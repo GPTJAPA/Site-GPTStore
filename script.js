@@ -12,7 +12,14 @@ const produtosDB = [
     id: "selecao-brasileira-1-2026",
     nome: "Camisa Seleção Brasileira I 2026",
     url: "produto.html?id=selecao-brasileira-1-2026",
-    img: "imagens/Camisas-time/Seleções/Seleção Brasileira 1/Frente.webp",
+    img: "imagens/Camisas-time/Seleções/Seleção Brasileira 1/Frente.jpg",
+    galeria: [
+      "imagens/Camisas-time/Seleções/Seleção Brasileira 1/Frente.jpg",
+      "imagens/Camisas-time/Seleções/Seleção Brasileira 1/Costas.jpg", // Exemplo de segunda foto
+      "imagens/Camisas-time/Seleções/Seleção Brasileira 1/emblema.jpg",
+      "imagens/Camisas-time/Seleções/Seleção Brasileira 1/gola.jpg",
+      "imagens/Camisas-time/Seleções/Seleção Brasileira 1/etiquta.jpg", // // Exemplo de terceira foto
+    ],
     preco: 299.9,
   },
   {
@@ -62,6 +69,11 @@ const produtosDB = [
     nome: "Camisa Alemanha",
     url: "produto.html?id=alemanha",
     img: "imagens/Camisas-time/Seleções/Alemanha/Frente.webp",
+    galeria: [
+      "imagens/Camisas-time/Seleções/Alemanha/Frente.webp",
+      "imagens/Camisas-time/Seleções/Alemanha/Costas.webp",
+      "imagens/Camisas-time/Seleções/Alemanha/Escudo.webp",
+    ],
     preco: 299.9,
   },
   {
@@ -332,10 +344,17 @@ function carregarProdutoDinamico() {
       imgPrincipalEl.alt = produto.nome;
     }
 
-    // Limpa as miniaturas e coloca apenas a foto principal do banco (evita bugar com fotos de outras camisas)
+    // Limpa as miniaturas antigas e carrega a galeria do produto
     const thumbnailsContainer = document.querySelector(".thumbnails");
     if (thumbnailsContainer) {
-      thumbnailsContainer.innerHTML = `<img src="${produto.img}" onclick="trocarImagem(this.src)" alt="Frente">`;
+      thumbnailsContainer.innerHTML = "";
+
+      // Se o produto tiver uma lista 'galeria', usa ela. Senão, usa apenas a imagem principal.
+      const imagensMiniatura = produto.galeria || [produto.img];
+
+      imagensMiniatura.forEach((caminhoImg, index) => {
+        thumbnailsContainer.innerHTML += `<img src="${caminhoImg}" onclick="trocarImagem(this.src)" alt="Foto ${index + 1}" onerror="this.style.display='none'">`;
+      });
     }
 
     // Atualiza Preço e remove o data-attribute para a personalização não bugar
