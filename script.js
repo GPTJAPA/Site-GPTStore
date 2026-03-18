@@ -79,7 +79,7 @@ const produtosDB = [
     galeria: [
       "imagens/Camisas-time/Seleções/Alemanha/frente.jpg",
       "imagens/Camisas-time/Seleções/Alemanha/costas.jpg",
-      "imagens/Camisas-time/Seleções/Alemanha/escudo.jpg",
+      "imagens/Camisas-time/Seleções/Alemanha/emblema.jpg",
       "imagens/Camisas-time/Seleções/Alemanha/etiqueta.jpg",
       "imagens/Camisas-time/Seleções/Alemanha/gola.jpg",
     ],
@@ -93,7 +93,7 @@ const produtosDB = [
     galeria: [
       "imagens/Camisas-time/Seleções/Alemanha - feminino/frente.jpg",
       "imagens/Camisas-time/Seleções/Alemanha - feminino/costas.jpg",
-      "imagens/Camisas-time/Seleções/Alemanha - feminino/escudo.jpg",
+      "imagens/Camisas-time/Seleções/Alemanha - feminino/emblema.jpg",
       "imagens/Camisas-time/Seleções/Alemanha - feminino/etiqueta.jpg",
       "imagens/Camisas-time/Seleções/Alemanha - feminino/gola.jpg",
     ],
@@ -107,7 +107,7 @@ const produtosDB = [
     galeria: [
       "imagens/Camisas-time/Seleções/Argentina/frente.jpg",
       "imagens/Camisas-time/Seleções/Argentina/costas.jpg",
-      "imagens/Camisas-time/Seleções/Argentina/escudo.jpg",
+      "imagens/Camisas-time/Seleções/Argentina/emblema.jpg",
       "imagens/Camisas-time/Seleções/Argentina/etiqueta.jpg",
       "imagens/Camisas-time/Seleções/Argentina/gola.jpg",
     ],
@@ -121,7 +121,7 @@ const produtosDB = [
     galeria: [
       "imagens/Camisas-time/Seleções/Argentina - Feminino/frente.jpg",
       "imagens/Camisas-time/Seleções/Argentina - Feminino/costas.jpg",
-      "imagens/Camisas-time/Seleções/Argentina - Feminino/escudo.jpg",
+      "imagens/Camisas-time/Seleções/Argentina - Feminino/emblema.jpg",
       "imagens/Camisas-time/Seleções/Argentina - Feminino/etiqueta.jpg",
       "imagens/Camisas-time/Seleções/Argentina - Feminino/gola.jpg",
     ],
@@ -135,7 +135,7 @@ const produtosDB = [
     galeria: [
       "imagens/Camisas-time/Seleções/Colombia/frente.jpg",
       "imagens/Camisas-time/Seleções/Colombia/costas.jpg",
-      "imagens/Camisas-time/Seleções/Colombia/escudo.jpg",
+      "imagens/Camisas-time/Seleções/Colombia/emblema.jpg",
       "imagens/Camisas-time/Seleções/Colombia/etiqueta.jpg",
       "imagens/Camisas-time/Seleções/Colombia/gola.jpg",
     ],
@@ -149,7 +149,7 @@ const produtosDB = [
     galeria: [
       "imagens/Camisas-time/Seleções/Colombia - feminino/frente.jpg",
       "imagens/Camisas-time/Seleções/Colombia - feminino/costas.jpg",
-      "imagens/Camisas-time/Seleções/Colombia - feminino/escudo.jpg",
+      "imagens/Camisas-time/Seleções/Colombia - feminino/emblema.jpg",
       "imagens/Camisas-time/Seleções/Colombia - feminino/etiqueta.jpg",
       "imagens/Camisas-time/Seleções/Colombia - feminino/gola.jpg",
     ],
@@ -163,7 +163,7 @@ const produtosDB = [
     galeria: [
       "imagens/Camisas-time/Seleções/Brasileira - retro penta/frente.jpg",
       "imagens/Camisas-time/Seleções/Brasileira - retro penta/costas.jpg",
-      "imagens/Camisas-time/Seleções/Brasileira - retro penta/escudo.jpg",
+      "imagens/Camisas-time/Seleções/Brasileira - retro penta/emblema.jpg",
       "imagens/Camisas-time/Seleções/Brasileira - retro penta/etiqueta.jpg",
       "imagens/Camisas-time/Seleções/Brasileira - retro penta/gola.jpg",
     ],
@@ -177,7 +177,7 @@ const produtosDB = [
     galeria: [
       "imagens/Camisas-time/Seleções/Seleção Brasileira 1 - Feminino/frente.jpg",
       "imagens/Camisas-time/Seleções/Seleção Brasileira 1 - Feminino/costas.jpg",
-      "imagens/Camisas-time/Seleções/Seleção Brasileira 1 - Feminino/escudo.jpg",
+      "imagens/Camisas-time/Seleções/Seleção Brasileira 1 - Feminino/emblema.jpg",
       "imagens/Camisas-time/Seleções/Seleção Brasileira 1 - Feminino/etiqueta.jpg",
       "imagens/Camisas-time/Seleções/Seleção Brasileira 1 - Feminino/gola.jpg",
     ],
@@ -191,7 +191,7 @@ const produtosDB = [
     galeria: [
       "imagens/Camisas-time/Seleções/Seleção Brasileira 2 - Feminino/frente.jpg",
       "imagens/Camisas-time/Seleções/Seleção Brasileira 2 - Feminino/costas.jpg",
-      "imagens/Camisas-time/Seleções/Seleção Brasileira 2 - Feminino/escudo.jpg",
+      "imagens/Camisas-time/Seleções/Seleção Brasileira 2 - Feminino/emblema.jpg",
       "imagens/Camisas-time/Seleções/Seleção Brasileira 2 - Feminino/etiqueta.jpg",
       "imagens/Camisas-time/Seleções/Seleção Brasileira 2 - Feminino/gola.jpg",
     ],
