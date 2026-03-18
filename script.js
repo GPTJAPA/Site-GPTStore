@@ -2,51 +2,122 @@
 // Lista de objetos que contém as informações básicas de cada produto para busca e exibição
 const produtosDB = [
   {
+    id: "coritiba-titular-2024",
     nome: "Camisa Coritiba Titular 2024",
-    url: "Pagina_produto_coritiba.html",
+    url: "produto.html?id=coritiba-titular-2024",
     img: "imagens/Camisas-time/Coritiba.jpeg",
     preco: 299.9,
   },
   {
+    id: "selecao-brasileira-1-2026",
     nome: "Camisa Seleção Brasileira I 2026",
-    url: "Pagina_produto_selecao_1.html",
+    url: "produto.html?id=selecao-brasileira-1-2026",
     img: "imagens/Camisas-time/Seleções/Seleção Brasileira 1/Frente.webp",
     preco: 299.9,
   },
   {
+    id: "selecao-brasileira-2-2026",
     nome: "Camisa Seleção Brasil II 2026",
-    url: "Pagina_produto.html",
+    url: "produto.html?id=selecao-brasileira-2-2026",
     img: "imagens/Camisas-time/Seleções/Seleção Brasileira 2/Seleção Brasil 2.webp",
     preco: 199.9,
   },
   {
+    id: "real-madrid-1-2025",
     nome: "Camisa Real Madrid I 2025",
-    url: "Pagina_produto_real_madrid.html",
+    url: "produto.html?id=real-madrid-1-2025",
     img: "imagens/Camisas-time/LaLiga/Real madrid I/Frente.jpg",
     preco: 349.9,
   },
   {
+    id: "barcelona-1-2025",
     nome: "Camisa Barcelona I 2025",
-    url: "Pagina_produto_barcelona.html",
+    url: "produto.html?id=barcelona-1-2025",
     img: "imagens/Camisas-time/LaLiga/Barcelona I/Frente.jpg",
     preco: 349.9,
   },
   {
+    id: "man-city-1-2025",
     nome: "Camisa Manchester City I 2025",
-    url: "Pagina_produto_man_city.html",
+    url: "produto.html?id=man-city-1-2025",
     img: "imagens/Camisas-time/Premier league/Man. City/Frente.jpg",
     preco: 329.9,
   },
   {
+    id: "arsenal-1-2025",
     nome: "Camisa Arsenal I 2025",
-    url: "Pagina_produto_arsenal.html",
+    url: "produto.html?id=arsenal-1-2025",
     img: "imagens/Camisas-time/Premier league/Arsenal/frente.jpg",
     preco: 329.9,
   },
   {
+    id: "franca-titular-2024",
     nome: "Camisa França Titular 2024",
-    url: "Pagina_produto_franca.html",
+    url: "produto.html?id=franca-titular-2024",
     img: "imagens/Camisas-time/Seleções/Seleção Brasileira 1/Frente.webp",
+    preco: 299.9,
+  },
+  {
+    id: "alemanha",
+    nome: "Camisa Alemanha",
+    url: "produto.html?id=alemanha",
+    img: "imagens/Camisas-time/Seleções/Alemanha/Frente.webp",
+    preco: 299.9,
+  },
+  {
+    id: "alemanha-fem",
+    nome: "Camisa Alemanha Feminina",
+    url: "produto.html?id=alemanha-fem",
+    img: "imagens/Camisas-time/Seleções/Alemanha Feminina/Frente.webp",
+    preco: 299.9,
+  },
+  {
+    id: "argentina",
+    nome: "Camisa Argentina",
+    url: "produto.html?id=argentina",
+    img: "imagens/Camisas-time/Seleções/Argentina/Frente.webp",
+    preco: 299.9,
+  },
+  {
+    id: "argentina-fem",
+    nome: "Camisa Argentina Feminina",
+    url: "produto.html?id=argentina-fem",
+    img: "imagens/Camisas-time/Seleções/Argentina Feminina/Frente.webp",
+    preco: 299.9,
+  },
+  {
+    id: "colombia",
+    nome: "Camisa Colombia",
+    url: "produto.html?id=colombia",
+    img: "imagens/Camisas-time/Seleções/Colombia/Frente.webp",
+    preco: 299.9,
+  },
+  {
+    id: "colombia-fem",
+    nome: "Camisa Colombia Feminina",
+    url: "produto.html?id=colombia-fem",
+    img: "imagens/Camisas-time/Seleções/Colombia Feminina/Frente.webp",
+    preco: 299.9,
+  },
+  {
+    id: "brasil-retro",
+    nome: "Camisa Brasil Retrô",
+    url: "produto.html?id=brasil-retro",
+    img: "imagens/Camisas-time/Seleções/Brasil Retro/Frente.webp",
+    preco: 299.9,
+  },
+  {
+    id: "selecao-brasileira-fem-1",
+    nome: "Camisa Seleção Brasileira Feminina I",
+    url: "produto.html?id=selecao-brasileira-fem-1",
+    img: "imagens/Camisas-time/Seleções/Seleção Brasileira Feminina 1/Frente.webp",
+    preco: 299.9,
+  },
+  {
+    id: "selecao-brasileira-fem-2",
+    nome: "Camisa Seleção Brasileira Feminina II",
+    url: "produto.html?id=selecao-brasileira-fem-2",
+    img: "imagens/Camisas-time/Seleções/Seleção Brasileira Feminina 2/Frente.webp",
     preco: 299.9,
   },
 ];
@@ -55,6 +126,8 @@ const produtosDB = [
 // O evento DOMContentLoaded garante que o HTML foi totalmente carregado antes de rodar o script
 document.addEventListener("DOMContentLoaded", () => {
   atualizarContadorCarrinho();
+
+  carregarProdutoDinamico();
 
   // Carrega produtos relacionados se o container existir
   exibirProdutosRelacionados();
@@ -232,6 +305,47 @@ document.addEventListener("DOMContentLoaded", () => {
       localStorage.getItem("pagamentoCliente") || "";
   }
 });
+
+// Preenche a página de produto dinamicamente com base no ID da URL
+function carregarProdutoDinamico() {
+  // Só roda se estivermos na página genérica de produto
+  if (!window.location.pathname.includes("produto.html")) return;
+
+  const params = new URLSearchParams(window.location.search);
+  const idProduto = params.get("id");
+
+  if (!idProduto) return;
+
+  const produto = produtosDB.find((p) => p.id === idProduto);
+
+  if (produto) {
+    // Atualiza título da aba do navegador
+    document.title = `Detalhes do Produto - ${produto.nome}`;
+
+    // Atualiza nome e imagem
+    const tituloEl = document.querySelector(".info h2");
+    if (tituloEl) tituloEl.innerText = produto.nome;
+
+    const imgPrincipalEl = document.getElementById("imagemPrincipal");
+    if (imgPrincipalEl) {
+      imgPrincipalEl.src = produto.img;
+      imgPrincipalEl.alt = produto.nome;
+    }
+
+    // Limpa as miniaturas e coloca apenas a foto principal do banco (evita bugar com fotos de outras camisas)
+    const thumbnailsContainer = document.querySelector(".thumbnails");
+    if (thumbnailsContainer) {
+      thumbnailsContainer.innerHTML = `<img src="${produto.img}" onclick="trocarImagem(this.src)" alt="Frente">`;
+    }
+
+    // Atualiza Preço e remove o data-attribute para a personalização não bugar
+    const precoEl = document.querySelector(".preco-destaque");
+    if (precoEl) {
+      precoEl.innerHTML = `R$ ${formatarPreco(produto.preco)} `;
+      delete precoEl.dataset.precoBase;
+    }
+  }
+}
 
 // Atualiza o número vermelho no ícone do carrinho no menu
 function atualizarContadorCarrinho() {
