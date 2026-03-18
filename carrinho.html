@@ -10,7 +10,9 @@
 
 <body>
     <nav class="navbar">
-        <div class="logo">GPT <span>STORE</span></div>
+        <a href="index.html" class="logo">
+            <img src="Logo loja.png" alt=" GPT STORE">
+        </a>
 
         <div class="menu-toggle" onclick="toggleMenu()">
             <span class="bar"></span>
@@ -75,7 +77,7 @@
                 <label for="pagamento-cliente">Forma de Pagamento *</label>
                 <select id="pagamento-cliente" onchange="localStorage.setItem('pagamentoCliente', this.value)">
                     <option value="">Selecione...</option>
-                    <option value="Pix">Pix (5% de desconto)</option>
+                    <option value="Pix">Pix</option>
                     <option value="Cartão de Crédito">Cartão de Crédito</option>
                     <option value="Cartão de Débito">Cartão de Débito</option>
                 </select>

@@ -27,8 +27,9 @@ body {
   /* Alinha o conteúdo da navbar com o resto do site (max 1200px) */
   padding-left: max(2rem, calc((100% - 1200px) / 2 + 2rem));
   padding-right: max(2rem, calc((100% - 1200px) / 2 + 2rem));
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: 0.1rem
+    /* Reduzido para 0.1rem para diminuir o espaço acima da navbar */;
+  padding-bottom: 0.2rem; /* Reduzido para 0.2rem para diminuir o espaço abaixo da navbar */
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -41,10 +42,19 @@ body {
   letter-spacing: 2px;
   font-family: "Russo One", sans-serif;
   font-style: italic;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
 }
 
 .logo span {
   color: #28a745;
+}
+
+.logo img {
+  max-height: 110px; /* Aumentado ainda mais o tamanho da logo */
+  width: auto;
+  background-color: transparent; /* Garante que o CSS não aplique cor de fundo */
 }
 
 .nav-links {

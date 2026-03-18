@@ -10,7 +10,9 @@
 
 <body>
     <nav class="navbar">
-        <div class="logo">GPT <span>STORE</span></div>
+        <a href="index.html" class="logo">
+            <img src="Logo loja.png" alt=" GPT STORE">
+        </a>
 
         <div class="menu-toggle" onclick="toggleMenu()">
             <span class="bar"></span>
@@ -43,7 +45,7 @@
 
         <div class="main-img-container">
             <!-- A imagem será injetada via JS -->
-            <img id="imagemPrincipal" src="" alt="Carregando Produto...">
+            <img id="imagemPrincipal" src="" alt="Carregando Produto..." fetchpriority="high" decoding="async">
         </div>
 
         <div class="info">
