@@ -18,7 +18,7 @@ const produtosDB = [
       "imagens/Camisas-time/Seleções/Seleção Brasileira 1/Costas.jpg", // Exemplo de segunda foto
       "imagens/Camisas-time/Seleções/Seleção Brasileira 1/emblema.jpg",
       "imagens/Camisas-time/Seleções/Seleção Brasileira 1/gola.jpg",
-      "imagens/Camisas-time/Seleções/Seleção Brasileira 1/etiquta.jpg", // // Exemplo de terceira foto
+      "imagens/Camisas-time/Seleções/Seleção Brasileira 1/etiqueta.jpg",
     ],
     preco: 299.9,
   },
@@ -30,9 +30,9 @@ const produtosDB = [
     galeria: [
       "imagens/Camisas-time/Seleções/Seleção Brasileira 2/Frente.jpg",
       "imagens/Camisas-time/Seleções/Seleção Brasileira 2/Costas.jpg", // Exemplo de segunda foto
-      "imagens/Camisas-time/Seleções/Seleção Brasileira 2/emblema.jpg.jpg",
+      "imagens/Camisas-time/Seleções/Seleção Brasileira 2/emblema.jpg",
       "imagens/Camisas-time/Seleções/Seleção Brasileira 2/lateral.jpg",
-      "imagens/Camisas-time/Seleções/Seleção Brasileira 2/etiquta.jpg", // // Exemplo de terceira foto
+      "imagens/Camisas-time/Seleções/Seleção Brasileira 2/etiqueta.jpg",
     ],
     preco: 199.9,
   },
@@ -81,7 +81,7 @@ const produtosDB = [
       "imagens/Camisas-time/Seleções/Alemanha/costas.jpg",
       "imagens/Camisas-time/Seleções/Alemanha/escudo.jpg",
       "imagens/Camisas-time/Seleções/Alemanha/etiqueta.jpg",
-      "imagens/Camisas-time/Seleções/Alemanha/gola.jpg.jpg",
+      "imagens/Camisas-time/Seleções/Alemanha/gola.jpg",
     ],
     preco: 299.9,
   },
@@ -95,7 +95,7 @@ const produtosDB = [
       "imagens/Camisas-time/Seleções/Alemanha - feminino/costas.jpg",
       "imagens/Camisas-time/Seleções/Alemanha - feminino/escudo.jpg",
       "imagens/Camisas-time/Seleções/Alemanha - feminino/etiqueta.jpg",
-      "imagens/Camisas-time/Seleções/Alemanha - feminino/gola.jpg.jpg",
+      "imagens/Camisas-time/Seleções/Alemanha - feminino/gola.jpg",
     ],
     preco: 299.9,
   },
@@ -418,7 +418,8 @@ function carregarProdutoDinamico() {
       const imagensMiniatura = produto.galeria || [produto.img];
 
       imagensMiniatura.forEach((caminhoImg, index) => {
-        thumbnailsContainer.innerHTML += `<img src="${caminhoImg}" onclick="trocarImagem(this.src)" alt="Foto ${index + 1}" onerror="this.style.display='none'">`;
+        // Removi o 'onerror' para que você possa ver exatamente quais imagens não estão sendo encontradas na pasta
+        thumbnailsContainer.innerHTML += `<img src="${caminhoImg}" onclick="trocarImagem(this.src)" alt="Foto ${index + 1}">`;
       });
     }
 
