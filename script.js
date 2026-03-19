@@ -123,7 +123,7 @@ const produtosDB = [
   },
   {
     id: "brasil-retro",
-    nome: "Camisa Brasil 2002 Retrô",
+    nome: "Camisa Seleção Brasileira 2002 Retrô",
     url: "produto.html?id=brasil-retro",
     img: "imagens/Camisas-time/Seleções/Brasileira - retro penta/frente.jpg",
     galeria: [
@@ -180,7 +180,7 @@ const produtosDB = [
   },
   {
     id: "brasil-1994-amarela",
-    nome: "Camisa Brasil 1994 - Amarela",
+    nome: "Camisa Seleção Brasileira 1994 - Amarela",
     url: "produto.html?id=brasil-1994-amarela",
     img: "imagens/Camisas-time/Seleções/Brasil Amare -1994/frente.jpg",
     galeria: [
@@ -194,7 +194,7 @@ const produtosDB = [
   },
   {
     id: "brasil-1994-azul",
-    nome: "Camisa Brasil 1994 - Azul",
+    nome: "Camisa Seleção Brasileira 1994 - Azul",
     url: "produto.html?id=brasil-1994-azul",
     img: "imagens/Camisas-time/Seleções/Brasil Azul -1994/frente.jpg",
     galeria: [
@@ -351,7 +351,7 @@ const produtosDB = [
   // --- BRASILEIRÃO ---
   {
     id: "atl-mineiro-titular-2024",
-    nome: "Camisa Atletico Mineiro Titular 2026",
+    nome: "Camisa Atletico Mineiro I 2026",
     url: "produto.html?id=atl-mineiro-titular-2024",
     img: "imagens/Camisas-time/Brasileirão A/Atl. Mineiro/frente.jpg",
     galeria: [
@@ -769,9 +769,9 @@ const produtosDB = [
   },
   // --- LA LIGA ---
   {
-    id: "real-madrid-1-2025",
-    nome: "Camisa Real Madrid I 2025",
-    url: "produto.html?id=real-madrid-1-2025",
+    id: "real-madrid-1-2026",
+    nome: "Camisa Real Madrid I 2026",
+    url: "produto.html?id=real-madrid-1-2026",
     img: "imagens/Camisas-time/LaLiga/Real madrid I/Frente.jpg",
     galeria: [
       "imagens/Camisas-time/LaLiga/Real madrid I/Frente.jpg",
@@ -782,9 +782,9 @@ const produtosDB = [
     preco: 180.0,
   },
   {
-    id: "real-madrid-2-2025",
-    nome: "Camisa Real Madrid II 2025",
-    url: "produto.html?id=real-madrid-2-2025",
+    id: "real-madrid-2-2026",
+    nome: "Camisa Real Madrid II 2026",
+    url: "produto.html?id=real-madrid-2-2026",
     img: "imagens/Camisas-time/LaLiga/Real madrid II/frente.jpg",
     galeria: [
       "imagens/Camisas-time/LaLiga/Real madrid II/frente.jpg",
