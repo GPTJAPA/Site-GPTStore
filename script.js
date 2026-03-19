@@ -2,13 +2,6 @@
 // Lista de objetos que contém as informações básicas de cada produto para busca e exibição
 const produtosDB = [
   {
-    id: "coritiba-titular-2024",
-    nome: "Camisa Coritiba Titular 2024",
-    url: "produto.html?id=coritiba-titular-2024",
-    img: "imagens/Camisas-time/Coritiba.jpeg",
-    preco: 299.9,
-  },
-  {
     id: "selecao-brasileira-1-2026",
     nome: "Camisa Seleção Brasileira I 2026",
     url: "produto.html?id=selecao-brasileira-1-2026",
@@ -20,7 +13,7 @@ const produtosDB = [
       "imagens/Camisas-time/Seleções/Seleção Brasileira 1/gola.jpg",
       "imagens/Camisas-time/Seleções/Seleção Brasileira 1/etiqueta.jpg",
     ],
-    preco: 299.9,
+    preco: 180.0,
   },
   {
     id: "selecao-brasileira-2-2026",
@@ -34,42 +27,14 @@ const produtosDB = [
       "imagens/Camisas-time/Seleções/Seleção Brasileira 2/lateral.jpg",
       "imagens/Camisas-time/Seleções/Seleção Brasileira 2/etiqueta.jpg",
     ],
-    preco: 199.9,
-  },
-  {
-    id: "real-madrid-1-2025",
-    nome: "Camisa Real Madrid I 2025",
-    url: "produto.html?id=real-madrid-1-2025",
-    img: "imagens/Camisas-time/LaLiga/Real madrid I/Frente.jpg",
-    preco: 349.9,
-  },
-  {
-    id: "barcelona-1-2025",
-    nome: "Camisa Barcelona I 2025",
-    url: "produto.html?id=barcelona-1-2025",
-    img: "imagens/Camisas-time/LaLiga/Barcelona I/Frente.jpg",
-    preco: 349.9,
-  },
-  {
-    id: "man-city-1-2025",
-    nome: "Camisa Manchester City I 2025",
-    url: "produto.html?id=man-city-1-2025",
-    img: "imagens/Camisas-time/Premier league/Man. City/Frente.jpg",
-    preco: 329.9,
-  },
-  {
-    id: "arsenal-1-2025",
-    nome: "Camisa Arsenal I 2025",
-    url: "produto.html?id=arsenal-1-2025",
-    img: "imagens/Camisas-time/Premier league/Arsenal/frente.jpg",
-    preco: 329.9,
+    preco: 180.0,
   },
   {
     id: "franca-titular-2024",
     nome: "Camisa França Titular 2024",
     url: "produto.html?id=franca-titular-2024",
     img: "imagens/Camisas-time/Seleções/Seleção Brasileira 1/Frente.webp",
-    preco: 299.9,
+    preco: 180.0,
   },
   {
     id: "alemanha",
@@ -83,7 +48,7 @@ const produtosDB = [
       "imagens/Camisas-time/Seleções/Alemanha/etiqueta.jpg",
       "imagens/Camisas-time/Seleções/Alemanha/gola.jpg",
     ],
-    preco: 299.9,
+    preco: 180.0,
   },
   {
     id: "alemanha-fem",
@@ -97,7 +62,7 @@ const produtosDB = [
       "imagens/Camisas-time/Seleções/Alemanha - feminino/etiqueta.jpg",
       "imagens/Camisas-time/Seleções/Alemanha - feminino/gola.jpg",
     ],
-    preco: 299.9,
+    preco: 180.0,
   },
   {
     id: "argentina",
@@ -112,7 +77,7 @@ const produtosDB = [
       "imagens/Camisas-time/Seleções/Argentina/etiqueta.jpg",
       "imagens/Camisas-time/Seleções/Argentina/gola.jpg",
     ],
-    preco: 299.9,
+    preco: 180.0,
   },
   {
     id: "argentina-fem",
@@ -126,7 +91,7 @@ const produtosDB = [
       "imagens/Camisas-time/Seleções/Argentina - Feminino/patch.jpg",
       "imagens/Camisas-time/Seleções/Argentina - Feminino/gola.jpg",
     ],
-    preco: 299.9,
+    preco: 180.0,
   },
   {
     id: "colombia",
@@ -140,7 +105,7 @@ const produtosDB = [
       "imagens/Camisas-time/Seleções/Colombia/etiqueta.jpg",
       "imagens/Camisas-time/Seleções/Colombia/gola.jpg",
     ],
-    preco: 299.9,
+    preco: 180.0,
   },
   {
     id: "colombia-fem",
@@ -154,7 +119,7 @@ const produtosDB = [
       "imagens/Camisas-time/Seleções/Colombia - feminino/etiqueta.jpg",
       "imagens/Camisas-time/Seleções/Colombia - feminino/gola.jpg",
     ],
-    preco: 299.9,
+    preco: 180.0,
   },
   {
     id: "brasil-retro",
@@ -169,7 +134,7 @@ const produtosDB = [
       "imagens/Camisas-time/Seleções/Brasileira - retro penta/ronaldo.png",
       "imagens/Camisas-time/Seleções/Brasileira - retro penta/Ronaldinho.webp",
     ],
-    preco: 299.9,
+    preco: 180.0,
   },
   {
     id: "selecao-brasileira-fem-1",
@@ -183,7 +148,7 @@ const produtosDB = [
       "imagens/Camisas-time/Seleções/Seleção Brasileira 1 - Feminino/etiqueta.jpg",
       "imagens/Camisas-time/Seleções/Seleção Brasileira 1 - Feminino/gola.jpg",
     ],
-    preco: 299.9,
+    preco: 180.0,
   },
   {
     id: "selecao-brasileira-fem-2",
@@ -197,7 +162,885 @@ const produtosDB = [
       "imagens/Camisas-time/Seleções/Seleção Brasileira 2 - Feminino/etiqueta.jpg",
       "imagens/Camisas-time/Seleções/Seleção Brasileira 2 - Feminino/lateral.jpg",
     ],
-    preco: 299.9,
+    preco: 180.0,
+  },
+  // --- BRASILEIRÃO ---
+  {
+    id: "atl-mineiro-titular-2024",
+    nome: "Camisa Atletico Mineiro Titular 2026",
+    url: "produto.html?id=atl-mineiro-titular-2024",
+    img: "imagens/Camisas-time/Brasileirão A/Atl. Mineiro/frente.jpg",
+    galeria: [
+      "imagens/Camisas-time/Brasileirão A/Atl. Mineiro/frente.jpg",
+      "imagens/Camisas-time/Brasileirão A/Atl. Mineiro/costas.jpg",
+      "imagens/Camisas-time/Brasileirão A/Atl. Mineiro/emblema.jpg",
+      "imagens/Camisas-time/Brasileirão A/Atl. Mineiro/etiqueta.jpg",
+      "imagens/Camisas-time/Brasileirão A/Atl. Mineiro/gola.jpg",
+    ],
+    preco: 180.0,
+  },
+  {
+    id: "atl-mineiro-ii-2026",
+    nome: "Camisa Atletico Mineiro II 2026",
+    url: "produto.html?id=atl-mineiro-ii-2026",
+    img: "imagens/Camisas-time/Brasileirão A/Atl. Mineiro II/frente.jpg",
+    galeria: [
+      "imagens/Camisas-time/Brasileirão A/Atl. Mineiro II/frente.jpg",
+      "imagens/Camisas-time/Brasileirão A/Atl. Mineiro II/costas.jpg",
+      "imagens/Camisas-time/Brasileirão A/Atl. Mineiro II/emblema.jpg",
+      "imagens/Camisas-time/Brasileirão A/Atl. Mineiro II/lateral.jpg",
+      "imagens/Camisas-time/Brasileirão A/Atl. Mineiro II/gola.jpg",
+    ],
+    preco: 180.0,
+  },
+  {
+    id: "atl-mineiro-iii-2026",
+    nome: "Camisa Atletico Mineiro III 2026",
+    url: "produto.html?id=atl-mineiro-iii-2026",
+    img: "imagens/Camisas-time/Brasileirão A/Atl. Mineiro III/frente.jpg",
+    galeria: [
+      "imagens/Camisas-time/Brasileirão A/Atl. Mineiro III/frente.jpg",
+      "imagens/Camisas-time/Brasileirão A/Atl. Mineiro III/costas.jpg",
+      "imagens/Camisas-time/Brasileirão A/Atl. Mineiro III/emblema.jpg",
+      "imagens/Camisas-time/Brasileirão A/Atl. Mineiro III/lateral.jpg",
+      "imagens/Camisas-time/Brasileirão A/Atl. Mineiro III/gola.jpg",
+    ],
+    preco: 180.0,
+  },
+  {
+    id: "atlético-juventus-2026",
+    nome: "Camisa Atlético Juventus 2026",
+    url: "produto.html?id=atlético-juventus-2026",
+    img: "imagens/Camisas-time/Brasileirão A/Atlético Juventus/frente.jpg",
+    galeria: [
+      "imagens/Camisas-time/Brasileirão A/Atlético Juventus/frente.jpg",
+      "imagens/Camisas-time/Brasileirão A/Atlético Juventus/costas.jpg",
+      "imagens/Camisas-time/Brasileirão A/Atlético Juventus/emblema.jpg",
+      "imagens/Camisas-time/Brasileirão A/Atlético Juventus/etiqueta.jpg",
+      "imagens/Camisas-time/Brasileirão A/Atlético Juventus/gola.jpg",
+    ],
+    preco: 180.0,
+  },
+  {
+    id: "botafogo-i-2026",
+    nome: "Camisa Botafogo I 2026",
+    url: "produto.html?id=botafogo-i-2026",
+    img: "imagens/Camisas-time/Brasileirão A/Botafogo I/frente.jpg",
+    galeria: [
+      "imagens/Camisas-time/Brasileirão A/Botafogo I/frente.jpg",
+      "imagens/Camisas-time/Brasileirão A/Botafogo I/costas.jpg",
+      "imagens/Camisas-time/Brasileirão A/Botafogo I/emblema.jpg",
+      "imagens/Camisas-time/Brasileirão A/Botafogo I/lateral.jpg",
+      "imagens/Camisas-time/Brasileirão A/Botafogo I/gola.jpg",
+    ],
+    preco: 180.0,
+  },
+  {
+    id: "botafogo-ii-2026",
+    nome: "Camisa Botafogo II 2026",
+    url: "produto.html?id=botafogo-ii-2026",
+    img: "imagens/Camisas-time/Brasileirão A/Botafogo II/frente.jpg",
+    galeria: [
+      "imagens/Camisas-time/Brasileirão A/Botafogo II/frente.jpg",
+      "imagens/Camisas-time/Brasileirão A/Botafogo II/costa.jpg",
+      "imagens/Camisas-time/Brasileirão A/Botafogo II/emblema.jpg",
+      "imagens/Camisas-time/Brasileirão A/Botafogo II/lateral.jpg",
+      "imagens/Camisas-time/Brasileirão A/Botafogo II/gola.jpg",
+    ],
+    preco: 180.0,
+  },
+  {
+    id: "corinthians-i-2026",
+    nome: "Camisa Corinthians I 2026",
+    url: "produto.html?id=corinthians-i-2026",
+    img: "imagens/Camisas-time/Brasileirão A/Corinthians I/frente.jpg",
+    galeria: [
+      "imagens/Camisas-time/Brasileirão A/Corinthians I/frente.jpg",
+      "imagens/Camisas-time/Brasileirão A/Corinthians I/costas.jpg",
+      "imagens/Camisas-time/Brasileirão A/Corinthians I/emblema.jpg",
+      "imagens/Camisas-time/Brasileirão A/Corinthians I/etiqueta.jpg",
+      "imagens/Camisas-time/Brasileirão A/Corinthians I/gola.jpg",
+    ],
+    preco: 180.0,
+  },
+  {
+    id: "corinthians-ii-2026",
+    nome: "Camisa Corinthians II 2026",
+    url: "produto.html?id=corinthians-ii-2026",
+    img: "imagens/Camisas-time/Brasileirão A/Corinthians II/frente.jpg",
+    galeria: [
+      "imagens/Camisas-time/Brasileirão A/Corinthians II/frente.jpg",
+      "imagens/Camisas-time/Brasileirão A/Corinthians II/costas.jpg",
+      "imagens/Camisas-time/Brasileirão A/Corinthians II/emblema.jpg",
+      "imagens/Camisas-time/Brasileirão A/Corinthians II/lateral.jpg",
+      "imagens/Camisas-time/Brasileirão A/Corinthians II/gola.jpg",
+    ],
+    preco: 180.0,
+  },
+  {
+    id: "corinthians-iv-2026",
+    nome: "Camisa Corinthians Total 90 2026",
+    url: "produto.html?id=corinthians-iv-2026",
+    img: "imagens/Camisas-time/Brasileirão A/Corinthians 4/frente.jpg",
+    galeria: [
+      "imagens/Camisas-time/Brasileirão A/Corinthians 4/frente.jpg",
+      "imagens/Camisas-time/Brasileirão A/Corinthians 4/costas.jpg",
+      "imagens/Camisas-time/Brasileirão A/Corinthians 4/emblema.jpg",
+      "imagens/Camisas-time/Brasileirão A/Corinthians 4/lateral.jpg",
+      "imagens/Camisas-time/Brasileirão A/Corinthians 4/gola.jpg",
+    ],
+    preco: 180.0,
+  },
+  {
+    id: "corinthians-iii-2026",
+    nome: "Camisa Corinthians Away 2025",
+    url: "produto.html?id=corinthians-iii-2026",
+    img: "imagens/Camisas-time/Brasileirão A/Corinthians III/frente.jpg",
+    galeria: [
+      "imagens/Camisas-time/Brasileirão A/Corinthians III/frente.jpg",
+      "imagens/Camisas-time/Brasileirão A/Corinthians III/costas.jpg",
+      "imagens/Camisas-time/Brasileirão A/Corinthians III/emblema.jpg",
+      "imagens/Camisas-time/Brasileirão A/Corinthians III/lateral.jpg",
+      "imagens/Camisas-time/Brasileirão A/Corinthians III/gola.jpg",
+    ],
+    preco: 180.0,
+  },
+  {
+    id: "cruzeiro-i-2026",
+    nome: "Camisa Cruzeiro I 2026",
+    url: "produto.html?id=cruzeiro-i-2026",
+    img: "imagens/Camisas-time/Brasileirão A/Cruzeiro I/frente.jpg",
+    galeria: [
+      "imagens/Camisas-time/Brasileirão A/Cruzeiro I/frente.jpg",
+      "imagens/Camisas-time/Brasileirão A/Cruzeiro I/costas.jpg",
+    ],
+    preco: 180.0,
+  },
+  {
+    id: "cruzeiro-ii-2026",
+    nome: "Camisa Cruzeiro II 2026",
+    url: "produto.html?id=cruzeiro-ii-2026",
+    img: "imagens/Camisas-time/Brasileirão A/Cruzeiro II/frente.jpg",
+    galeria: [
+      "imagens/Camisas-time/Brasileirão A/Cruzeiro II/frente.jpg",
+      "imagens/Camisas-time/Brasileirão A/Cruzeiro II/costas.jpg",
+      "imagens/Camisas-time/Brasileirão A/Cruzeiro II/emblema.jpg",
+      "imagens/Camisas-time/Brasileirão A/Cruzeiro II/etiqueta.jpg",
+      "imagens/Camisas-time/Brasileirão A/Cruzeiro II/lateral.jpg",
+    ],
+    preco: 180.0,
+  },
+  {
+    id: "cruzeiro-iii-2026",
+    nome: "Camisa Cruzeiro de Treino 2025",
+    url: "produto.html?id=cruzeiro-iii-2026",
+    img: "imagens/Camisas-time/Brasileirão A/Cruzeiro III/frente.jpg",
+    galeria: [
+      "imagens/Camisas-time/Brasileirão A/Cruzeiro III/frente.jpg",
+      "imagens/Camisas-time/Brasileirão A/Cruzeiro III/costas.jpg",
+      "imagens/Camisas-time/Brasileirão A/Cruzeiro III/emblema.jpg",
+      "imagens/Camisas-time/Brasileirão A/Cruzeiro III/lateral.jpg",
+      "imagens/Camisas-time/Brasileirão A/Cruzeiro III/gola.jpg",
+    ],
+    preco: 180.0,
+  },
+  {
+    id: "flamengo-1-2026",
+    nome: "Camisa Flamengo I 2026",
+    url: "produto.html?id=flamengo-1-2026",
+    img: "imagens/Camisas-time/Brasileirão A/Flamengo/frente.jpg",
+    galeria: [
+      "imagens/Camisas-time/Brasileirão A/Flamengo/frente.jpg",
+      "imagens/Camisas-time/Brasileirão A/Flamengo/costas.jpg",
+      "imagens/Camisas-time/Brasileirão A/Flamengo/emblema.jpg",
+      "imagens/Camisas-time/Brasileirão A/Flamengo/gola.jpg",
+    ],
+    preco: 180.0,
+  },
+  {
+    id: "flamengo-2-2026",
+    nome: "Camisa Flamengo II 2026",
+    url: "produto.html?id=flamengo-2-2026",
+    img: "imagens/Camisas-time/Brasileirão A/Flamengo II/frente.jpg",
+    galeria: [
+      "imagens/Camisas-time/Brasileirão A/Flamengo II/frente.jpg",
+      "imagens/Camisas-time/Brasileirão A/Flamengo II/costas.jpg",
+      "imagens/Camisas-time/Brasileirão A/Flamengo II/emblema.jpg",
+      "imagens/Camisas-time/Brasileirão A/Flamengo II/lateral.jpg",
+      "imagens/Camisas-time/Brasileirão A/Flamengo II/gola.jpg",
+    ],
+    preco: 180.0,
+  },
+  {
+    id: "flamengo-3-2026",
+    nome: "Camisa Flamengo III 2026",
+    url: "produto.html?id=flamengo-3-2026",
+    img: "imagens/Camisas-time/Brasileirão A/Flamengo III/frente.jpg",
+    galeria: [
+      "imagens/Camisas-time/Brasileirão A/Flamengo III/frente.jpg",
+      "imagens/Camisas-time/Brasileirão A/Flamengo III/costas.jpg",
+      "imagens/Camisas-time/Brasileirão A/Flamengo III/emblema.jpg",
+      "imagens/Camisas-time/Brasileirão A/Flamengo III/lateral.jpg",
+      "imagens/Camisas-time/Brasileirão A/Flamengo III/gola.jpg",
+    ],
+    preco: 180.0,
+  },
+  {
+    id: "flamengo-4-2026",
+    nome: "Camisa Flamengo IV 2026",
+    url: "produto.html?id=flamengo-4-2026",
+    img: "imagens/Camisas-time/Brasileirão A/Flamengo 4/frente.jpg",
+    galeria: [
+      "imagens/Camisas-time/Brasileirão A/Flamengo 4/frente.jpg",
+      "imagens/Camisas-time/Brasileirão A/Flamengo 4/costas.jpg",
+      "imagens/Camisas-time/Brasileirão A/Flamengo 4/emblema.jpg",
+      "imagens/Camisas-time/Brasileirão A/Flamengo 4/gola.jpg",
+    ],
+    preco: 180.0,
+  },
+  {
+    id: "gremio-i-2026",
+    nome: "Camisa Grêmio I 2026",
+    url: "produto.html?id=gremio-i-2026",
+    img: "imagens/Camisas-time/Brasileirão A/Gremio I/frente.jpg",
+    galeria: [
+      "imagens/Camisas-time/Brasileirão A/Gremio I/frente.jpg",
+      "imagens/Camisas-time/Brasileirão A/Gremio I/costas.jpg",
+      "imagens/Camisas-time/Brasileirão A/Gremio I/emblema.jpg",
+      "imagens/Camisas-time/Brasileirão A/Gremio I/etiqueta.jpg",
+    ],
+    preco: 180.0,
+  },
+  {
+    id: "gremio-ii-2026",
+    nome: "Camisa Grêmio II 2026",
+    url: "produto.html?id=gremio-ii-2026",
+    img: "imagens/Camisas-time/Brasileirão A/Gremio II/frente.jpg",
+    galeria: [
+      "imagens/Camisas-time/Brasileirão A/Gremio II/frente.jpg",
+      "imagens/Camisas-time/Brasileirão A/Gremio II/costas.jpg",
+      "imagens/Camisas-time/Brasileirão A/Gremio II/emblema.jpg",
+      "imagens/Camisas-time/Brasileirão A/Gremio II/etiqueta.jpg",
+    ],
+    preco: 180.0,
+  },
+  {
+    id: "gremio-iii-2026",
+    nome: "Camisa Grêmio III 2026",
+    url: "produto.html?id=gremio-iii-2026",
+    img: "imagens/Camisas-time/Brasileirão A/Gremio III/frente.jpg",
+    galeria: [
+      "imagens/Camisas-time/Brasileirão A/Gremio III/frente.jpg",
+      "imagens/Camisas-time/Brasileirão A/Gremio III/costas.jpg",
+      "imagens/Camisas-time/Brasileirão A/Gremio III/emblema.jpg",
+      "imagens/Camisas-time/Brasileirão A/Gremio III/etiqueta.jpg",
+      "imagens/Camisas-time/Brasileirão A/Gremio III/gola.jpg",
+    ],
+    preco: 180.0,
+  },
+  {
+    id: "internacional-1-2026",
+    nome: "Camisa Internacional I 2026",
+    url: "produto.html?id=internacional-1-2026",
+    img: "imagens/Camisas-time/Brasileirão A/Internacional I/frente.jpg",
+    galeria: [
+      "imagens/Camisas-time/Brasileirão A/Internacional I/frente.jpg",
+      "imagens/Camisas-time/Brasileirão A/Internacional I/costas.jpg",
+      "imagens/Camisas-time/Brasileirão A/Internacional I/emblema.jpg",
+      "imagens/Camisas-time/Brasileirão A/Internacional I/gola.jpg",
+    ],
+    preco: 180.0,
+  },
+  {
+    id: "palmeiras-1-2026",
+    nome: "Camisa Palmeiras I 2026",
+    url: "produto.html?id=palmeiras-1-2026",
+    img: "imagens/Camisas-time/Brasileirão A/Palmeiras I/frente.jpg",
+    galeria: [
+      "imagens/Camisas-time/Brasileirão A/Palmeiras I/frente.jpg",
+      "imagens/Camisas-time/Brasileirão A/Palmeiras I/costas.jpg",
+    ],
+    preco: 180.0,
+  },
+  {
+    id: "palmeiras-2-2026",
+    nome: "Camisa Palmeiras II 2026",
+    url: "produto.html?id=palmeiras-2-2026",
+    img: "imagens/Camisas-time/Brasileirão A/Palmeiras II/frente.jpg",
+    galeria: [
+      "imagens/Camisas-time/Brasileirão A/Palmeiras II/frente.jpg",
+      "imagens/Camisas-time/Brasileirão A/Palmeiras II/costas.jpg",
+    ],
+    preco: 180.0,
+  },
+  {
+    id: "palmeiras-3-2026",
+    nome: "Camisa Palmeiras III 2025",
+    url: "produto.html?id=palmeiras-3-2026",
+    img: "imagens/Camisas-time/Brasileirão A/Palmeiras III/frente.jpg",
+    galeria: [
+      "imagens/Camisas-time/Brasileirão A/Palmeiras III/frente.jpg",
+      "imagens/Camisas-time/Brasileirão A/Palmeiras III/costas.jpg",
+      "imagens/Camisas-time/Brasileirão A/Palmeiras III/emblema.jpg",
+    ],
+    preco: 180.0,
+  },
+  {
+    id: "santos-1-2026",
+    nome: "Camisa Santos I 2026",
+    url: "produto.html?id=santos-1-2026",
+    img: "imagens/Camisas-time/Brasileirão A/Santos I/frente.jpg",
+    galeria: [
+      "imagens/Camisas-time/Brasileirão A/Santos I/frente.jpg",
+      "imagens/Camisas-time/Brasileirão A/Santos I/costas.jpg",
+      "imagens/Camisas-time/Brasileirão A/Santos I/emblema.jpg",
+      "imagens/Camisas-time/Brasileirão A/Santos I/etiqueta.jpg",
+      "imagens/Camisas-time/Brasileirão A/Santos I/gola.jpg",
+    ],
+    preco: 180.0,
+  },
+  {
+    id: "santos-2-2026",
+    nome: "Camisa Santos II 2026",
+    url: "produto.html?id=santos-2-2026",
+    img: "imagens/Camisas-time/Brasileirão A/Santos II/frente.jpg",
+    galeria: [
+      "imagens/Camisas-time/Brasileirão A/Santos II/frente.jpg",
+      "imagens/Camisas-time/Brasileirão A/Santos II/costas.jpg",
+      "imagens/Camisas-time/Brasileirão A/Santos II/emblema.jpg",
+      "imagens/Camisas-time/Brasileirão A/Santos II/etiqueta.jpg",
+      "imagens/Camisas-time/Brasileirão A/Santos II/lateral.jpg",
+    ],
+    preco: 180.0,
+  },
+  {
+    id: "santos-3-2026",
+    nome: "Camisa Santos III 2026",
+    url: "produto.html?id=santos-3-2026",
+    img: "imagens/Camisas-time/Brasileirão A/Santos III/frente.jpg",
+    galeria: [
+      "imagens/Camisas-time/Brasileirão A/Santos III/frente.jpg",
+      "imagens/Camisas-time/Brasileirão A/Santos III/costas.jpg",
+      "imagens/Camisas-time/Brasileirão A/Santos III/emblema.jpg",
+      "imagens/Camisas-time/Brasileirão A/Santos III/etiqueta.jpg",
+      "imagens/Camisas-time/Brasileirão A/Santos III/gola.jpg",
+    ],
+    preco: 180.0,
+  },
+  {
+    id: "sao-paulo-2-2026",
+    nome: "Camisa São Paulo II 2026",
+    url: "produto.html?id=sao-paulo-2-2026",
+    img: "imagens/Camisas-time/Brasileirão A/São Paulo II/frente.jpg",
+    galeria: [
+      "imagens/Camisas-time/Brasileirão A/São Paulo II/frente.jpg",
+      "imagens/Camisas-time/Brasileirão A/São Paulo II/costas.jpg",
+    ],
+    preco: 180.0,
+  },
+  {
+    id: "sao-paulo-1-2026",
+    nome: "Camisa São Paulo I 2026",
+    url: "produto.html?id=sao-paulo-1-2026",
+    img: "imagens/Camisas-time/Brasileirão A/São Paulo/frente.jpg",
+    galeria: [
+      "imagens/Camisas-time/Brasileirão A/São Paulo/frente.jpg",
+      "imagens/Camisas-time/Brasileirão A/São Paulo/costas.jpg",
+      ,
+    ],
+    preco: 180.0,
+  },
+  {
+    id: "sao-paulo-3-2026",
+    nome: "Camisa São Paulo III 2026",
+    url: "produto.html?id=sao-paulo-3-2026",
+    img: "imagens/Camisas-time/Brasileirão A/São Paulo III/frente.jpg",
+    galeria: [
+      "imagens/Camisas-time/Brasileirão A/São Paulo III/frente.jpg",
+      "imagens/Camisas-time/Brasileirão A/São Paulo III/costas.jpg",
+    ],
+    preco: 180.0,
+  },
+  {
+    id: "vasco-1-2026",
+    nome: "Camisa Vasco I 2026",
+    url: "produto.html?id=vasco-1-2026",
+    img: "imagens/Camisas-time/Brasileirão A/Vasco I/frente.jpg",
+    galeria: [
+      "imagens/Camisas-time/Brasileirão A/Vasco I/frente.jpg",
+      "imagens/Camisas-time/Brasileirão A/Vasco I/costas.jpg",
+    ],
+    preco: 180.0,
+  },
+  {
+    id: "vasco-2-2026",
+    nome: "Camisa Vasco II 2026",
+    url: "produto.html?id=vasco-2-2026",
+    img: "imagens/Camisas-time/Brasileirão A/Vasco II/frente.jpg",
+    galeria: [
+      "imagens/Camisas-time/Brasileirão A/Vasco II/frente.jpg",
+      "imagens/Camisas-time/Brasileirão A/Vasco II/costas.jpg",
+    ],
+    preco: 180.0,
+  },
+  // --- LA LIGA ---
+  {
+    id: "real-madrid-1-2025",
+    nome: "Camisa Real Madrid I 2025",
+    url: "produto.html?id=real-madrid-1-2025",
+    img: "imagens/Camisas-time/LaLiga/Real madrid I/Frente.jpg",
+    galeria: [
+      "imagens/Camisas-time/LaLiga/Real madrid I/Frente.jpg",
+      "imagens/Camisas-time/LaLiga/Real madrid I/Costas.jpg",
+      "imagens/Camisas-time/LaLiga/Real madrid I/Escudo.jpg",
+      "imagens/Camisas-time/LaLiga/Real madrid I/Gola.jpg",
+    ],
+    preco: 180.0,
+  },
+  {
+    id: "real-madrid-2-2025",
+    nome: "Camisa Real Madrid II 2025",
+    url: "produto.html?id=real-madrid-2-2025",
+    img: "imagens/Camisas-time/LaLiga/Real madrid II/frente.jpg",
+    galeria: [
+      "imagens/Camisas-time/LaLiga/Real madrid II/frente.jpg",
+      "imagens/Camisas-time/LaLiga/Real madrid II/costas.jpg",
+      "imagens/Camisas-time/LaLiga/Real madrid II/emblema.jpg",
+      "imagens/Camisas-time/LaLiga/Real madrid II/gola.jpg",
+    ],
+    preco: 180.0,
+  },
+  {
+    id: "barcelona-1-2025",
+    nome: "Camisa Barcelona I 2025",
+    url: "produto.html?id=barcelona-1-2025",
+    img: "imagens/Camisas-time/LaLiga/Barcelona I/Frente.jpg",
+    galeria: [
+      "imagens/Camisas-time/LaLiga/Barcelona I/Frente.jpg",
+      "imagens/Camisas-time/LaLiga/Barcelona I/costas.jpg",
+      "imagens/Camisas-time/LaLiga/Barcelona I/emblema.jpg",
+      "imagens/Camisas-time/LaLiga/Barcelona I/lateral.jpg",
+    ],
+    preco: 180.0,
+  },
+  {
+    id: "barcelona-2-2025",
+    nome: "Camisa Barcelona II 2025",
+    url: "produto.html?id=barcelona-2-2025",
+    img: "imagens/Camisas-time/LaLiga/Barcelona II/frente.jpg",
+    galeria: [
+      "imagens/Camisas-time/LaLiga/Barcelona II/frente.jpg",
+      "imagens/Camisas-time/LaLiga/Barcelona II/costas.jpg",
+      "imagens/Camisas-time/LaLiga/Barcelona II/emblema.jpg",
+      "imagens/Camisas-time/LaLiga/Barcelona II/etiqueta.jpg",
+      "imagens/Camisas-time/LaLiga/Barcelona II/gola.jpg",
+    ],
+    preco: 180.0,
+  },
+  {
+    id: "atletico-madrid-1-2025",
+    nome: "Camisa Atletico Madrid I 2025",
+    url: "produto.html?id=atletico-madrid-1-2025",
+    img: "imagens/Camisas-time/LaLiga/Atletico Madrid/frente.jpg",
+    galeria: [
+      "imagens/Camisas-time/LaLiga/Atletico Madrid/frente.jpg",
+      "imagens/Camisas-time/LaLiga/Atletico Madrid/costas.jpg",
+      "imagens/Camisas-time/LaLiga/Atletico Madrid/emblema.jpg",
+      "imagens/Camisas-time/LaLiga/Atletico Madrid/etiqueta.jpg",
+      "imagens/Camisas-time/LaLiga/Atletico Madrid/lateral.jpg",
+    ],
+    preco: 180.0,
+  },
+  {
+    id: "atletico-madrid-2-2025",
+    nome: "Camisa Atletico Madrid II 2025",
+    url: "produto.html?id=atletico-madrid-2-2025",
+    img: "imagens/Camisas-time/LaLiga/Atletico Madrid - Copia/frente.jpg",
+    galeria: [
+      "imagens/Camisas-time/LaLiga/Atletico Madrid - Copia/frente.jpg",
+      "imagens/Camisas-time/LaLiga/Atletico Madrid - Copia/costas.jpg",
+    ],
+    preco: 180.0,
+  },
+  {
+    id: "athletic-bilbao-1-2025",
+    nome: "Camisa Athletic Bilbao I 2025",
+    url: "produto.html?id=athletic-bilbao-1-2025",
+    img: "imagens/Camisas-time/LaLiga/Athletic Bilbao/frente.jpg",
+    galeria: [
+      "imagens/Camisas-time/LaLiga/Athletic Bilbao/frente.jpg",
+      "imagens/Camisas-time/LaLiga/Athletic Bilbao/costas.jpg",
+      "imagens/Camisas-time/LaLiga/Athletic Bilbao/Emblema.webp",
+    ],
+    preco: 180.0,
+  },
+  {
+    id: "celta-vigo-1-2025",
+    nome: "Camisa Celta De Vigo Especial I 2026",
+    url: "produto.html?id=celta-vigo-1-2025",
+    img: "imagens/Camisas-time/LaLiga/Celta De Vigo Especial/frente.jpg",
+    galeria: [
+      "imagens/Camisas-time/LaLiga/Celta De Vigo Especial/frente.jpg",
+      "imagens/Camisas-time/LaLiga/Celta De Vigo Especial/costas.jpg",
+      "imagens/Camisas-time/LaLiga/Celta De Vigo Especial/emblema.jpg",
+      "imagens/Camisas-time/LaLiga/Celta De Vigo Especial/etiqueta.jpg",
+      "imagens/Camisas-time/LaLiga/Celta De Vigo Especial/lateral.jpg",
+    ],
+    preco: 180.0,
+  },
+  {
+    id: "celta-vigo-2-2025",
+    nome: "Camisa Celta De Vigo Especial II 2026",
+    url: "produto.html?id=celta-vigo-2-2025",
+    img: "imagens/Camisas-time/LaLiga/Celta De Vigo Especial II/frente.jpg",
+    galeria: [
+      "imagens/Camisas-time/LaLiga/Celta De Vigo Especial II/frente.jpg",
+      "imagens/Camisas-time/LaLiga/Celta De Vigo Especial II/costas.jpg",
+      "imagens/Camisas-time/LaLiga/Celta De Vigo Especial II/emblema.jpg",
+      "imagens/Camisas-time/LaLiga/Celta De Vigo Especial II/lateral.jpg",
+    ],
+    preco: 180.0,
+  },
+  // --- PREMIER LEAGUE ---AAAA
+  {
+    id: "arsenal-1-2026",
+    nome: "Camisa Arsenal I 2026",
+    url: "produto.html?id=arsenal-1-2026",
+    img: "imagens/Camisas-time/Premier league/Arsenal/frente.jpg",
+    galeria: [
+      "imagens/Camisas-time/Premier league/Arsenal/frente.jpg",
+      "imagens/Camisas-time/Premier league/Arsenal/Costas.jpg",
+      "imagens/Camisas-time/Premier league/Arsenal/Escudo.jpg",
+      "imagens/Camisas-time/Premier league/Arsenal/Manga.jpg",
+    ],
+    preco: 180.0,
+  },
+  {
+    id: "arsenal-2-2026",
+    nome: "Camisa Arsenal II 2026",
+    url: "produto.html?id=arsenal-2-2026",
+    img: "imagens/Camisas-time/Premier league/Arsenal Azul/frente.jpg",
+    galeria: [
+      "imagens/Camisas-time/Premier league/Arsenal Azul/frente.jpg",
+      "imagens/Camisas-time/Premier league/Arsenal Azul/costas.jpg",
+      "imagens/Camisas-time/Premier league/Arsenal Azul/emblema.jpg",
+      "imagens/Camisas-time/Premier league/Arsenal Azul/etiqueta.jpg",
+      "imagens/Camisas-time/Premier league/Arsenal Azul/gola.jpg",
+      "imagens/Camisas-time/Premier league/Arsenal Azul/lateral.jpg",
+    ],
+    preco: 180.0,
+  },
+  {
+    id: "aston-villa-1-2026",
+    nome: "Camisa Aston Villa I 2026",
+    url: "produto.html?id=aston-villa-1-2026",
+    img: "imagens/Camisas-time/Premier league/Aston Villa/frente.jpg",
+    galeria: [
+      "imagens/Camisas-time/Premier league/Aston Villa/frente.jpg",
+      "imagens/Camisas-time/Premier league/Aston Villa/costas.jpg",
+      "imagens/Camisas-time/Premier league/Aston Villa/emblema.jpg",
+      "imagens/Camisas-time/Premier league/Aston Villa/lateral.jpg",
+      "imagens/Camisas-time/Premier league/Aston Villa/gola.jpg",
+    ],
+    preco: 180.0,
+  },
+  {
+    id: "chelsea-1-2026",
+    nome: "Camisa Chelsea I 2026",
+    url: "produto.html?id=chelsea-1-2026",
+    img: "imagens/Camisas-time/Premier league/Chelsea I/frente.jpg",
+    galeria: [
+      "imagens/Camisas-time/Premier league/Chelsea I/frente.jpg",
+      "imagens/Camisas-time/Premier league/Chelsea I/costas.jpg",
+      "imagens/Camisas-time/Premier league/Chelsea I/emblema.jpg",
+      "imagens/Camisas-time/Premier league/Chelsea I/lateral.jpg",
+      "imagens/Camisas-time/Premier league/Chelsea I/gola.jpg",
+    ],
+    preco: 180.0,
+  },
+  {
+    id: "chelsea-2-2026",
+    nome: "Camisa Chelsea II 2026",
+    url: "produto.html?id=chelsea-2-2026",
+    img: "imagens/Camisas-time/Premier league/Chelsea II/frente.jpg",
+    galeria: [
+      "imagens/Camisas-time/Premier league/Chelsea II/frente.jpg",
+      "imagens/Camisas-time/Premier league/Chelsea II/costas.jpg",
+      "imagens/Camisas-time/Premier league/Chelsea II/emblema.jpg",
+      "imagens/Camisas-time/Premier league/Chelsea II/lateral.jpg",
+      "imagens/Camisas-time/Premier league/Chelsea II/gola.jpg",
+    ],
+    preco: 180.0,
+  },
+  {
+    id: "chelsea-3-2026",
+    nome: "Camisa Chelsea III 2026",
+    url: "produto.html?id=chelsea-3-2026",
+    img: "imagens/Camisas-time/Premier league/Chelsea III/frente.jpg",
+    galeria: [
+      "imagens/Camisas-time/Premier league/Chelsea III/frente.jpg",
+      "imagens/Camisas-time/Premier league/Chelsea III/costas.jpg",
+      "imagens/Camisas-time/Premier league/Chelsea III/emblema.jpg",
+      "imagens/Camisas-time/Premier league/Chelsea III/lateral.jpg",
+      "imagens/Camisas-time/Premier league/Chelsea III/gola.jpg",
+    ],
+    preco: 180.0,
+  },
+  {
+    id: "liverpool-1-2026",
+    nome: "Camisa Liverpool I 2026",
+    url: "produto.html?id=liverpool-1-2026",
+    img: "imagens/Camisas-time/Premier league/Liverpool/frente.webp",
+    galeria: [
+      "imagens/Camisas-time/Premier league/Liverpool/frente.webp",
+      "imagens/Camisas-time/Premier league/Liverpool/costas.webp",
+      "imagens/Camisas-time/Premier league/Liverpool/emblema.webp",
+      "imagens/Camisas-time/Premier league/Liverpool/gola.webp",
+    ],
+    preco: 180.0,
+  },
+  {
+    id: "liverpool-2-2026",
+    nome: "Camisa Liverpool II 2026",
+    url: "produto.html?id=liverpool-2-2026",
+    img: "imagens/Camisas-time/Premier league/Liverpool II/frente.jpg",
+    galeria: [
+      "imagens/Camisas-time/Premier league/Liverpool II/frente.jpg",
+      "imagens/Camisas-time/Premier league/Liverpool II/costas.jpg",
+      "imagens/Camisas-time/Premier league/Liverpool II/emblema.jpg",
+      "imagens/Camisas-time/Premier league/Liverpool II/lateral.jpg",
+      "imagens/Camisas-time/Premier league/Liverpool II/gola.jpg",
+    ],
+    preco: 180.0,
+  },
+  {
+    id: "liverpool-3-2026",
+    nome: "Camisa Liverpool III 2026",
+    url: "produto.html?id=liverpool-3-2026",
+    img: "imagens/Camisas-time/Premier league/Liverpool III/frente.jpg",
+    galeria: [
+      "imagens/Camisas-time/Premier league/Liverpool III/frente.jpg",
+      "imagens/Camisas-time/Premier league/Liverpool III/costas.jpg",
+      "imagens/Camisas-time/Premier league/Liverpool III/emblema.jpg",
+      "imagens/Camisas-time/Premier league/Liverpool III/gola.jpg",
+    ],
+    preco: 180.0,
+  },
+  {
+    id: "man-city-1-2026",
+    nome: "Camisa Manchester City I 2026",
+    url: "produto.html?id=man-city-1-2026",
+    img: "imagens/Camisas-time/Premier league/Man. City/Frente.jpg",
+    galeria: [
+      "imagens/Camisas-time/Premier league/Man. City/Frente.jpg",
+      "imagens/Camisas-time/Premier league/Man. City/costas.jpg",
+      "imagens/Camisas-time/Premier league/Man. City/Escudo.jpg",
+      "imagens/Camisas-time/Premier league/Man. City/gola.jpg",
+    ],
+    preco: 180.0,
+  },
+  {
+    id: "man-city-2-2026",
+    nome: "Camisa Manchester City II 2026",
+    url: "produto.html?id=man-city-2-2026",
+    img: "imagens/Camisas-time/Premier league/Man. City  II/frente.jpg",
+    galeria: [
+      "imagens/Camisas-time/Premier league/Man. City  II/frente.jpg",
+      "imagens/Camisas-time/Premier league/Man. City  II/costas.jpg",
+      "imagens/Camisas-time/Premier league/Man. City  II/emblema.jpg",
+      "imagens/Camisas-time/Premier league/Man. City  II/lateral.jpg",
+      "imagens/Camisas-time/Premier league/Man. City  II/gola.jpg",
+    ],
+    preco: 180.0,
+  },
+  {
+    id: "man-city-3-2026",
+    nome: "Camisa Manchester City III 2026",
+    url: "produto.html?id=man-city-3-2026",
+    img: "imagens/Camisas-time/Premier league/Man. City III/frente.jpg",
+    galeria: [
+      "imagens/Camisas-time/Premier league/Man. City III/frente.jpg",
+      "imagens/Camisas-time/Premier league/Man. City III/costas.jpg",
+      "imagens/Camisas-time/Premier league/Man. City III/emblema.jpg",
+      "imagens/Camisas-time/Premier league/Man. City III/lateral.jpg",
+      "imagens/Camisas-time/Premier league/Man. City III/gola.jpg",
+    ],
+    preco: 180.0,
+  },
+  {
+    id: "man-utd-1-2026",
+    nome: "Camisa Manchester United I 2026",
+    url: "produto.html?id=man-utd-1-2026",
+    img: "imagens/Camisas-time/Premier league/Man. Utd/frente.jpg",
+    galeria: [
+      "imagens/Camisas-time/Premier league/Man. Utd/frente.jpg",
+      "imagens/Camisas-time/Premier league/Man. Utd/costas.jpg",
+      "imagens/Camisas-time/Premier league/Man. Utd/emblema.jpg",
+      "imagens/Camisas-time/Premier league/Man. Utd/lateral.jpg",
+      "imagens/Camisas-time/Premier league/Man. Utd/gola.jpg",
+    ],
+    preco: 180.0,
+  },
+  {
+    id: "man-utd-2-2026",
+    nome: "Camisa Manchester United II 2026",
+    url: "produto.html?id=man-utd-2-2026",
+    img: "imagens/Camisas-time/Premier league/Man. Utd II/frente.jpg",
+    galeria: [
+      "imagens/Camisas-time/Premier league/Man. Utd II/frente.jpg",
+      "imagens/Camisas-time/Premier league/Man. Utd II/costas.jpg",
+      "imagens/Camisas-time/Premier league/Man. Utd II/emblema.jpg",
+      "imagens/Camisas-time/Premier league/Man. Utd II/lateral.jpg",
+      "imagens/Camisas-time/Premier league/Man. Utd II/gola.jpg",
+    ],
+    preco: 180.0,
+  },
+  {
+    id: "man-utd-3-2026",
+    nome: "Camisa Manchester United III 2026",
+    url: "produto.html?id=man-utd-3-2026",
+    img: "imagens/Camisas-time/Premier league/Man. Utd III/frente.jpg",
+    galeria: [
+      "imagens/Camisas-time/Premier league/Man. Utd III/frente.jpg",
+      "imagens/Camisas-time/Premier league/Man. Utd III/costas.jpg",
+    ],
+    preco: 180.0,
+  },
+  {
+    id: "newcastle-1-2026",
+    nome: "Camisa Newcastle I 2026",
+    url: "produto.html?id=newcastle-1-2026",
+    img: "imagens/Camisas-time/Premier league/Newcastle I/frente.jpg",
+    galeria: [
+      "imagens/Camisas-time/Premier league/Newcastle I/frente.jpg",
+      "imagens/Camisas-time/Premier league/Newcastle I/costas.jpg",
+      "imagens/Camisas-time/Premier league/Newcastle I/emblema.jpg",
+      ,
+      "imagens/Camisas-time/Premier league/Newcastle I/gola.jpg",
+    ],
+    preco: 180.0,
+  },
+  {
+    id: "newcastle-2-2026",
+    nome: "Camisa Newcastle II 2026",
+    url: "produto.html?id=newcastle-2-2026",
+    img: "imagens/Camisas-time/Premier league/Newcastle II/frente.jpg",
+    galeria: [
+      "imagens/Camisas-time/Premier league/Newcastle II/frente.jpg",
+      "imagens/Camisas-time/Premier league/Newcastle II/costas.jpg",
+      "imagens/Camisas-time/Premier league/Newcastle II/emblema.jpg",
+      "imagens/Camisas-time/Premier league/Newcastle II/lateral.jpg",
+      "imagens/Camisas-time/Premier league/Newcastle II/gola.jpg",
+    ],
+    preco: 180.0,
+  },
+  {
+    id: "tottenham-1-2026",
+    nome: "Camisa Tottenham I 2026",
+    url: "produto.html?id=tottenham-1-2026",
+    img: "imagens/Camisas-time/Premier league/Tottenham I/frente.jpg",
+    galeria: [
+      "imagens/Camisas-time/Premier league/Tottenham I/frente.jpg",
+      "imagens/Camisas-time/Premier league/Tottenham I/costas.jpg",
+      "imagens/Camisas-time/Premier league/Tottenham I/emblema.jpg",
+      "imagens/Camisas-time/Premier league/Tottenham I/lateral.jpg",
+      "imagens/Camisas-time/Premier league/Tottenham I/gola.jpg",
+    ],
+    preco: 180.0,
+  },
+  {
+    id: "tottenham-2-2026",
+    nome: "Camisa Tottenham II 2026",
+    url: "produto.html?id=tottenham-2-2026",
+    img: "imagens/Camisas-time/Premier league/Tottenham II/frente.jpg",
+    galeria: [
+      "imagens/Camisas-time/Premier league/Tottenham II/frente.jpg",
+      "imagens/Camisas-time/Premier league/Tottenham II/costas.jpg",
+      "imagens/Camisas-time/Premier league/Tottenham II/emblema.jpg",
+      "imagens/Camisas-time/Premier league/Tottenham II/lateral.jpg",
+      "imagens/Camisas-time/Premier league/Tottenham II/gola.jpg",
+    ],
+    preco: 180.0,
+  },
+  // --- LIGUE 1 ---
+  {
+    id: "psg-1-2026",
+    nome: "Camisa Paris Saint-Germain I 2026",
+    url: "produto.html?id=psg-1-2026",
+    img: "imagens/Camisas-time/Ligue 1/Paris/frente.jpg",
+    galeria: [
+      "imagens/Camisas-time/Ligue 1/Paris/frente.jpg",
+      "imagens/Camisas-time/Ligue 1/Paris/costas.jpg",
+      "imagens/Camisas-time/Ligue 1/Paris/emblema.jpg",
+      "imagens/Camisas-time/Ligue 1/Paris/etiqueta.jpg",
+      "imagens/Camisas-time/Ligue 1/Paris/lateral.jpg",
+    ],
+    preco: 180.0,
+  },
+  {
+    id: "marseille-1-2026",
+    nome: "Camisa Olympique de Marseille I 2026",
+    url: "produto.html?id=marseille-1-2026",
+    img: "imagens/Camisas-time/Ligue 1/OLympique/frente.jpg",
+    galeria: [
+      "imagens/Camisas-time/Ligue 1/OLympique/frente.jpg",
+      "imagens/Camisas-time/Ligue 1/OLympique/costas.jpg",
+      "imagens/Camisas-time/Ligue 1/OLympique/emblema.jpg",
+      "imagens/Camisas-time/Ligue 1/OLympique/etiqueta.jpg",
+      "imagens/Camisas-time/Ligue 1/OLympique/gola.jpg",
+    ],
+    preco: 180.0,
+  },
+  {
+    id: "lyon-1-2026",
+    nome: "Camisa Olympique Lyonnais I 2026",
+    url: "produto.html?id=lyon-1-2026",
+    img: "imagens/Camisas-time/Ligue 1/Lyon/frente.jpg",
+    galeria: [
+      "imagens/Camisas-time/Ligue 1/Lyon/frente.jpg",
+      "imagens/Camisas-time/Ligue 1/Lyon/costas.jpg",
+    ],
+    preco: 180.0,
+  },
+  // --- BUNDESLIGA ---
+  {
+    id: "bayern-especial-2026",
+    nome: "Camisa Bayern Munich Especial",
+    url: "produto.html?id=bayern-especial-2026",
+    img: "imagens/Camisas-time/Bundesliga/Bayern Munich Especial/frente.jpg",
+    galeria: [
+      "imagens/Camisas-time/Bundesliga/Bayern Munich Especial/frente.jpg",
+      "imagens/Camisas-time/Bundesliga/Bayern Munich Especial/costas.jpg",
+      "imagens/Camisas-time/Bundesliga/Bayern Munich Especial/emblema.jpg",
+      "imagens/Camisas-time/Bundesliga/Bayern Munich Especial/gola.jpg",
+    ],
+    preco: 180.0,
+  },
+  {
+    id: "bayern-1-2026",
+    nome: "Camisa Bayern Munich I 2026",
+    url: "produto.html?id=bayern-1-2026",
+    img: "imagens/Camisas-time/Bundesliga/Bayern Munich I/frente.jpg",
+    galeria: [
+      "imagens/Camisas-time/Bundesliga/Bayern Munich I/frente.jpg",
+      "imagens/Camisas-time/Bundesliga/Bayern Munich I/costas.jpg",
+      "imagens/Camisas-time/Bundesliga/Bayern Munich I/emblema.jpg",
+      "imagens/Camisas-time/Bundesliga/Bayern Munich I/gola.jpg",
+    ],
+    preco: 180.0,
+  },
+  {
+    id: "borussia-1-2026",
+    nome: "Camisa Borussia Dortmund I 2026",
+    url: "produto.html?id=borussia-1-2026",
+    img: "imagens/Camisas-time/Bundesliga/Borussia Dortmund/frente.jpg",
+    galeria: [
+      "imagens/Camisas-time/Bundesliga/Borussia Dortmund/frente.jpg",
+      "imagens/Camisas-time/Bundesliga/Borussia Dortmund/costas.jpg",
+      "imagens/Camisas-time/Bundesliga/Borussia Dortmund/emblema.jpg",
+      "imagens/Camisas-time/Bundesliga/Borussia Dortmund/gola.jpg",
+    ],
+    preco: 180.0,
   },
 ];
 
@@ -421,7 +1264,7 @@ function carregarProdutoDinamico() {
 
       imagensMiniatura.forEach((caminhoImg, index) => {
         // Removi o 'onerror' para que você possa ver exatamente quais imagens não estão sendo encontradas na pasta
-        thumbnailsContainer.innerHTML += `<img src="${caminhoImg}" onclick="trocarImagem(this.src)" alt="Foto ${index + 1}">`;
+        thumbnailsContainer.innerHTML += `<img src="${caminhoImg}" onclick="trocarImagem(this.src)" alt="Foto ${index + 1}" loading="lazy">`;
       });
     }
 
@@ -851,8 +1694,8 @@ function renderizarCarrinho() {
     subtotal += item.preco * (item.quantidade || 1);
   });
 
-  // 2. Barra de Progresso de Frete Grátis (Meta: R$ 299,00)
-  const LIMITE_FRETE = 299.0;
+  // 2. Barra de Progresso de Frete Grátis (Meta: R$ 400,00)
+  const LIMITE_FRETE = 400.0;
   const percentual = Math.min((subtotal / LIMITE_FRETE) * 100, 100);
   const falta = LIMITE_FRETE - subtotal;
 
@@ -900,7 +1743,7 @@ function renderizarCarrinho() {
   if (dadosFrete) {
     valorFrete = dadosFrete.valor;
 
-    // Verifica se atingiu a meta de Frete Grátis (R$ 299,00)
+    // Verifica se atingiu a meta de Frete Grátis
     if (subtotal >= LIMITE_FRETE) {
       valorFrete = 0;
       htmlFrete = `<p>Frete (${dadosFrete.tipo}): <span style="color: #28a745; font-weight: bold;">GRÁTIS</span> <span style="text-decoration: line-through; font-size: 0.8em; color: #999;">R$ ${formatarPreco(dadosFrete.valor)}</span> <button class="btn-remover-frete" onclick="removerFrete()" title="Remover frete">❌</button></p>`;
@@ -1047,7 +1890,7 @@ function finalizarPedidoWhatsApp() {
     let valorFrete = dadosFrete.valor;
     let textoFrete = `🚚 *Frete (${dadosFrete.tipo}): R$ ${formatarPreco(valorFrete)}*`;
 
-    if (subtotal >= 299.0) {
+    if (subtotal >= 400.0) {
       valorFrete = 0;
       textoFrete = `🚚 *Frete (${dadosFrete.tipo}): GRÁTIS (Meta atingida)*`;
     }
@@ -1089,35 +1932,10 @@ function esvaziarCarrinho() {
 
 // Calcula o preço com 5% de desconto para exibição (Pix)
 function calcularPrecoPix() {
-  // Busca o preço apenas dentro de .info (garante que é a página do produto e não um card da lista)
-  const precoElemento = document.querySelector(".info .preco-destaque");
-
-  // Se não houver preço na página (ex: home), a função para aqui
-  if (!precoElemento) return;
-
-  // Remove o aviso de Pix anterior para não duplicar ao atualizar
+  // Função desativada para não exibir mais o desconto de 5% no Pix
   const pixAnterior = document.querySelector(".preco-pix");
   if (pixAnterior) {
     pixAnterior.remove();
-  }
-
-  // Pega apenas o texto do preço (primeiro nó de texto), ignorando o preço antigo (span)
-  const textoPreco = precoElemento.childNodes[0].textContent;
-
-  // Limpa a string: remove "R$", remove pontos de milhar e troca vírgula por ponto
-  const valorNumerico = parseFloat(
-    textoPreco.replace("R$", "").replace(/\./g, "").replace(",", ".").trim(),
-  );
-
-  if (!isNaN(valorNumerico)) {
-    const valorPix = valorNumerico * 0.95; // Aplica 5% de desconto
-
-    const pPix = document.createElement("p");
-    pPix.classList.add("preco-pix");
-    pPix.innerHTML = `R$ ${formatarPreco(valorPix)} com <strong>Pix</strong> (5% de desconto)`;
-
-    // Insere o elemento logo após o preço principal
-    precoElemento.after(pPix);
   }
 }
 
