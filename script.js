@@ -2,13 +2,6 @@
 // Lista de objetos que contém as informações básicas de cada produto para busca e exibição
 const produtosDB = [
   {
-    id: "coritiba-titular-2024",
-    nome: "Camisa Coritiba Titular 2024",
-    url: "produto.html?id=coritiba-titular-2024",
-    img: "imagens/Camisas-time/Coritiba.jpeg",
-    preco: 180.0,
-  },
-  {
     id: "selecao-brasileira-1-2026",
     nome: "Camisa Seleção Brasileira I 2026",
     url: "produto.html?id=selecao-brasileira-1-2026",
@@ -195,7 +188,7 @@ const produtosDB = [
       "imagens/Camisas-time/Brasileirão A/Atl. Mineiro II/frente.jpg",
       "imagens/Camisas-time/Brasileirão A/Atl. Mineiro II/costas.jpg",
       "imagens/Camisas-time/Brasileirão A/Atl. Mineiro II/emblema.jpg",
-      "imagens/Camisas-time/Brasileirão A/Atl. Mineiro II/etiqueta.jpg",
+      "imagens/Camisas-time/Brasileirão A/Atl. Mineiro II/lateral.jpg",
       "imagens/Camisas-time/Brasileirão A/Atl. Mineiro II/gola.jpg",
     ],
     preco: 180.0,
@@ -209,7 +202,7 @@ const produtosDB = [
       "imagens/Camisas-time/Brasileirão A/Atl. Mineiro III/frente.jpg",
       "imagens/Camisas-time/Brasileirão A/Atl. Mineiro III/costas.jpg",
       "imagens/Camisas-time/Brasileirão A/Atl. Mineiro III/emblema.jpg",
-      "imagens/Camisas-time/Brasileirão A/Atl. Mineiro III/etiqueta.jpg",
+      "imagens/Camisas-time/Brasileirão A/Atl. Mineiro III/lateral.jpg",
       "imagens/Camisas-time/Brasileirão A/Atl. Mineiro III/gola.jpg",
     ],
     preco: 180.0,
@@ -237,7 +230,7 @@ const produtosDB = [
       "imagens/Camisas-time/Brasileirão A/Botafogo I/frente.jpg",
       "imagens/Camisas-time/Brasileirão A/Botafogo I/costas.jpg",
       "imagens/Camisas-time/Brasileirão A/Botafogo I/emblema.jpg",
-      "imagens/Camisas-time/Brasileirão A/Botafogo I/etiqueta.jpg",
+      "imagens/Camisas-time/Brasileirão A/Botafogo I/lateral.jpg",
       "imagens/Camisas-time/Brasileirão A/Botafogo I/gola.jpg",
     ],
     preco: 180.0,
@@ -249,9 +242,9 @@ const produtosDB = [
     img: "imagens/Camisas-time/Brasileirão A/Botafogo II/frente.jpg",
     galeria: [
       "imagens/Camisas-time/Brasileirão A/Botafogo II/frente.jpg",
-      "imagens/Camisas-time/Brasileirão A/Botafogo II/costas.jpg",
+      "imagens/Camisas-time/Brasileirão A/Botafogo II/costa.jpg",
       "imagens/Camisas-time/Brasileirão A/Botafogo II/emblema.jpg",
-      "imagens/Camisas-time/Brasileirão A/Botafogo II/etiqueta.jpg",
+      "imagens/Camisas-time/Brasileirão A/Botafogo II/lateral.jpg",
       "imagens/Camisas-time/Brasileirão A/Botafogo II/gola.jpg",
     ],
     preco: 180.0,
@@ -279,7 +272,7 @@ const produtosDB = [
       "imagens/Camisas-time/Brasileirão A/Corinthians II/frente.jpg",
       "imagens/Camisas-time/Brasileirão A/Corinthians II/costas.jpg",
       "imagens/Camisas-time/Brasileirão A/Corinthians II/emblema.jpg",
-      "imagens/Camisas-time/Brasileirão A/Corinthians II/etiqueta.jpg",
+      "imagens/Camisas-time/Brasileirão A/Corinthians II/lateral.jpg",
       "imagens/Camisas-time/Brasileirão A/Corinthians II/gola.jpg",
     ],
     preco: 180.0,
@@ -293,7 +286,7 @@ const produtosDB = [
       "imagens/Camisas-time/Brasileirão A/Corinthians 4/frente.jpg",
       "imagens/Camisas-time/Brasileirão A/Corinthians 4/costas.jpg",
       "imagens/Camisas-time/Brasileirão A/Corinthians 4/emblema.jpg",
-      "imagens/Camisas-time/Brasileirão A/Corinthians 4/etiqueta.jpg",
+      "imagens/Camisas-time/Brasileirão A/Corinthians 4/lateral.jpg",
       "imagens/Camisas-time/Brasileirão A/Corinthians 4/gola.jpg",
     ],
     preco: 180.0,
@@ -307,7 +300,7 @@ const produtosDB = [
       "imagens/Camisas-time/Brasileirão A/Corinthians III/frente.jpg",
       "imagens/Camisas-time/Brasileirão A/Corinthians III/costas.jpg",
       "imagens/Camisas-time/Brasileirão A/Corinthians III/emblema.jpg",
-      "imagens/Camisas-time/Brasileirão A/Corinthians III/etiqueta.jpg",
+      "imagens/Camisas-time/Brasileirão A/Corinthians III/lateral.jpg",
       "imagens/Camisas-time/Brasileirão A/Corinthians III/gola.jpg",
     ],
     preco: 180.0,
@@ -320,9 +313,6 @@ const produtosDB = [
     galeria: [
       "imagens/Camisas-time/Brasileirão A/Cruzeiro I/frente.jpg",
       "imagens/Camisas-time/Brasileirão A/Cruzeiro I/costas.jpg",
-      "imagens/Camisas-time/Brasileirão A/Cruzeiro I/emblema.jpg",
-      "imagens/Camisas-time/Brasileirão A/Cruzeiro I/etiqueta.jpg",
-      "imagens/Camisas-time/Brasileirão A/Cruzeiro I/gola.jpg",
     ],
     preco: 180.0,
   },
@@ -336,7 +326,7 @@ const produtosDB = [
       "imagens/Camisas-time/Brasileirão A/Cruzeiro II/costas.jpg",
       "imagens/Camisas-time/Brasileirão A/Cruzeiro II/emblema.jpg",
       "imagens/Camisas-time/Brasileirão A/Cruzeiro II/etiqueta.jpg",
-      "imagens/Camisas-time/Brasileirão A/Cruzeiro II/gola.jpg",
+      "imagens/Camisas-time/Brasileirão A/Cruzeiro II/lateral.jpg",
     ],
     preco: 180.0,
   },
@@ -349,7 +339,7 @@ const produtosDB = [
       "imagens/Camisas-time/Brasileirão A/Cruzeiro III/frente.jpg",
       "imagens/Camisas-time/Brasileirão A/Cruzeiro III/costas.jpg",
       "imagens/Camisas-time/Brasileirão A/Cruzeiro III/emblema.jpg",
-      "imagens/Camisas-time/Brasileirão A/Cruzeiro III/etiqueta.jpg",
+      "imagens/Camisas-time/Brasileirão A/Cruzeiro III/lateral.jpg",
       "imagens/Camisas-time/Brasileirão A/Cruzeiro III/gola.jpg",
     ],
     preco: 180.0,
@@ -363,7 +353,6 @@ const produtosDB = [
       "imagens/Camisas-time/Brasileirão A/Flamengo/frente.jpg",
       "imagens/Camisas-time/Brasileirão A/Flamengo/costas.jpg",
       "imagens/Camisas-time/Brasileirão A/Flamengo/emblema.jpg",
-      "imagens/Camisas-time/Brasileirão A/Flamengo/etiqueta.jpg",
       "imagens/Camisas-time/Brasileirão A/Flamengo/gola.jpg",
     ],
     preco: 180.0,
@@ -377,7 +366,7 @@ const produtosDB = [
       "imagens/Camisas-time/Brasileirão A/Flamengo II/frente.jpg",
       "imagens/Camisas-time/Brasileirão A/Flamengo II/costas.jpg",
       "imagens/Camisas-time/Brasileirão A/Flamengo II/emblema.jpg",
-      "imagens/Camisas-time/Brasileirão A/Flamengo II/etiqueta.jpg",
+      "imagens/Camisas-time/Brasileirão A/Flamengo II/lateral.jpg",
       "imagens/Camisas-time/Brasileirão A/Flamengo II/gola.jpg",
     ],
     preco: 180.0,
@@ -391,7 +380,7 @@ const produtosDB = [
       "imagens/Camisas-time/Brasileirão A/Flamengo III/frente.jpg",
       "imagens/Camisas-time/Brasileirão A/Flamengo III/costas.jpg",
       "imagens/Camisas-time/Brasileirão A/Flamengo III/emblema.jpg",
-      "imagens/Camisas-time/Brasileirão A/Flamengo III/etiqueta.jpg",
+      "imagens/Camisas-time/Brasileirão A/Flamengo III/lateral.jpg",
       "imagens/Camisas-time/Brasileirão A/Flamengo III/gola.jpg",
     ],
     preco: 180.0,
@@ -405,7 +394,6 @@ const produtosDB = [
       "imagens/Camisas-time/Brasileirão A/Flamengo 4/frente.jpg",
       "imagens/Camisas-time/Brasileirão A/Flamengo 4/costas.jpg",
       "imagens/Camisas-time/Brasileirão A/Flamengo 4/emblema.jpg",
-      "imagens/Camisas-time/Brasileirão A/Flamengo 4/etiqueta.jpg",
       "imagens/Camisas-time/Brasileirão A/Flamengo 4/gola.jpg",
     ],
     preco: 180.0,
@@ -420,7 +408,6 @@ const produtosDB = [
       "imagens/Camisas-time/Brasileirão A/Gremio I/costas.jpg",
       "imagens/Camisas-time/Brasileirão A/Gremio I/emblema.jpg",
       "imagens/Camisas-time/Brasileirão A/Gremio I/etiqueta.jpg",
-      "imagens/Camisas-time/Brasileirão A/Gremio I/gola.jpg",
     ],
     preco: 180.0,
   },
@@ -434,7 +421,6 @@ const produtosDB = [
       "imagens/Camisas-time/Brasileirão A/Gremio II/costas.jpg",
       "imagens/Camisas-time/Brasileirão A/Gremio II/emblema.jpg",
       "imagens/Camisas-time/Brasileirão A/Gremio II/etiqueta.jpg",
-      "imagens/Camisas-time/Brasileirão A/Gremio II/gola.jpg",
     ],
     preco: 180.0,
   },
@@ -461,7 +447,6 @@ const produtosDB = [
       "imagens/Camisas-time/Brasileirão A/Internacional I/frente.jpg",
       "imagens/Camisas-time/Brasileirão A/Internacional I/costas.jpg",
       "imagens/Camisas-time/Brasileirão A/Internacional I/emblema.jpg",
-      "imagens/Camisas-time/Brasileirão A/Internacional I/etiqueta.jpg",
       "imagens/Camisas-time/Brasileirão A/Internacional I/gola.jpg",
     ],
     preco: 180.0,
@@ -474,9 +459,6 @@ const produtosDB = [
     galeria: [
       "imagens/Camisas-time/Brasileirão A/Palmeiras I/frente.jpg",
       "imagens/Camisas-time/Brasileirão A/Palmeiras I/costas.jpg",
-      "imagens/Camisas-time/Brasileirão A/Palmeiras I/emblema.jpg",
-      "imagens/Camisas-time/Brasileirão A/Palmeiras I/etiqueta.jpg",
-      "imagens/Camisas-time/Brasileirão A/Palmeiras I/gola.jpg",
     ],
     preco: 180.0,
   },
@@ -488,9 +470,6 @@ const produtosDB = [
     galeria: [
       "imagens/Camisas-time/Brasileirão A/Palmeiras II/frente.jpg",
       "imagens/Camisas-time/Brasileirão A/Palmeiras II/costas.jpg",
-      "imagens/Camisas-time/Brasileirão A/Palmeiras II/emblema.jpg",
-      "imagens/Camisas-time/Brasileirão A/Palmeiras II/etiqueta.jpg",
-      "imagens/Camisas-time/Brasileirão A/Palmeiras II/gola.jpg",
     ],
     preco: 180.0,
   },
@@ -503,8 +482,6 @@ const produtosDB = [
       "imagens/Camisas-time/Brasileirão A/Palmeiras III/frente.jpg",
       "imagens/Camisas-time/Brasileirão A/Palmeiras III/costas.jpg",
       "imagens/Camisas-time/Brasileirão A/Palmeiras III/emblema.jpg",
-      "imagens/Camisas-time/Brasileirão A/Palmeiras III/etiqueta.jpg",
-      "imagens/Camisas-time/Brasileirão A/Palmeiras III/gola.jpg",
     ],
     preco: 180.0,
   },
@@ -532,7 +509,7 @@ const produtosDB = [
       "imagens/Camisas-time/Brasileirão A/Santos II/costas.jpg",
       "imagens/Camisas-time/Brasileirão A/Santos II/emblema.jpg",
       "imagens/Camisas-time/Brasileirão A/Santos II/etiqueta.jpg",
-      "imagens/Camisas-time/Brasileirão A/Santos II/gola.jpg",
+      "imagens/Camisas-time/Brasileirão A/Santos II/lateral.jpg",
     ],
     preco: 180.0,
   },
@@ -558,9 +535,6 @@ const produtosDB = [
     galeria: [
       "imagens/Camisas-time/Brasileirão A/São Paulo II/frente.jpg",
       "imagens/Camisas-time/Brasileirão A/São Paulo II/costas.jpg",
-      "imagens/Camisas-time/Brasileirão A/São Paulo II/emblema.jpg",
-      "imagens/Camisas-time/Brasileirão A/São Paulo II/etiqueta.jpg",
-      "imagens/Camisas-time/Brasileirão A/São Paulo II/gola.jpg",
     ],
     preco: 180.0,
   },
@@ -572,9 +546,7 @@ const produtosDB = [
     galeria: [
       "imagens/Camisas-time/Brasileirão A/São Paulo/frente.jpg",
       "imagens/Camisas-time/Brasileirão A/São Paulo/costas.jpg",
-      "imagens/Camisas-time/Brasileirão A/São Paulo/emblema.jpg",
-      "imagens/Camisas-time/Brasileirão A/São Paulo/etiqueta.jpg",
-      "imagens/Camisas-time/Brasileirão A/São Paulo/gola.jpg",
+      ,
     ],
     preco: 180.0,
   },
@@ -586,9 +558,6 @@ const produtosDB = [
     galeria: [
       "imagens/Camisas-time/Brasileirão A/São Paulo III/frente.jpg",
       "imagens/Camisas-time/Brasileirão A/São Paulo III/costas.jpg",
-      "imagens/Camisas-time/Brasileirão A/São Paulo III/emblema.jpg",
-      "imagens/Camisas-time/Brasileirão A/São Paulo III/etiqueta.jpg",
-      "imagens/Camisas-time/Brasileirão A/São Paulo III/gola.jpg",
     ],
     preco: 180.0,
   },
@@ -600,9 +569,6 @@ const produtosDB = [
     galeria: [
       "imagens/Camisas-time/Brasileirão A/Vasco I/frente.jpg",
       "imagens/Camisas-time/Brasileirão A/Vasco I/costas.jpg",
-      "imagens/Camisas-time/Brasileirão A/Vasco I/emblema.jpg",
-      "imagens/Camisas-time/Brasileirão A/Vasco I/etiqueta.jpg",
-      "imagens/Camisas-time/Brasileirão A/Vasco I/gola.jpg",
     ],
     preco: 180.0,
   },
@@ -614,9 +580,6 @@ const produtosDB = [
     galeria: [
       "imagens/Camisas-time/Brasileirão A/Vasco II/frente.jpg",
       "imagens/Camisas-time/Brasileirão A/Vasco II/costas.jpg",
-      "imagens/Camisas-time/Brasileirão A/Vasco II/emblema.jpg",
-      "imagens/Camisas-time/Brasileirão A/Vasco II/etiqueta.jpg",
-      "imagens/Camisas-time/Brasileirão A/Vasco II/gola.jpg",
     ],
     preco: 180.0,
   },
@@ -628,10 +591,9 @@ const produtosDB = [
     img: "imagens/Camisas-time/LaLiga/Real madrid I/Frente.jpg",
     galeria: [
       "imagens/Camisas-time/LaLiga/Real madrid I/Frente.jpg",
-      "imagens/Camisas-time/LaLiga/Real madrid I/costas.jpg",
-      "imagens/Camisas-time/LaLiga/Real madrid I/emblema.jpg",
-      "imagens/Camisas-time/LaLiga/Real madrid I/etiqueta.jpg",
-      "imagens/Camisas-time/LaLiga/Real madrid I/gola.jpg",
+      "imagens/Camisas-time/LaLiga/Real madrid I/Costas.jpg",
+      "imagens/Camisas-time/LaLiga/Real madrid I/Escudo.jpg",
+      "imagens/Camisas-time/LaLiga/Real madrid I/Gola.jpg",
     ],
     preco: 180.0,
   },
@@ -644,7 +606,6 @@ const produtosDB = [
       "imagens/Camisas-time/LaLiga/Real madrid II/frente.jpg",
       "imagens/Camisas-time/LaLiga/Real madrid II/costas.jpg",
       "imagens/Camisas-time/LaLiga/Real madrid II/emblema.jpg",
-      "imagens/Camisas-time/LaLiga/Real madrid II/etiqueta.jpg",
       "imagens/Camisas-time/LaLiga/Real madrid II/gola.jpg",
     ],
     preco: 180.0,
@@ -658,8 +619,7 @@ const produtosDB = [
       "imagens/Camisas-time/LaLiga/Barcelona I/Frente.jpg",
       "imagens/Camisas-time/LaLiga/Barcelona I/costas.jpg",
       "imagens/Camisas-time/LaLiga/Barcelona I/emblema.jpg",
-      "imagens/Camisas-time/LaLiga/Barcelona I/etiqueta.jpg",
-      "imagens/Camisas-time/LaLiga/Barcelona I/gola.jpg",
+      "imagens/Camisas-time/LaLiga/Barcelona I/lateral.jpg",
     ],
     preco: 180.0,
   },
@@ -687,7 +647,7 @@ const produtosDB = [
       "imagens/Camisas-time/LaLiga/Atletico Madrid/costas.jpg",
       "imagens/Camisas-time/LaLiga/Atletico Madrid/emblema.jpg",
       "imagens/Camisas-time/LaLiga/Atletico Madrid/etiqueta.jpg",
-      "imagens/Camisas-time/LaLiga/Atletico Madrid/gola.jpg",
+      "imagens/Camisas-time/LaLiga/Atletico Madrid/lateral.jpg",
     ],
     preco: 180.0,
   },
@@ -699,9 +659,6 @@ const produtosDB = [
     galeria: [
       "imagens/Camisas-time/LaLiga/Atletico Madrid - Copia/frente.jpg",
       "imagens/Camisas-time/LaLiga/Atletico Madrid - Copia/costas.jpg",
-      "imagens/Camisas-time/LaLiga/Atletico Madrid - Copia/emblema.jpg",
-      "imagens/Camisas-time/LaLiga/Atletico Madrid - Copia/etiqueta.jpg",
-      "imagens/Camisas-time/LaLiga/Atletico Madrid - Copia/gola.jpg",
     ],
     preco: 180.0,
   },
@@ -713,9 +670,7 @@ const produtosDB = [
     galeria: [
       "imagens/Camisas-time/LaLiga/Athletic Bilbao/frente.jpg",
       "imagens/Camisas-time/LaLiga/Athletic Bilbao/costas.jpg",
-      "imagens/Camisas-time/LaLiga/Athletic Bilbao/emblema.jpg",
-      "imagens/Camisas-time/LaLiga/Athletic Bilbao/etiqueta.jpg",
-      "imagens/Camisas-time/LaLiga/Athletic Bilbao/gola.jpg",
+      "imagens/Camisas-time/LaLiga/Athletic Bilbao/Emblema.webp",
     ],
     preco: 180.0,
   },
@@ -729,7 +684,7 @@ const produtosDB = [
       "imagens/Camisas-time/LaLiga/Celta De Vigo Especial/costas.jpg",
       "imagens/Camisas-time/LaLiga/Celta De Vigo Especial/emblema.jpg",
       "imagens/Camisas-time/LaLiga/Celta De Vigo Especial/etiqueta.jpg",
-      "imagens/Camisas-time/LaLiga/Celta De Vigo Especial/gola.jpg",
+      "imagens/Camisas-time/LaLiga/Celta De Vigo Especial/lateral.jpg",
     ],
     preco: 180.0,
   },
@@ -742,23 +697,21 @@ const produtosDB = [
       "imagens/Camisas-time/LaLiga/Celta De Vigo Especial II/frente.jpg",
       "imagens/Camisas-time/LaLiga/Celta De Vigo Especial II/costas.jpg",
       "imagens/Camisas-time/LaLiga/Celta De Vigo Especial II/emblema.jpg",
-      "imagens/Camisas-time/LaLiga/Celta De Vigo Especial II/etiqueta.jpg",
-      "imagens/Camisas-time/LaLiga/Celta De Vigo Especial II/gola.jpg",
+      "imagens/Camisas-time/LaLiga/Celta De Vigo Especial II/lateral.jpg",
     ],
     preco: 180.0,
   },
   // --- PREMIER LEAGUE ---AAAA
   {
-    id: "arsenal-1-2025",
-    nome: "Camisa Arsenal I 2025",
-    url: "produto.html?id=arsenal-1-2025",
+    id: "arsenal-1-2026",
+    nome: "Camisa Arsenal I 2026",
+    url: "produto.html?id=arsenal-1-2026",
     img: "imagens/Camisas-time/Premier league/Arsenal/frente.jpg",
     galeria: [
       "imagens/Camisas-time/Premier league/Arsenal/frente.jpg",
-      "imagens/Camisas-time/Premier league/Arsenal/costas.jpg",
-      "imagens/Camisas-time/Premier league/Arsenal/emblema.jpg",
-      "imagens/Camisas-time/Premier league/Arsenal/etiqueta.jpg",
-      "imagens/Camisas-time/Premier league/Arsenal/gola.jpg",
+      "imagens/Camisas-time/Premier league/Arsenal/Costas.jpg",
+      "imagens/Camisas-time/Premier league/Arsenal/Escudo.jpg",
+      "imagens/Camisas-time/Premier league/Arsenal/Manga.jpg",
     ],
     preco: 180.0,
   },
@@ -786,7 +739,7 @@ const produtosDB = [
       "imagens/Camisas-time/Premier league/Aston Villa/frente.jpg",
       "imagens/Camisas-time/Premier league/Aston Villa/costas.jpg",
       "imagens/Camisas-time/Premier league/Aston Villa/emblema.jpg",
-      "imagens/Camisas-time/Premier league/Aston Villa/etiqueta.jpg",
+      "imagens/Camisas-time/Premier league/Aston Villa/lateral.jpg",
       "imagens/Camisas-time/Premier league/Aston Villa/gola.jpg",
     ],
     preco: 180.0,
@@ -800,7 +753,7 @@ const produtosDB = [
       "imagens/Camisas-time/Premier league/Chelsea I/frente.jpg",
       "imagens/Camisas-time/Premier league/Chelsea I/costas.jpg",
       "imagens/Camisas-time/Premier league/Chelsea I/emblema.jpg",
-      "imagens/Camisas-time/Premier league/Chelsea I/etiqueta.jpg",
+      "imagens/Camisas-time/Premier league/Chelsea I/lateral.jpg",
       "imagens/Camisas-time/Premier league/Chelsea I/gola.jpg",
     ],
     preco: 180.0,
@@ -814,7 +767,7 @@ const produtosDB = [
       "imagens/Camisas-time/Premier league/Chelsea II/frente.jpg",
       "imagens/Camisas-time/Premier league/Chelsea II/costas.jpg",
       "imagens/Camisas-time/Premier league/Chelsea II/emblema.jpg",
-      "imagens/Camisas-time/Premier league/Chelsea II/etiqueta.jpg",
+      "imagens/Camisas-time/Premier league/Chelsea II/lateral.jpg",
       "imagens/Camisas-time/Premier league/Chelsea II/gola.jpg",
     ],
     preco: 180.0,
@@ -828,7 +781,7 @@ const produtosDB = [
       "imagens/Camisas-time/Premier league/Chelsea III/frente.jpg",
       "imagens/Camisas-time/Premier league/Chelsea III/costas.jpg",
       "imagens/Camisas-time/Premier league/Chelsea III/emblema.jpg",
-      "imagens/Camisas-time/Premier league/Chelsea III/etiqueta.jpg",
+      "imagens/Camisas-time/Premier league/Chelsea III/lateral.jpg",
       "imagens/Camisas-time/Premier league/Chelsea III/gola.jpg",
     ],
     preco: 180.0,
@@ -840,10 +793,9 @@ const produtosDB = [
     img: "imagens/Camisas-time/Premier league/Liverpool/frente.webp",
     galeria: [
       "imagens/Camisas-time/Premier league/Liverpool/frente.webp",
-      "imagens/Camisas-time/Premier league/Liverpool/costas.jpg",
-      "imagens/Camisas-time/Premier league/Liverpool/emblema.jpg",
-      "imagens/Camisas-time/Premier league/Liverpool/etiqueta.jpg",
-      "imagens/Camisas-time/Premier league/Liverpool/gola.jpg",
+      "imagens/Camisas-time/Premier league/Liverpool/costas.webp",
+      "imagens/Camisas-time/Premier league/Liverpool/emblema.webp",
+      "imagens/Camisas-time/Premier league/Liverpool/gola.webp",
     ],
     preco: 180.0,
   },
@@ -856,7 +808,7 @@ const produtosDB = [
       "imagens/Camisas-time/Premier league/Liverpool II/frente.jpg",
       "imagens/Camisas-time/Premier league/Liverpool II/costas.jpg",
       "imagens/Camisas-time/Premier league/Liverpool II/emblema.jpg",
-      "imagens/Camisas-time/Premier league/Liverpool II/etiqueta.jpg",
+      "imagens/Camisas-time/Premier league/Liverpool II/lateral.jpg",
       "imagens/Camisas-time/Premier league/Liverpool II/gola.jpg",
     ],
     preco: 180.0,
@@ -870,21 +822,19 @@ const produtosDB = [
       "imagens/Camisas-time/Premier league/Liverpool III/frente.jpg",
       "imagens/Camisas-time/Premier league/Liverpool III/costas.jpg",
       "imagens/Camisas-time/Premier league/Liverpool III/emblema.jpg",
-      "imagens/Camisas-time/Premier league/Liverpool III/etiqueta.jpg",
       "imagens/Camisas-time/Premier league/Liverpool III/gola.jpg",
     ],
     preco: 180.0,
   },
   {
-    id: "man-city-1-2025",
-    nome: "Camisa Manchester City I 2025",
-    url: "produto.html?id=man-city-1-2025",
+    id: "man-city-1-2026",
+    nome: "Camisa Manchester City I 2026",
+    url: "produto.html?id=man-city-1-2026",
     img: "imagens/Camisas-time/Premier league/Man. City/Frente.jpg",
     galeria: [
       "imagens/Camisas-time/Premier league/Man. City/Frente.jpg",
       "imagens/Camisas-time/Premier league/Man. City/costas.jpg",
-      "imagens/Camisas-time/Premier league/Man. City/emblema.jpg",
-      "imagens/Camisas-time/Premier league/Man. City/etiqueta.jpg",
+      "imagens/Camisas-time/Premier league/Man. City/Escudo.jpg",
       "imagens/Camisas-time/Premier league/Man. City/gola.jpg",
     ],
     preco: 180.0,
@@ -898,7 +848,7 @@ const produtosDB = [
       "imagens/Camisas-time/Premier league/Man. City  II/frente.jpg",
       "imagens/Camisas-time/Premier league/Man. City  II/costas.jpg",
       "imagens/Camisas-time/Premier league/Man. City  II/emblema.jpg",
-      "imagens/Camisas-time/Premier league/Man. City  II/etiqueta.jpg",
+      "imagens/Camisas-time/Premier league/Man. City  II/lateral.jpg",
       "imagens/Camisas-time/Premier league/Man. City  II/gola.jpg",
     ],
     preco: 180.0,
@@ -912,7 +862,7 @@ const produtosDB = [
       "imagens/Camisas-time/Premier league/Man. City III/frente.jpg",
       "imagens/Camisas-time/Premier league/Man. City III/costas.jpg",
       "imagens/Camisas-time/Premier league/Man. City III/emblema.jpg",
-      "imagens/Camisas-time/Premier league/Man. City III/etiqueta.jpg",
+      "imagens/Camisas-time/Premier league/Man. City III/lateral.jpg",
       "imagens/Camisas-time/Premier league/Man. City III/gola.jpg",
     ],
     preco: 180.0,
@@ -926,7 +876,7 @@ const produtosDB = [
       "imagens/Camisas-time/Premier league/Man. Utd/frente.jpg",
       "imagens/Camisas-time/Premier league/Man. Utd/costas.jpg",
       "imagens/Camisas-time/Premier league/Man. Utd/emblema.jpg",
-      "imagens/Camisas-time/Premier league/Man. Utd/etiqueta.jpg",
+      "imagens/Camisas-time/Premier league/Man. Utd/lateral.jpg",
       "imagens/Camisas-time/Premier league/Man. Utd/gola.jpg",
     ],
     preco: 180.0,
@@ -940,7 +890,7 @@ const produtosDB = [
       "imagens/Camisas-time/Premier league/Man. Utd II/frente.jpg",
       "imagens/Camisas-time/Premier league/Man. Utd II/costas.jpg",
       "imagens/Camisas-time/Premier league/Man. Utd II/emblema.jpg",
-      "imagens/Camisas-time/Premier league/Man. Utd II/etiqueta.jpg",
+      "imagens/Camisas-time/Premier league/Man. Utd II/lateral.jpg",
       "imagens/Camisas-time/Premier league/Man. Utd II/gola.jpg",
     ],
     preco: 180.0,
@@ -953,9 +903,6 @@ const produtosDB = [
     galeria: [
       "imagens/Camisas-time/Premier league/Man. Utd III/frente.jpg",
       "imagens/Camisas-time/Premier league/Man. Utd III/costas.jpg",
-      "imagens/Camisas-time/Premier league/Man. Utd III/emblema.jpg",
-      "imagens/Camisas-time/Premier league/Man. Utd III/etiqueta.jpg",
-      "imagens/Camisas-time/Premier league/Man. Utd III/gola.jpg",
     ],
     preco: 180.0,
   },
@@ -968,7 +915,7 @@ const produtosDB = [
       "imagens/Camisas-time/Premier league/Newcastle I/frente.jpg",
       "imagens/Camisas-time/Premier league/Newcastle I/costas.jpg",
       "imagens/Camisas-time/Premier league/Newcastle I/emblema.jpg",
-      "imagens/Camisas-time/Premier league/Newcastle I/etiqueta.jpg",
+      ,
       "imagens/Camisas-time/Premier league/Newcastle I/gola.jpg",
     ],
     preco: 180.0,
@@ -982,7 +929,7 @@ const produtosDB = [
       "imagens/Camisas-time/Premier league/Newcastle II/frente.jpg",
       "imagens/Camisas-time/Premier league/Newcastle II/costas.jpg",
       "imagens/Camisas-time/Premier league/Newcastle II/emblema.jpg",
-      "imagens/Camisas-time/Premier league/Newcastle II/etiqueta.jpg",
+      "imagens/Camisas-time/Premier league/Newcastle II/lateral.jpg",
       "imagens/Camisas-time/Premier league/Newcastle II/gola.jpg",
     ],
     preco: 180.0,
@@ -996,7 +943,7 @@ const produtosDB = [
       "imagens/Camisas-time/Premier league/Tottenham I/frente.jpg",
       "imagens/Camisas-time/Premier league/Tottenham I/costas.jpg",
       "imagens/Camisas-time/Premier league/Tottenham I/emblema.jpg",
-      "imagens/Camisas-time/Premier league/Tottenham I/etiqueta.jpg",
+      "imagens/Camisas-time/Premier league/Tottenham I/lateral.jpg",
       "imagens/Camisas-time/Premier league/Tottenham I/gola.jpg",
     ],
     preco: 180.0,
@@ -1010,7 +957,7 @@ const produtosDB = [
       "imagens/Camisas-time/Premier league/Tottenham II/frente.jpg",
       "imagens/Camisas-time/Premier league/Tottenham II/costas.jpg",
       "imagens/Camisas-time/Premier league/Tottenham II/emblema.jpg",
-      "imagens/Camisas-time/Premier league/Tottenham II/etiqueta.jpg",
+      "imagens/Camisas-time/Premier league/Tottenham II/lateral.jpg",
       "imagens/Camisas-time/Premier league/Tottenham II/gola.jpg",
     ],
     preco: 180.0,
@@ -1026,7 +973,7 @@ const produtosDB = [
       "imagens/Camisas-time/Ligue 1/Paris/costas.jpg",
       "imagens/Camisas-time/Ligue 1/Paris/emblema.jpg",
       "imagens/Camisas-time/Ligue 1/Paris/etiqueta.jpg",
-      "imagens/Camisas-time/Ligue 1/Paris/gola.jpg",
+      "imagens/Camisas-time/Ligue 1/Paris/lateral.jpg",
     ],
     preco: 180.0,
   },
@@ -1052,9 +999,6 @@ const produtosDB = [
     galeria: [
       "imagens/Camisas-time/Ligue 1/Lyon/frente.jpg",
       "imagens/Camisas-time/Ligue 1/Lyon/costas.jpg",
-      "imagens/Camisas-time/Ligue 1/Lyon/emblema.jpg",
-      "imagens/Camisas-time/Ligue 1/Lyon/etiqueta.jpg",
-      "imagens/Camisas-time/Ligue 1/Lyon/gola.jpg",
     ],
     preco: 180.0,
   },
@@ -1068,7 +1012,6 @@ const produtosDB = [
       "imagens/Camisas-time/Bundesliga/Bayern Munich Especial/frente.jpg",
       "imagens/Camisas-time/Bundesliga/Bayern Munich Especial/costas.jpg",
       "imagens/Camisas-time/Bundesliga/Bayern Munich Especial/emblema.jpg",
-      "imagens/Camisas-time/Bundesliga/Bayern Munich Especial/etiqueta.jpg",
       "imagens/Camisas-time/Bundesliga/Bayern Munich Especial/gola.jpg",
     ],
     preco: 180.0,
@@ -1082,7 +1025,6 @@ const produtosDB = [
       "imagens/Camisas-time/Bundesliga/Bayern Munich I/frente.jpg",
       "imagens/Camisas-time/Bundesliga/Bayern Munich I/costas.jpg",
       "imagens/Camisas-time/Bundesliga/Bayern Munich I/emblema.jpg",
-      "imagens/Camisas-time/Bundesliga/Bayern Munich I/etiqueta.jpg",
       "imagens/Camisas-time/Bundesliga/Bayern Munich I/gola.jpg",
     ],
     preco: 180.0,
@@ -1096,7 +1038,6 @@ const produtosDB = [
       "imagens/Camisas-time/Bundesliga/Borussia Dortmund/frente.jpg",
       "imagens/Camisas-time/Bundesliga/Borussia Dortmund/costas.jpg",
       "imagens/Camisas-time/Bundesliga/Borussia Dortmund/emblema.jpg",
-      "imagens/Camisas-time/Bundesliga/Borussia Dortmund/etiqueta.jpg",
       "imagens/Camisas-time/Bundesliga/Borussia Dortmund/gola.jpg",
     ],
     preco: 180.0,
@@ -1753,8 +1694,8 @@ function renderizarCarrinho() {
     subtotal += item.preco * (item.quantidade || 1);
   });
 
-  // 2. Barra de Progresso de Frete Grátis (Meta: R$ 299,00)
-  const LIMITE_FRETE = 299.0;
+  // 2. Barra de Progresso de Frete Grátis (Meta: R$ 400,00)
+  const LIMITE_FRETE = 400.0;
   const percentual = Math.min((subtotal / LIMITE_FRETE) * 100, 100);
   const falta = LIMITE_FRETE - subtotal;
 
@@ -1802,7 +1743,7 @@ function renderizarCarrinho() {
   if (dadosFrete) {
     valorFrete = dadosFrete.valor;
 
-    // Verifica se atingiu a meta de Frete Grátis (R$ 299,00)
+    // Verifica se atingiu a meta de Frete Grátis
     if (subtotal >= LIMITE_FRETE) {
       valorFrete = 0;
       htmlFrete = `<p>Frete (${dadosFrete.tipo}): <span style="color: #28a745; font-weight: bold;">GRÁTIS</span> <span style="text-decoration: line-through; font-size: 0.8em; color: #999;">R$ ${formatarPreco(dadosFrete.valor)}</span> <button class="btn-remover-frete" onclick="removerFrete()" title="Remover frete">❌</button></p>`;
@@ -1949,7 +1890,7 @@ function finalizarPedidoWhatsApp() {
     let valorFrete = dadosFrete.valor;
     let textoFrete = `🚚 *Frete (${dadosFrete.tipo}): R$ ${formatarPreco(valorFrete)}*`;
 
-    if (subtotal >= 299.0) {
+    if (subtotal >= 400.0) {
       valorFrete = 0;
       textoFrete = `🚚 *Frete (${dadosFrete.tipo}): GRÁTIS (Meta atingida)*`;
     }
@@ -1991,35 +1932,10 @@ function esvaziarCarrinho() {
 
 // Calcula o preço com 5% de desconto para exibição (Pix)
 function calcularPrecoPix() {
-  // Busca o preço apenas dentro de .info (garante que é a página do produto e não um card da lista)
-  const precoElemento = document.querySelector(".info .preco-destaque");
-
-  // Se não houver preço na página (ex: home), a função para aqui
-  if (!precoElemento) return;
-
-  // Remove o aviso de Pix anterior para não duplicar ao atualizar
+  // Função desativada para não exibir mais o desconto de 5% no Pix
   const pixAnterior = document.querySelector(".preco-pix");
   if (pixAnterior) {
     pixAnterior.remove();
-  }
-
-  // Pega apenas o texto do preço (primeiro nó de texto), ignorando o preço antigo (span)
-  const textoPreco = precoElemento.childNodes[0].textContent;
-
-  // Limpa a string: remove "R$", remove pontos de milhar e troca vírgula por ponto
-  const valorNumerico = parseFloat(
-    textoPreco.replace("R$", "").replace(/\./g, "").replace(",", ".").trim(),
-  );
-
-  if (!isNaN(valorNumerico)) {
-    const valorPix = valorNumerico * 0.95; // Aplica 5% de desconto
-
-    const pPix = document.createElement("p");
-    pPix.classList.add("preco-pix");
-    pPix.innerHTML = `R$ ${formatarPreco(valorPix)} com <strong>Pix</strong> (5% de desconto)`;
-
-    // Insere o elemento logo após o preço principal
-    precoElemento.after(pPix);
   }
 }
 
