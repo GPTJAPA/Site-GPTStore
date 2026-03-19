@@ -977,17 +977,27 @@ footer {
 /* --- Responsividade e Ajustes Mobile --- */
 @media (max-width: 768px) {
   .navbar {
+    display: flex; /* Altera de grid para flex no mobile */
     flex-direction: row; /* Alinha Logo e Hambúrguer lado a lado */
     flex-wrap: wrap; /* Permite que o conteúdo quebre linha */
     justify-content: space-between;
     align-items: center;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding: 10px 15px;
+  }
+
+  .logo {
+    order: 1;
+    margin-right: auto;
+  }
+
+  .logo img {
+    max-height: 50px; /* Reduz o tamanho do logo no mobile */
   }
 
   .menu-toggle {
     display: flex; /* Mostra o botão no mobile */
-    order: 1; /* Fica à direita do logo */
+    order: 3; /* Fica no final à direita */
+    margin-left: 10px;
   }
 
   .nav-links {
@@ -1017,20 +1027,25 @@ footer {
   }
 
   .nav-right {
-    width: 100%;
-    justify-content: center;
-    flex-wrap: wrap;
-    order: 2; /* Fica abaixo do logo/menu, mas acima dos links */
-    margin-top: 15px;
+    width: auto;
+    flex: 1;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+    order: 2; /* Fica entre o logo e o menu */
+    margin-top: 0;
+    gap: 10px;
   }
 
   .search-box {
     width: 100%;
-    margin-bottom: 10px;
+    max-width: 150px; /* Reduz o tamanho da barra de busca no mobile */
+    margin-bottom: 0;
   }
 
   .search-box input {
     width: 100%;
+    padding: 8px 10px;
+    font-size: 0.85rem;
   }
 
   /* Ajuste Home Mobile */
