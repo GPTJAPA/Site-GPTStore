@@ -76,7 +76,7 @@
 
             <div class="input-group-carrinho">
                 <label for="pagamento-cliente">Forma de Pagamento *</label>
-                <select id="pagamento-cliente" onchange="localStorage.setItem('pagamentoCliente', this.value)">
+                <select id="pagamento-cliente" onchange="localStorage.setItem('pagamentoCliente', this.value); renderizarCarrinho()">
                     <option value="">Selecione...</option>
                     <option value="Pix">Pix</option>
                     <option value="Cartão de Crédito">Cartão de Crédito</option>

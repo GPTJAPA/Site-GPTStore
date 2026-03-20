@@ -256,9 +256,17 @@ header.hero {
 }
 
 .card p {
-  color: #28a745;
+  color: #333;
   font-weight: bold;
   font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.card .preco-pix-card {
+  color: #28a745;
+  font-size: 1.1rem;
+  font-weight: normal;
+  margin-top: 0;
   margin-bottom: 15px;
 }
 
@@ -318,6 +326,43 @@ header.hero {
 }
 
 /* Imagem Principal com Zoom */
+.coluna-principal-img {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 500px;
+}
+
+.cuidados-manto {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #eee;
+}
+
+.cuidados-manto strong {
+  display: block;
+  margin-bottom: 12px;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+.cuidados-manto ul {
+  list-style: none;
+  padding: 0;
+}
+
+.cuidados-manto ul li {
+  font-size: 0.85rem;
+  color: #555;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.cuidados-manto ul li:last-child {
+  margin-bottom: 0;
+}
+
 .main-img-container {
   overflow: hidden;
   border-radius: 8px;
@@ -534,6 +579,7 @@ header.hero {
 /* --- Opções de Personalização --- */
 .personalizacao-container {
   margin: 20px 0;
+  display: none !important; /* Desativado temporariamente */
 }
 .botoes-personalizar {
   display: flex;
@@ -569,6 +615,43 @@ header.hero {
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
+}
+
+/* --- Informações Extras do Produto (Compra Segura, etc) --- */
+.produto-infos-extras {
+  margin-top: 30px;
+  border-top: 1px solid #eee;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #eee;
+}
+
+.info-icone {
+  font-size: 1.5rem;
+}
+
+.info-item div strong {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+.info-item div p {
+  color: #666;
+  font-size: 0.85rem;
+  line-height: 1.4;
 }
 
 /* --- Estilos da Página de Carrinho --- */
@@ -1065,6 +1148,10 @@ footer {
     align-items: center;
   }
 
+  .coluna-principal-img {
+    display: contents; /* Permite reordenar os itens internos no mobile separadamente */
+  }
+
   .thumbnails {
     flex-direction: row;
     order: 2;
@@ -1090,6 +1177,12 @@ footer {
     width: 100%;
     margin-top: 20px;
     order: 3;
+  }
+
+  .cuidados-manto {
+    width: 100%;
+    order: 4;
+    margin-top: 20px;
   }
 
   /* Ajuste Carrinho Mobile */

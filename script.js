@@ -13,7 +13,7 @@ const produtosDB = [
       "imagens/Camisas-time/Seleções/Seleção Brasileira 1/gola.jpg",
       "imagens/Camisas-time/Seleções/Seleção Brasileira 1/etiqueta.jpg",
     ],
-    preco: 180.0,
+    preco: 190.0,
   },
   {
     id: "selecao-brasileira-2-2026",
@@ -27,18 +27,11 @@ const produtosDB = [
       "imagens/Camisas-time/Seleções/Seleção Brasileira 2/lateral.jpg",
       "imagens/Camisas-time/Seleções/Seleção Brasileira 2/etiqueta.jpg",
     ],
-    preco: 180.0,
-  },
-  {
-    id: "franca-titular-2024",
-    nome: "Camisa França Titular 2024",
-    url: "produto.html?id=franca-titular-2024",
-    img: "imagens/Camisas-time/Seleções/Seleção Brasileira 1/Frente.webp",
-    preco: 180.0,
+    preco: 190.0,
   },
   {
     id: "alemanha",
-    nome: "Camisa Alemanha",
+    nome: "Camisa Seleção Alemanha I 2026",
     url: "produto.html?id=alemanha",
     img: "imagens/Camisas-time/Seleções/Alemanha/frente.jpg",
     galeria: [
@@ -48,11 +41,11 @@ const produtosDB = [
       "imagens/Camisas-time/Seleções/Alemanha/etiqueta.jpg",
       "imagens/Camisas-time/Seleções/Alemanha/gola.jpg",
     ],
-    preco: 180.0,
+    preco: 190.0,
   },
   {
     id: "alemanha-fem",
-    nome: "Camisa Alemanha Feminina",
+    nome: "Camisa Seleção Alemanha Feminina",
     url: "produto.html?id=alemanha-fem",
     img: "imagens/Camisas-time/Seleções/Alemanha - feminino/frente.jpg",
     galeria: [
@@ -62,11 +55,11 @@ const produtosDB = [
       "imagens/Camisas-time/Seleções/Alemanha - feminino/etiqueta.jpg",
       "imagens/Camisas-time/Seleções/Alemanha - feminino/gola.jpg",
     ],
-    preco: 180.0,
+    preco: 190.0,
   },
   {
     id: "argentina",
-    nome: "Camisa Argentina",
+    nome: "Camisa Seleção Argentina I 2026",
     url: "produto.html?id=argentina",
     img: "imagens/Camisas-time/Seleções/Argentina/frente.jpg",
     galeria: [
@@ -77,11 +70,11 @@ const produtosDB = [
       "imagens/Camisas-time/Seleções/Argentina/etiqueta.jpg",
       "imagens/Camisas-time/Seleções/Argentina/gola.jpg",
     ],
-    preco: 180.0,
+    preco: 190.0,
   },
   {
     id: "argentina-fem",
-    nome: "Camisa Argentina Feminina",
+    nome: "Camisa Seleção Argentina Feminina",
     url: "produto.html?id=argentina-fem",
     img: "imagens/Camisas-time/Seleções/Argentina - Feminino/frente.jpg",
     galeria: [
@@ -91,11 +84,11 @@ const produtosDB = [
       "imagens/Camisas-time/Seleções/Argentina - Feminino/patch.jpg",
       "imagens/Camisas-time/Seleções/Argentina - Feminino/gola.jpg",
     ],
-    preco: 180.0,
+    preco: 190.0,
   },
   {
     id: "colombia",
-    nome: "Camisa Colombia",
+    nome: "Camisa Seleção Colombia I 2026",
     url: "produto.html?id=colombia",
     img: "imagens/Camisas-time/Seleções/Colombia/frente.jpg",
     galeria: [
@@ -105,11 +98,11 @@ const produtosDB = [
       "imagens/Camisas-time/Seleções/Colombia/etiqueta.jpg",
       "imagens/Camisas-time/Seleções/Colombia/gola.jpg",
     ],
-    preco: 180.0,
+    preco: 190.0,
   },
   {
     id: "colombia-fem",
-    nome: "Camisa Colombia Feminina",
+    nome: "Camisa Seleção Colombia Feminina",
     url: "produto.html?id=colombia-fem",
     img: "imagens/Camisas-time/Seleções/Colombia - feminino/frente.jpg",
     galeria: [
@@ -119,7 +112,7 @@ const produtosDB = [
       "imagens/Camisas-time/Seleções/Colombia - feminino/etiqueta.jpg",
       "imagens/Camisas-time/Seleções/Colombia - feminino/gola.jpg",
     ],
-    preco: 180.0,
+    preco: 190.0,
   },
   {
     id: "brasil-retro",
@@ -134,7 +127,7 @@ const produtosDB = [
       "imagens/Camisas-time/Seleções/Brasileira - retro penta/ronaldo.png",
       "imagens/Camisas-time/Seleções/Brasileira - retro penta/Ronaldinho.webp",
     ],
-    preco: 210.0,
+    preco: 220.0,
   },
   {
     id: "selecao-brasileira-fem-1",
@@ -148,7 +141,7 @@ const produtosDB = [
       "imagens/Camisas-time/Seleções/Seleção Brasileira 1 - Feminino/etiqueta.jpg",
       "imagens/Camisas-time/Seleções/Seleção Brasileira 1 - Feminino/gola.jpg",
     ],
-    preco: 180.0,
+    preco: 190.0,
   },
   {
     id: "selecao-brasileira-fem-2",
@@ -162,11 +155,11 @@ const produtosDB = [
       "imagens/Camisas-time/Seleções/Seleção Brasileira 2 - Feminino/etiqueta.jpg",
       "imagens/Camisas-time/Seleções/Seleção Brasileira 2 - Feminino/lateral.jpg",
     ],
-    preco: 180.0,
+    preco: 190.0,
   },
   {
     id: "alemanha-2",
-    nome: "Camisa Alemanha II",
+    nome: "Camisa Seleção Alemanha II 2026",
     url: "produto.html?id=alemanha-2",
     img: "imagens/Camisas-time/Seleções/Alemanha II/frente.jpg",
     galeria: [
@@ -176,7 +169,7 @@ const produtosDB = [
       "imagens/Camisas-time/Seleções/Alemanha II/lateral.jpg",
       "imagens/Camisas-time/Seleções/Alemanha II/gola.jpg",
     ],
-    preco: 180.0,
+    preco: 190.0,
   },
   {
     id: "brasil-1994-amarela",
@@ -190,7 +183,7 @@ const produtosDB = [
       "imagens/Camisas-time/Seleções/Brasil Amare -1994/lateral.jpg",
       "imagens/Camisas-time/Seleções/Brasil Amare -1994/gola.jpg",
     ],
-    preco: 210.0,
+    preco: 220.0,
   },
   {
     id: "brasil-1994-azul",
@@ -204,22 +197,22 @@ const produtosDB = [
       "imagens/Camisas-time/Seleções/Brasil Azul -1994/lateral.jpg",
       "imagens/Camisas-time/Seleções/Brasil Azul -1994/gola.jpg",
     ],
-    preco: 210.0,
+    preco: 220.0,
   },
   {
     id: "espanha",
-    nome: "Camisa Espanha",
+    nome: "Camisa Seleção Espanha I 2026",
     url: "produto.html?id=espanha",
     img: "imagens/Camisas-time/Seleções/Espanha/frente.jpg",
     galeria: [
       "imagens/Camisas-time/Seleções/Espanha/frente.jpg",
       "imagens/Camisas-time/Seleções/Espanha/costas.jpg",
     ],
-    preco: 180.0,
+    preco: 190.0,
   },
   {
     id: "espanha-fem",
-    nome: "Camisa Espanha Feminina",
+    nome: "Camisa Seleção Espanha Feminina",
     url: "produto.html?id=espanha-fem",
     img: "imagens/Camisas-time/Seleções/Espanha - feminino/frente.jpg",
     galeria: [
@@ -228,11 +221,11 @@ const produtosDB = [
       "imagens/Camisas-time/Seleções/Espanha - feminino/emblema.jpg",
       "imagens/Camisas-time/Seleções/Espanha - feminino/gola.jpg",
     ],
-    preco: 180.0,
+    preco: 190.0,
   },
   {
     id: "franca-retro",
-    nome: "Camisa França - Retro",
+    nome: "Camisa Seleção França - Retro",
     url: "produto.html?id=franca-retro",
     img: "imagens/Camisas-time/Seleções/França - retro/frente.jpg",
     galeria: [
@@ -243,11 +236,11 @@ const produtosDB = [
       "imagens/Camisas-time/Seleções/França - retro/gola.jpg",
       "imagens/Camisas-time/Seleções/França - retro/Zidane.webp",
     ],
-    preco: 210.0,
+    preco: 220.0,
   },
   {
     id: "italia-1",
-    nome: "Camisa Italia I",
+    nome: "Camisa Seleção Italia I 2026",
     url: "produto.html?id=italia-1",
     img: "imagens/Camisas-time/Seleções/Italia I/frente.jpg",
     galeria: [
@@ -258,11 +251,11 @@ const produtosDB = [
       "imagens/Camisas-time/Seleções/Italia I/etiqueta.jpg",
       "imagens/Camisas-time/Seleções/Italia I/lateral.jpg",
     ],
-    preco: 180.0,
+    preco: 190.0,
   },
   {
     id: "italia-2",
-    nome: "Camisa Italia II",
+    nome: "Camisa Seleção Italia II 2026",
     url: "produto.html?id=italia-2",
     img: "imagens/Camisas-time/Seleções/Italia II/frente.jpg",
     galeria: [
@@ -273,11 +266,11 @@ const produtosDB = [
       "imagens/Camisas-time/Seleções/Italia II/etiqueta.jpg",
       "imagens/Camisas-time/Seleções/Italia II/lateral.jpg",
     ],
-    preco: 180.0,
+    preco: 190.0,
   },
   {
     id: "mexico",
-    nome: "Camisa Mexico",
+    nome: "Camisa Seleção México I 2026",
     url: "produto.html?id=mexico",
     img: "imagens/Camisas-time/Seleções/Mexico/frente.jpg",
     galeria: [
@@ -287,11 +280,11 @@ const produtosDB = [
       "imagens/Camisas-time/Seleções/Mexico/etiqueta.jpg",
       "imagens/Camisas-time/Seleções/Mexico/gola.jpg",
     ],
-    preco: 180.0,
+    preco: 190.0,
   },
   {
     id: "mexico-fem",
-    nome: "Camisa Mexico Feminina",
+    nome: "Camisa Seleção México Feminina",
     url: "produto.html?id=mexico-fem",
     img: "imagens/Camisas-time/Seleções/Mexico - feminino/frente.jpg",
     galeria: [
@@ -302,11 +295,11 @@ const produtosDB = [
       "imagens/Camisas-time/Seleções/Mexico - feminino/gola.jpg",
       "imagens/Camisas-time/Seleções/Mexico - feminino/corpo.jpg",
     ],
-    preco: 180.0,
+    preco: 190.0,
   },
   {
     id: "portugal",
-    nome: "Camisa Portugal",
+    nome: "Camisa Seleção Portugal I 2026",
     url: "produto.html?id=portugal",
     img: "imagens/Camisas-time/Seleções/Portugal/frente.jpg",
     galeria: [
@@ -316,11 +309,11 @@ const produtosDB = [
       "imagens/Camisas-time/Seleções/Portugal/etiqueta.jpg",
       "imagens/Camisas-time/Seleções/Portugal/gola.jpg",
     ],
-    preco: 180.0,
+    preco: 190.0,
   },
   {
     id: "portugal-fem",
-    nome: "Camisa Portugal Feminina",
+    nome: "Camisa Seleção Portugal Feminina",
     url: "produto.html?id=portugal-fem",
     img: "imagens/Camisas-time/Seleções/Portugal - feminino/frente.jpg",
     galeria: [
@@ -331,11 +324,11 @@ const produtosDB = [
       "imagens/Camisas-time/Seleções/Portugal - feminino/gola.jpg",
       "imagens/Camisas-time/Seleções/Portugal - feminino/corpo.jpg",
     ],
-    preco: 180.0,
+    preco: 190.0,
   },
   {
     id: "portugal-especial",
-    nome: "Camisa Portugal Especial",
+    nome: "Camisa Seleção Portugal Especial",
     url: "produto.html?id=portugal-especial",
     img: "imagens/Camisas-time/Seleções/Portugal especial/frente.jpg",
     galeria: [
@@ -346,7 +339,7 @@ const produtosDB = [
       "imagens/Camisas-time/Seleções/Portugal especial/gola.jpg",
       "imagens/Camisas-time/Seleções/Portugal especial/lateral.jpg",
     ],
-    preco: 180.0,
+    preco: 190.0,
   },
   // --- BRASILEIRÃO ---
   {
@@ -361,7 +354,7 @@ const produtosDB = [
       "imagens/Camisas-time/Brasileirão A/Atl. Mineiro/etiqueta.jpg",
       "imagens/Camisas-time/Brasileirão A/Atl. Mineiro/gola.jpg",
     ],
-    preco: 180.0,
+    preco: 190.0,
   },
   {
     id: "atl-mineiro-ii-2026",
@@ -375,7 +368,7 @@ const produtosDB = [
       "imagens/Camisas-time/Brasileirão A/Atl. Mineiro II/lateral.jpg",
       "imagens/Camisas-time/Brasileirão A/Atl. Mineiro II/gola.jpg",
     ],
-    preco: 180.0,
+    preco: 190.0,
   },
   {
     id: "atl-mineiro-iii-2026",
@@ -389,7 +382,7 @@ const produtosDB = [
       "imagens/Camisas-time/Brasileirão A/Atl. Mineiro III/lateral.jpg",
       "imagens/Camisas-time/Brasileirão A/Atl. Mineiro III/gola.jpg",
     ],
-    preco: 180.0,
+    preco: 190.0,
   },
   {
     id: "atlético-juventus-2026",
@@ -403,7 +396,7 @@ const produtosDB = [
       "imagens/Camisas-time/Brasileirão A/Atlético Juventus/etiqueta.jpg",
       "imagens/Camisas-time/Brasileirão A/Atlético Juventus/gola.jpg",
     ],
-    preco: 180.0,
+    preco: 190.0,
   },
   {
     id: "botafogo-i-2026",
@@ -417,7 +410,7 @@ const produtosDB = [
       "imagens/Camisas-time/Brasileirão A/Botafogo I/lateral.jpg",
       "imagens/Camisas-time/Brasileirão A/Botafogo I/gola.jpg",
     ],
-    preco: 180.0,
+    preco: 190.0,
   },
   {
     id: "botafogo-ii-2026",
@@ -431,7 +424,7 @@ const produtosDB = [
       "imagens/Camisas-time/Brasileirão A/Botafogo II/lateral.jpg",
       "imagens/Camisas-time/Brasileirão A/Botafogo II/gola.jpg",
     ],
-    preco: 180.0,
+    preco: 190.0,
   },
   {
     id: "corinthians-i-2026",
@@ -445,7 +438,7 @@ const produtosDB = [
       "imagens/Camisas-time/Brasileirão A/Corinthians I/etiqueta.jpg",
       "imagens/Camisas-time/Brasileirão A/Corinthians I/gola.jpg",
     ],
-    preco: 180.0,
+    preco: 190.0,
   },
   {
     id: "corinthians-ii-2026",
@@ -459,7 +452,7 @@ const produtosDB = [
       "imagens/Camisas-time/Brasileirão A/Corinthians II/lateral.jpg",
       "imagens/Camisas-time/Brasileirão A/Corinthians II/gola.jpg",
     ],
-    preco: 180.0,
+    preco: 190.0,
   },
   {
     id: "corinthians-iv-2026",
@@ -473,7 +466,7 @@ const produtosDB = [
       "imagens/Camisas-time/Brasileirão A/Corinthians 4/lateral.jpg",
       "imagens/Camisas-time/Brasileirão A/Corinthians 4/gola.jpg",
     ],
-    preco: 180.0,
+    preco: 190.0,
   },
   {
     id: "corinthians-iii-2026",
@@ -487,7 +480,7 @@ const produtosDB = [
       "imagens/Camisas-time/Brasileirão A/Corinthians III/lateral.jpg",
       "imagens/Camisas-time/Brasileirão A/Corinthians III/gola.jpg",
     ],
-    preco: 180.0,
+    preco: 190.0,
   },
   {
     id: "cruzeiro-i-2026",
@@ -498,7 +491,7 @@ const produtosDB = [
       "imagens/Camisas-time/Brasileirão A/Cruzeiro I/frente.jpg",
       "imagens/Camisas-time/Brasileirão A/Cruzeiro I/costas.jpg",
     ],
-    preco: 180.0,
+    preco: 190.0,
   },
   {
     id: "cruzeiro-ii-2026",
@@ -512,7 +505,7 @@ const produtosDB = [
       "imagens/Camisas-time/Brasileirão A/Cruzeiro II/etiqueta.jpg",
       "imagens/Camisas-time/Brasileirão A/Cruzeiro II/lateral.jpg",
     ],
-    preco: 180.0,
+    preco: 190.0,
   },
   {
     id: "cruzeiro-iii-2026",
@@ -526,7 +519,7 @@ const produtosDB = [
       "imagens/Camisas-time/Brasileirão A/Cruzeiro III/lateral.jpg",
       "imagens/Camisas-time/Brasileirão A/Cruzeiro III/gola.jpg",
     ],
-    preco: 180.0,
+    preco: 190.0,
   },
   {
     id: "flamengo-1-2026",
@@ -539,7 +532,7 @@ const produtosDB = [
       "imagens/Camisas-time/Brasileirão A/Flamengo/emblema.jpg",
       "imagens/Camisas-time/Brasileirão A/Flamengo/gola.jpg",
     ],
-    preco: 180.0,
+    preco: 190.0,
   },
   {
     id: "flamengo-2-2026",
@@ -553,7 +546,7 @@ const produtosDB = [
       "imagens/Camisas-time/Brasileirão A/Flamengo II/lateral.jpg",
       "imagens/Camisas-time/Brasileirão A/Flamengo II/gola.jpg",
     ],
-    preco: 180.0,
+    preco: 190.0,
   },
   {
     id: "flamengo-3-2026",
@@ -567,7 +560,7 @@ const produtosDB = [
       "imagens/Camisas-time/Brasileirão A/Flamengo III/lateral.jpg",
       "imagens/Camisas-time/Brasileirão A/Flamengo III/gola.jpg",
     ],
-    preco: 180.0,
+    preco: 190.0,
   },
   {
     id: "flamengo-4-2026",
@@ -580,7 +573,7 @@ const produtosDB = [
       "imagens/Camisas-time/Brasileirão A/Flamengo 4/emblema.jpg",
       "imagens/Camisas-time/Brasileirão A/Flamengo 4/gola.jpg",
     ],
-    preco: 180.0,
+    preco: 190.0,
   },
   {
     id: "gremio-i-2026",
@@ -593,7 +586,7 @@ const produtosDB = [
       "imagens/Camisas-time/Brasileirão A/Gremio I/emblema.jpg",
       "imagens/Camisas-time/Brasileirão A/Gremio I/etiqueta.jpg",
     ],
-    preco: 180.0,
+    preco: 190.0,
   },
   {
     id: "gremio-ii-2026",
@@ -606,7 +599,7 @@ const produtosDB = [
       "imagens/Camisas-time/Brasileirão A/Gremio II/emblema.jpg",
       "imagens/Camisas-time/Brasileirão A/Gremio II/etiqueta.jpg",
     ],
-    preco: 180.0,
+    preco: 190.0,
   },
   {
     id: "gremio-iii-2026",
@@ -620,7 +613,7 @@ const produtosDB = [
       "imagens/Camisas-time/Brasileirão A/Gremio III/etiqueta.jpg",
       "imagens/Camisas-time/Brasileirão A/Gremio III/gola.jpg",
     ],
-    preco: 180.0,
+    preco: 190.0,
   },
   {
     id: "internacional-1-2026",
@@ -633,7 +626,7 @@ const produtosDB = [
       "imagens/Camisas-time/Brasileirão A/Internacional I/emblema.jpg",
       "imagens/Camisas-time/Brasileirão A/Internacional I/gola.jpg",
     ],
-    preco: 180.0,
+    preco: 190.0,
   },
   {
     id: "palmeiras-1-2026",
@@ -644,7 +637,7 @@ const produtosDB = [
       "imagens/Camisas-time/Brasileirão A/Palmeiras I/frente.jpg",
       "imagens/Camisas-time/Brasileirão A/Palmeiras I/costas.jpg",
     ],
-    preco: 180.0,
+    preco: 190.0,
   },
   {
     id: "palmeiras-2-2026",
@@ -655,7 +648,7 @@ const produtosDB = [
       "imagens/Camisas-time/Brasileirão A/Palmeiras II/frente.jpg",
       "imagens/Camisas-time/Brasileirão A/Palmeiras II/costas.jpg",
     ],
-    preco: 180.0,
+    preco: 190.0,
   },
   {
     id: "palmeiras-3-2026",
@@ -667,7 +660,7 @@ const produtosDB = [
       "imagens/Camisas-time/Brasileirão A/Palmeiras III/costas.jpg",
       "imagens/Camisas-time/Brasileirão A/Palmeiras III/emblema.jpg",
     ],
-    preco: 180.0,
+    preco: 190.0,
   },
   {
     id: "santos-1-2026",
@@ -681,7 +674,7 @@ const produtosDB = [
       "imagens/Camisas-time/Brasileirão A/Santos I/etiqueta.jpg",
       "imagens/Camisas-time/Brasileirão A/Santos I/gola.jpg",
     ],
-    preco: 180.0,
+    preco: 190.0,
   },
   {
     id: "santos-2-2026",
@@ -695,7 +688,7 @@ const produtosDB = [
       "imagens/Camisas-time/Brasileirão A/Santos II/etiqueta.jpg",
       "imagens/Camisas-time/Brasileirão A/Santos II/lateral.jpg",
     ],
-    preco: 180.0,
+    preco: 190.0,
   },
   {
     id: "santos-3-2026",
@@ -709,7 +702,7 @@ const produtosDB = [
       "imagens/Camisas-time/Brasileirão A/Santos III/etiqueta.jpg",
       "imagens/Camisas-time/Brasileirão A/Santos III/gola.jpg",
     ],
-    preco: 180.0,
+    preco: 190.0,
   },
   {
     id: "sao-paulo-2-2026",
@@ -720,7 +713,7 @@ const produtosDB = [
       "imagens/Camisas-time/Brasileirão A/São Paulo II/frente.jpg",
       "imagens/Camisas-time/Brasileirão A/São Paulo II/costas.jpg",
     ],
-    preco: 180.0,
+    preco: 190.0,
   },
   {
     id: "sao-paulo-1-2026",
@@ -732,7 +725,7 @@ const produtosDB = [
       "imagens/Camisas-time/Brasileirão A/São Paulo/costas.jpg",
       ,
     ],
-    preco: 180.0,
+    preco: 190.0,
   },
   {
     id: "sao-paulo-3-2026",
@@ -743,7 +736,7 @@ const produtosDB = [
       "imagens/Camisas-time/Brasileirão A/São Paulo III/frente.jpg",
       "imagens/Camisas-time/Brasileirão A/São Paulo III/costas.jpg",
     ],
-    preco: 180.0,
+    preco: 190.0,
   },
   {
     id: "vasco-1-2026",
@@ -754,7 +747,7 @@ const produtosDB = [
       "imagens/Camisas-time/Brasileirão A/Vasco I/frente.jpg",
       "imagens/Camisas-time/Brasileirão A/Vasco I/costas.jpg",
     ],
-    preco: 180.0,
+    preco: 190.0,
   },
   {
     id: "vasco-2-2026",
@@ -765,7 +758,7 @@ const produtosDB = [
       "imagens/Camisas-time/Brasileirão A/Vasco II/frente.jpg",
       "imagens/Camisas-time/Brasileirão A/Vasco II/costas.jpg",
     ],
-    preco: 180.0,
+    preco: 190.0,
   },
   // --- LA LIGA ---
   {
@@ -779,7 +772,7 @@ const produtosDB = [
       "imagens/Camisas-time/LaLiga/Real madrid I/Escudo.jpg",
       "imagens/Camisas-time/LaLiga/Real madrid I/Gola.jpg",
     ],
-    preco: 180.0,
+    preco: 190.0,
   },
   {
     id: "real-madrid-2-2026",
@@ -792,7 +785,7 @@ const produtosDB = [
       "imagens/Camisas-time/LaLiga/Real madrid II/emblema.jpg",
       "imagens/Camisas-time/LaLiga/Real madrid II/gola.jpg",
     ],
-    preco: 180.0,
+    preco: 190.0,
   },
   {
     id: "barcelona-1-2025",
@@ -805,7 +798,7 @@ const produtosDB = [
       "imagens/Camisas-time/LaLiga/Barcelona I/emblema.jpg",
       "imagens/Camisas-time/LaLiga/Barcelona I/lateral.jpg",
     ],
-    preco: 180.0,
+    preco: 190.0,
   },
   {
     id: "barcelona-2-2025",
@@ -819,7 +812,7 @@ const produtosDB = [
       "imagens/Camisas-time/LaLiga/Barcelona II/etiqueta.jpg",
       "imagens/Camisas-time/LaLiga/Barcelona II/gola.jpg",
     ],
-    preco: 180.0,
+    preco: 190.0,
   },
   {
     id: "atletico-madrid-1-2025",
@@ -833,7 +826,7 @@ const produtosDB = [
       "imagens/Camisas-time/LaLiga/Atletico Madrid/etiqueta.jpg",
       "imagens/Camisas-time/LaLiga/Atletico Madrid/lateral.jpg",
     ],
-    preco: 180.0,
+    preco: 190.0,
   },
   {
     id: "atletico-madrid-2-2025",
@@ -844,7 +837,7 @@ const produtosDB = [
       "imagens/Camisas-time/LaLiga/Atletico Madrid - Copia/frente.jpg",
       "imagens/Camisas-time/LaLiga/Atletico Madrid - Copia/costas.jpg",
     ],
-    preco: 180.0,
+    preco: 190.0,
   },
   {
     id: "athletic-bilbao-1-2025",
@@ -856,7 +849,7 @@ const produtosDB = [
       "imagens/Camisas-time/LaLiga/Athletic Bilbao/costas.jpg",
       "imagens/Camisas-time/LaLiga/Athletic Bilbao/Emblema.webp",
     ],
-    preco: 180.0,
+    preco: 190.0,
   },
   {
     id: "celta-vigo-1-2025",
@@ -870,7 +863,7 @@ const produtosDB = [
       "imagens/Camisas-time/LaLiga/Celta De Vigo Especial/etiqueta.jpg",
       "imagens/Camisas-time/LaLiga/Celta De Vigo Especial/lateral.jpg",
     ],
-    preco: 180.0,
+    preco: 190.0,
   },
   {
     id: "celta-vigo-2-2025",
@@ -883,7 +876,7 @@ const produtosDB = [
       "imagens/Camisas-time/LaLiga/Celta De Vigo Especial II/emblema.jpg",
       "imagens/Camisas-time/LaLiga/Celta De Vigo Especial II/lateral.jpg",
     ],
-    preco: 180.0,
+    preco: 190.0,
   },
   // --- PREMIER LEAGUE ---AAAA
   {
@@ -897,7 +890,7 @@ const produtosDB = [
       "imagens/Camisas-time/Premier league/Arsenal/Escudo.jpg",
       "imagens/Camisas-time/Premier league/Arsenal/Manga.jpg",
     ],
-    preco: 180.0,
+    preco: 190.0,
   },
   {
     id: "arsenal-2-2026",
@@ -912,7 +905,7 @@ const produtosDB = [
       "imagens/Camisas-time/Premier league/Arsenal Azul/gola.jpg",
       "imagens/Camisas-time/Premier league/Arsenal Azul/lateral.jpg",
     ],
-    preco: 180.0,
+    preco: 190.0,
   },
   {
     id: "aston-villa-1-2026",
@@ -926,7 +919,7 @@ const produtosDB = [
       "imagens/Camisas-time/Premier league/Aston villa/lateral.jpg",
       "imagens/Camisas-time/Premier league/Aston villa/gola.jpg",
     ],
-    preco: 180.0,
+    preco: 190.0,
   },
   {
     id: "chelsea-1-2026",
@@ -940,7 +933,7 @@ const produtosDB = [
       "imagens/Camisas-time/Premier league/Chelsea I/lateral.jpg",
       "imagens/Camisas-time/Premier league/Chelsea I/gola.jpg",
     ],
-    preco: 180.0,
+    preco: 190.0,
   },
   {
     id: "chelsea-2-2026",
@@ -954,7 +947,7 @@ const produtosDB = [
       "imagens/Camisas-time/Premier league/Chelsea II/lateral.jpg",
       "imagens/Camisas-time/Premier league/Chelsea II/gola.jpg",
     ],
-    preco: 180.0,
+    preco: 190.0,
   },
   {
     id: "chelsea-3-2026",
@@ -968,7 +961,7 @@ const produtosDB = [
       "imagens/Camisas-time/Premier league/Chelsea III/lateral.jpg",
       "imagens/Camisas-time/Premier league/Chelsea III/gola.jpg",
     ],
-    preco: 180.0,
+    preco: 190.0,
   },
   {
     id: "liverpool-1-2026",
@@ -981,7 +974,7 @@ const produtosDB = [
       "imagens/Camisas-time/Premier league/Liverpool/emblema.webp",
       "imagens/Camisas-time/Premier league/Liverpool/gola.webp",
     ],
-    preco: 180.0,
+    preco: 190.0,
   },
   {
     id: "liverpool-2-2026",
@@ -995,7 +988,7 @@ const produtosDB = [
       "imagens/Camisas-time/Premier league/Liverpool II/lateral.jpg",
       "imagens/Camisas-time/Premier league/Liverpool II/gola.jpg",
     ],
-    preco: 180.0,
+    preco: 190.0,
   },
   {
     id: "liverpool-3-2026",
@@ -1008,7 +1001,7 @@ const produtosDB = [
       "imagens/Camisas-time/Premier league/Liverpool III/emblema.jpg",
       "imagens/Camisas-time/Premier league/Liverpool III/gola.jpg",
     ],
-    preco: 180.0,
+    preco: 190.0,
   },
   {
     id: "man-city-1-2026",
@@ -1021,7 +1014,7 @@ const produtosDB = [
       "imagens/Camisas-time/Premier league/Man. City/Escudo.jpg",
       "imagens/Camisas-time/Premier league/Man. City/gola.jpg",
     ],
-    preco: 180.0,
+    preco: 190.0,
   },
   {
     id: "man-city-2-2026",
@@ -1035,7 +1028,7 @@ const produtosDB = [
       "imagens/Camisas-time/Premier league/Man. City  II/lateral.jpg",
       "imagens/Camisas-time/Premier league/Man. City  II/gola.jpg",
     ],
-    preco: 180.0,
+    preco: 190.0,
   },
   {
     id: "man-city-3-2026",
@@ -1049,7 +1042,7 @@ const produtosDB = [
       "imagens/Camisas-time/Premier league/Man. City III/lateral.jpg",
       "imagens/Camisas-time/Premier league/Man. City III/gola.jpg",
     ],
-    preco: 180.0,
+    preco: 190.0,
   },
   {
     id: "man-utd-1-2026",
@@ -1063,7 +1056,7 @@ const produtosDB = [
       "imagens/Camisas-time/Premier league/Man. Utd/lateral.jpg",
       "imagens/Camisas-time/Premier league/Man. Utd/gola.jpg",
     ],
-    preco: 180.0,
+    preco: 190.0,
   },
   {
     id: "man-utd-2-2026",
@@ -1077,7 +1070,7 @@ const produtosDB = [
       "imagens/Camisas-time/Premier league/Man. Utd II/lateral.jpg",
       "imagens/Camisas-time/Premier league/Man. Utd II/gola.jpg",
     ],
-    preco: 180.0,
+    preco: 190.0,
   },
   {
     id: "man-utd-3-2026",
@@ -1088,7 +1081,7 @@ const produtosDB = [
       "imagens/Camisas-time/Premier league/Man. Utd III/frente.jpg",
       "imagens/Camisas-time/Premier league/Man. Utd III/costas.jpg",
     ],
-    preco: 180.0,
+    preco: 190.0,
   },
   {
     id: "newcastle-1-2026",
@@ -1102,7 +1095,7 @@ const produtosDB = [
       ,
       "imagens/Camisas-time/Premier league/Newcastle I/gola.jpg",
     ],
-    preco: 180.0,
+    preco: 190.0,
   },
   {
     id: "newcastle-2-2026",
@@ -1116,7 +1109,7 @@ const produtosDB = [
       "imagens/Camisas-time/Premier league/Newcastle II/lateral.jpg",
       "imagens/Camisas-time/Premier league/Newcastle II/gola.jpg",
     ],
-    preco: 180.0,
+    preco: 190.0,
   },
   {
     id: "tottenham-1-2026",
@@ -1130,7 +1123,7 @@ const produtosDB = [
       "imagens/Camisas-time/Premier league/Tottenham I/lateral.jpg",
       "imagens/Camisas-time/Premier league/Tottenham I/gola.jpg",
     ],
-    preco: 180.0,
+    preco: 190.0,
   },
   {
     id: "tottenham-2-2026",
@@ -1144,7 +1137,7 @@ const produtosDB = [
       "imagens/Camisas-time/Premier league/Tottenham II/lateral.jpg",
       "imagens/Camisas-time/Premier league/Tottenham II/gola.jpg",
     ],
-    preco: 180.0,
+    preco: 190.0,
   },
   // --- LIGUE 1 ---
   {
@@ -1159,7 +1152,7 @@ const produtosDB = [
       "imagens/Camisas-time/Ligue 1/Paris/etiqueta.jpg",
       "imagens/Camisas-time/Ligue 1/Paris/lateral.jpg",
     ],
-    preco: 180.0,
+    preco: 190.0,
   },
   {
     id: "marseille-1-2026",
@@ -1173,7 +1166,7 @@ const produtosDB = [
       "imagens/Camisas-time/Ligue 1/OLympique/etiqueta.jpg",
       "imagens/Camisas-time/Ligue 1/OLympique/gola.jpg",
     ],
-    preco: 180.0,
+    preco: 190.0,
   },
   {
     id: "lyon-1-2026",
@@ -1184,7 +1177,7 @@ const produtosDB = [
       "imagens/Camisas-time/Ligue 1/Lyon/frente.jpg",
       "imagens/Camisas-time/Ligue 1/Lyon/costas.jpg",
     ],
-    preco: 180.0,
+    preco: 190.0,
   },
   // --- BUNDESLIGA ---
   {
@@ -1198,7 +1191,7 @@ const produtosDB = [
       "imagens/Camisas-time/Bundesliga/Bayern Munich especial/emblema.jpg",
       "imagens/Camisas-time/Bundesliga/Bayern Munich especial/gola.jpg",
     ],
-    preco: 180.0,
+    preco: 190.0,
   },
   {
     id: "bayern-1-2026",
@@ -1211,7 +1204,7 @@ const produtosDB = [
       "imagens/Camisas-time/Bundesliga/Bayern Munich I/emblema.jpg",
       "imagens/Camisas-time/Bundesliga/Bayern Munich I/gola.jpg",
     ],
-    preco: 180.0,
+    preco: 190.0,
   },
   {
     id: "borussia-1-2026",
@@ -1224,7 +1217,7 @@ const produtosDB = [
       "imagens/Camisas-time/Bundesliga/Borussia Dortmund/emblema.jpg",
       "imagens/Camisas-time/Bundesliga/Borussia Dortmund/gola.jpg",
     ],
-    preco: 180.0,
+    preco: 190.0,
   },
   // --- SERIE A ---
   {
@@ -1239,7 +1232,7 @@ const produtosDB = [
       "imagens/Camisas-time/SERIE A  - ITALIA/AC Milan I/gola.jpg",
       "imagens/Camisas-time/SERIE A  - ITALIA/AC Milan I/etiqueta.jpg",
     ],
-    preco: 180.0,
+    preco: 190.0,
   },
   {
     id: "ac-milan-2-2026",
@@ -1250,7 +1243,7 @@ const produtosDB = [
       "imagens/Camisas-time/SERIE A  - ITALIA/AC Milan II/frente.jpg",
       "imagens/Camisas-time/SERIE A  - ITALIA/AC Milan II/costas.jpg",
     ],
-    preco: 180.0,
+    preco: 190.0,
   },
   {
     id: "inter-milan-1-2026",
@@ -1264,7 +1257,7 @@ const produtosDB = [
       "imagens/Camisas-time/SERIE A  - ITALIA/Inter Milan I/gola.jpg",
       "imagens/Camisas-time/SERIE A  - ITALIA/Inter Milan I/etiqueta.jpg",
     ],
-    preco: 180.0,
+    preco: 190.0,
   },
   {
     id: "inter-milan-2-2026",
@@ -1275,32 +1268,32 @@ const produtosDB = [
       "imagens/Camisas-time/SERIE A  - ITALIA/Inter Milan II/frente.jpg",
       "imagens/Camisas-time/SERIE A  - ITALIA/Inter Milan II/costas.jpg",
       "imagens/Camisas-time/SERIE A  - ITALIA/Inter Milan II/emblema.jpg",
-      "imagens/Camisas-time/SERIE A  - ITALIA/Inter Milan II/gola.jpg",
+      "imagens/Camisas-time/SERIE A  - ITALIA/Inter Milan II/lateral.jpg",
       "imagens/Camisas-time/SERIE A  - ITALIA/Inter Milan II/etiqueta.jpg",
     ],
-    preco: 180.0,
+    preco: 190.0,
   },
   {
     id: "juventus-1-2026",
     nome: "Camisa Juventus I 2026",
     url: "produto.html?id=juventus-1-2026",
-    img: "imagens/Camisas-time/SERIE A  - ITALIA/Juventus I/frente.jpg",
+    img: "imagens/Camisas-time/SERIE A  - ITALIA/Juventus I/frente.png",
     galeria: [
-      "imagens/Camisas-time/SERIE A  - ITALIA/Juventus I/frente.jpg",
-      "imagens/Camisas-time/SERIE A  - ITALIA/Juventus I/costas.jpg",
+      "imagens/Camisas-time/SERIE A  - ITALIA/Juventus I/frente.png",
+      "imagens/Camisas-time/SERIE A  - ITALIA/Juventus I/costas.png",
     ],
-    preco: 180.0,
+    preco: 190.0,
   },
   {
     id: "juventus-2-2026",
     nome: "Camisa Juventus II 2026",
     url: "produto.html?id=juventus-2-2026",
-    img: "imagens/Camisas-time/SERIE A  - ITALIA/Juventus II/frente.jpg",
+    img: "imagens/Camisas-time/SERIE A  - ITALIA/Juventus II/frente.png",
     galeria: [
-      "imagens/Camisas-time/SERIE A  - ITALIA/Juventus II/frente.jpg",
+      "imagens/Camisas-time/SERIE A  - ITALIA/Juventus II/frente.png",
       "imagens/Camisas-time/SERIE A  - ITALIA/Juventus II/costas.jpg",
     ],
-    preco: 180.0,
+    preco: 190.0,
   },
   {
     id: "napoli-1-2026",
@@ -1314,7 +1307,7 @@ const produtosDB = [
       "imagens/Camisas-time/SERIE A  - ITALIA/Napoli I/gola.jpg",
       "imagens/Camisas-time/SERIE A  - ITALIA/Napoli I/lateral.jpg",
     ],
-    preco: 180.0,
+    preco: 190.0,
   },
   {
     id: "napoli-2-2026",
@@ -1325,7 +1318,7 @@ const produtosDB = [
       "imagens/Camisas-time/SERIE A  - ITALIA/Napoli II/frente.jpg",
       "imagens/Camisas-time/SERIE A  - ITALIA/Napoli II/costas.jpg",
     ],
-    preco: 180.0,
+    preco: 190.0,
   },
   {
     id: "roma-1-2026",
@@ -1336,7 +1329,7 @@ const produtosDB = [
       "imagens/Camisas-time/SERIE A  - ITALIA/Roma I/frente.jpg",
       "imagens/Camisas-time/SERIE A  - ITALIA/Roma I/costas.jpg",
     ],
-    preco: 180.0,
+    preco: 190.0,
   },
   {
     id: "roma-2-2026",
@@ -1350,7 +1343,7 @@ const produtosDB = [
       "imagens/Camisas-time/SERIE A  - ITALIA/Roma II/gola.jpg",
       "imagens/Camisas-time/SERIE A  - ITALIA/Roma II/lateral.jpg",
     ],
-    preco: 180.0,
+    preco: 190.0,
   },
   {
     id: "roma-3-2026",
@@ -1364,7 +1357,7 @@ const produtosDB = [
       "imagens/Camisas-time/SERIE A  - ITALIA/Roma III/gola.jpg",  
       "imagens/Camisas-time/SERIE A  - ITALIA/Roma III/lateral.jpg",
     ],
-    preco: 180.0,
+    preco: 190.0,
   },
 ];
 
@@ -1377,6 +1370,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Carrega produtos relacionados se o container existir
   exibirProdutosRelacionados();
+
+  // Adiciona o preço com desconto Pix nos cards de produtos
+  calcularPrecoPixCards();
 
   // Se estivermos na página do carrinho, renderiza os itens
   if (document.getElementById("lista-carrinho")) {
@@ -1760,11 +1756,16 @@ function atualizarTotalComFrete() {
 
 // Alterna entre "Com Personalização" e "Sem Personalização", ajustando o preço
 function alternarPersonalizacao(querPersonalizar) {
+  if (querPersonalizar) {
+    mostrarNotificacao("⚠️ A personalização de camisas está temporariamente indisponível.", "erro");
+    return;
+  }
+
   const campos = document.getElementById("campos-personalizar");
   const status = document.getElementById("status-personalizacao");
   const btnCom = document.getElementById("btn-com-perso");
   const btnSem = document.getElementById("btn-sem-perso");
-  const precoElemento = document.querySelector(".preco-destaque");
+  const precoElemento = document.querySelector(".info .preco-destaque");
 
   // Salva o preço base original na primeira vez que a função é chamada
   if (precoElemento && !precoElemento.dataset.precoBase) {
@@ -1849,7 +1850,7 @@ function finalizarCompra() {
     const imagemSrc = document.getElementById("imagemPrincipal").src;
 
     // Lógica de Preço
-    const precoElemento = document.querySelector(".preco-destaque");
+    const precoElemento = document.querySelector(".info .preco-destaque");
     let precoFinal;
 
     if (precoElemento.dataset.precoBase) {
@@ -1928,8 +1929,8 @@ function finalizarCompra() {
 // --- Sistema de Cupons ---
 // --- Sistema de Cupons ---
 const cuponsValidos = {
-  BEMVINDO10: 0.1, // 10% de desconto
-  GPTSTORE: 0.15, // 15% de desconto
+  BEMVINDO10: 0.1, // 10% de desconto, 
+  AMIGOSDPADILHA: 35, // R$ 35 de desconto fixo
 };
 
 // Carrega a biblioteca de confetes dinamicamente
@@ -2056,7 +2057,21 @@ function renderizarCarrinho() {
   const cupomAtivo = localStorage.getItem("cupomAtivo");
   let desconto = 0;
   if (cupomAtivo && cuponsValidos[cupomAtivo]) {
-    desconto = subtotal * cuponsValidos[cupomAtivo];
+    const valorCupom = cuponsValidos[cupomAtivo];
+    // Se for menor ou igual a 1, entende-se como porcentagem (ex: 0.1). Caso contrário, valor fixo.
+    if (valorCupom <= 1) {
+      desconto = subtotal * valorCupom;
+    } else {
+      desconto = Math.min(valorCupom, subtotal); // Math.min evita que o desconto seja maior que o subtotal
+    }
+  }
+
+  // Lógica de Desconto Pix
+  let descontoPix = 0;
+  const pagamentoSelecionado = localStorage.getItem("pagamentoCliente");
+  // Não aplica o desconto de Pix se o cupom AMIGOSDPADILHA estiver ativo
+  if (pagamentoSelecionado === "Pix" && cupomAtivo !== "AMIGOSDPADILHA") {
+    descontoPix = (subtotal - desconto) * 0.05;
   }
 
   // Lógica de Frete (Recupera do LocalStorage)
@@ -2076,7 +2091,7 @@ function renderizarCarrinho() {
     }
   }
 
-  const totalFinal = subtotal - desconto + valorFrete;
+  const totalFinal = subtotal - desconto - descontoPix + valorFrete;
 
   // Adiciona o campo de cupom ao final da lista
   lista.innerHTML += `
@@ -2087,6 +2102,7 @@ function renderizarCarrinho() {
             ${cupomAtivo ? `<button class="btn-remover-cupom" onclick="removerCupom()" title="Remover cupom">❌</button>` : ""}
         </div>
         ${desconto > 0 ? `<div class="resumo-desconto"><p>Subtotal: R$ ${formatarPreco(subtotal)}</p><p class="texto-desconto">Desconto (${cupomAtivo}): - R$ ${formatarPreco(desconto)}</p></div>` : ""}
+        ${descontoPix > 0 ? `<div class="resumo-desconto"><p class="texto-desconto">Desconto Pix (5%): - R$ ${formatarPreco(descontoPix)}</p></div>` : ""}
         ${dadosFrete ? `<div class="resumo-desconto">${htmlFrete}</div>` : ""}
     </div>
   `;
@@ -2202,10 +2218,24 @@ function finalizarPedidoWhatsApp() {
   // Verifica se tem cupom para o WhatsApp
   const cupomAtivo = localStorage.getItem("cupomAtivo");
   if (cupomAtivo && cuponsValidos[cupomAtivo]) {
-    const desconto = total * cuponsValidos[cupomAtivo];
+    let desconto = 0;
+    const valorCupom = cuponsValidos[cupomAtivo];
+    if (valorCupom <= 1) {
+      desconto = total * valorCupom;
+    } else {
+      desconto = Math.min(valorCupom, total);
+    }
     mensagem += `🏷️ *Subtotal: R$ ${formatarPreco(total)}*\n`;
     mensagem += `🎟️ *Cupom (${cupomAtivo}): - R$ ${formatarPreco(desconto)}*\n`;
     total -= desconto;
+  }
+
+  // Verifica desconto Pix
+  // Não aplica o desconto de Pix se o cupom AMIGOSDPADILHA estiver ativo
+  if (pagamento === "Pix" && cupomAtivo !== "AMIGOSDPADILHA") {
+    const descontoPix = total * 0.05;
+    mensagem += `💸 *Desconto Pix (5%): - R$ ${formatarPreco(descontoPix)}*\n`;
+    total -= descontoPix;
   }
 
   // Adiciona o Frete na mensagem do WhatsApp
@@ -2256,11 +2286,52 @@ function esvaziarCarrinho() {
 
 // Calcula o preço com 5% de desconto para exibição (Pix)
 function calcularPrecoPix() {
-  // Função desativada para não exibir mais o desconto de 5% no Pix
+  const precoElemento = document.querySelector(".info .preco-destaque");
+  if (!precoElemento) return;
+
   const pixAnterior = document.querySelector(".preco-pix");
   if (pixAnterior) {
     pixAnterior.remove();
   }
+
+  let precoBase = 0;
+  if (precoElemento.dataset.precoBase) {
+    precoBase = parseFloat(precoElemento.dataset.precoBase);
+  } else {
+    const textoPreco = precoElemento.childNodes[0].textContent;
+    precoBase = parseFloat(
+      textoPreco.replace("R$", "").replace(/\./g, "").replace(",", ".").trim()
+    );
+  }
+
+  const precoPix = precoBase * 0.95;
+
+  const divPrecoPix = document.createElement("div");
+  divPrecoPix.classList.add("preco-pix");
+  divPrecoPix.innerHTML = `<strong>R$ ${formatarPreco(precoPix)}</strong> no Pix (5% off)`;
+
+  precoElemento.parentNode.insertBefore(divPrecoPix, precoElemento.nextSibling);
+}
+
+// Adiciona o valor do Pix nos cards de listagem de produtos
+function calcularPrecoPixCards() {
+  const cards = document.querySelectorAll(".card");
+  cards.forEach((card) => {
+    const precoElemento = card.querySelector(".preco-destaque");
+    if (!precoElemento) return;
+
+    const textoPreco = precoElemento.textContent;
+    const precoBase = parseFloat(
+      textoPreco.replace("R$", "").replace(/\./g, "").replace(",", ".").trim()
+    );
+
+    if (!isNaN(precoBase)) {
+      const precoPix = precoBase * 0.95;
+      precoElemento.classList.remove("preco-destaque");
+      precoElemento.classList.add("preco-pix-card");
+      precoElemento.innerHTML = `<strong>R$ ${formatarPreco(precoPix)}</strong> no Pix (5% off)`;
+    }
+  });
 }
 
 // Função auxiliar para formatar preço (R$) - Troca ponto por vírgula
@@ -2382,11 +2453,12 @@ function exibirProdutosRelacionados() {
   let html = `<h2 class="titulo-relacionados">Você também pode gostar</h2><div class="container-produtos">`;
 
   produtosAleatorios.forEach((produto) => {
+    const precoPix = produto.preco * 0.95;
     html += `
         <div class="card">
             <img src="${produto.img}" alt="${produto.nome}" onclick="window.location.href='${produto.url}'" style="cursor: pointer;">
             <h3>${produto.nome}</h3>
-            <p class="preco-destaque">R$ ${formatarPreco(produto.preco)}</p>
+            <p class="preco-pix-card"><strong>R$ ${formatarPreco(precoPix)}</strong> no Pix (5% off)</p>
             <button onclick="window.location.href='${produto.url}'">Ver Detalhes</button>
         </div>
     `;
