@@ -3,7 +3,7 @@
 const produtosDB = [
   {
     id: "selecao-brasileira-1-2026",
-    nome: "Camisa Seleção Brasileira I 2026",
+    nome: "Camisa Seleção Brasileira I 2026 - VERSÃO JOGADOR",
     url: "produto.html?id=selecao-brasileira-1-2026",
     img: "imagens/Camisas-time/Seleções/Seleção Brasileira 1/Frente.jpg",
     galeria: [
