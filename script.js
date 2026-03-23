@@ -127,7 +127,7 @@ const produtosDB = [
       "imagens/Camisas-time/Seleções/Brasileira - retro penta/ronaldo.png",
       "imagens/Camisas-time/Seleções/Brasileira - retro penta/Ronaldinho.webp",
     ],
-    preco: 200.0,
+    preco: 230.0,
   },
   {
     id: "selecao-brasileira-fem-1",
