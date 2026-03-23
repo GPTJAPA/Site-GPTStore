@@ -207,6 +207,9 @@ const produtosDB = [
     galeria: [
       "imagens/Camisas-time/Seleções/Espanha/frente.jpg",
       "imagens/Camisas-time/Seleções/Espanha/costas.jpg",
+      "imagens/Camisas-time/Seleções/Espanha/emblema.jpg",
+      "imagens/Camisas-time/Seleções/Espanha/etiqueta.jpg",
+      "imagens/Camisas-time/Seleções/Espanha/gola.jpg",
     ],
     preco: 200.0,
   },
@@ -2430,6 +2433,7 @@ function calcularPrecoPix() {
   const precoElemento =
     document.querySelector(".info .preco-destaque") ||
     document.querySelector(".preco-destaque");
+    document.querySelector(".info .preco-destaque");
   if (!precoElemento) return;
 
   const pixAnterior = document.querySelector(".preco-pix");
@@ -2671,6 +2675,24 @@ function subirTopo() {
 }
 
 // Função para abrir/fechar o Menu Hambúrguer no mobile
+function toggleMenu() {
+  const navLinks = document.querySelector(".nav-links");
+  const menuToggle = document.querySelector(".menu-toggle");
+  navLinks.classList.toggle("active");
+  if (menuToggle) menuToggle.classList.toggle("active");
+}
+function toggleMenu() {
+  const navLinks = document.querySelector(".nav-links");
+  const menuToggle = document.querySelector(".menu-toggle");
+  navLinks.classList.toggle("active");
+  if (menuToggle) menuToggle.classList.toggle("active");
+}
+function toggleMenu() {
+  const navLinks = document.querySelector(".nav-links");
+  const menuToggle = document.querySelector(".menu-toggle");
+  navLinks.classList.toggle("active");
+  if (menuToggle) menuToggle.classList.toggle("active");
+}
 function toggleMenu() {
   const navLinks = document.querySelector(".nav-links");
   const menuToggle = document.querySelector(".menu-toggle");
