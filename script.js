@@ -723,7 +723,6 @@ const produtosDB = [
     galeria: [
       "imagens/Camisas-time/Brasileirão A/São Paulo/frente.jpg",
       "imagens/Camisas-time/Brasileirão A/São Paulo/costas.jpg",
-      ,
     ],
     preco: 200.0,
   },
@@ -1092,7 +1091,6 @@ const produtosDB = [
       "imagens/Camisas-time/Premier league/Newcastle I/frente.jpg",
       "imagens/Camisas-time/Premier league/Newcastle I/costas.jpg",
       "imagens/Camisas-time/Premier league/Newcastle I/emblema.jpg",
-      ,
       "imagens/Camisas-time/Premier league/Newcastle I/gola.jpg",
     ],
     preco: 200.0,
@@ -1470,24 +1468,6 @@ document.addEventListener("DOMContentLoaded", () => {
   // Calcula e exibe o preço do Pix automaticamente
   // Pega o preço principal e aplica 5% de desconto visualmente
   calcularPrecoPix();
-
-  // ForchInput.addEventListener("keydown", (e) => {
-  if (e.key === "Enter") {
-    const termo = normalizarTexto(e.target.value);
-    const resultados = produtosDB.filter((produto) =>
-      normalizarTexto(produto.nome).includes(termo),
-    );
-    if (resultados.length > 0) {
-      window.location.href = resultados[0].url;
-    }
-  }
-});
-
-// Fecha a busca ao clicar fora
-document.addEventListener("click", (e) => {
-  if (!searchBox.contains(e.target)) {
-    resultsContainer.classList.remove("ativo");
-  }
 });
 
 // Calcula e exibe o preço do Pix automaticamente
@@ -1649,10 +1629,43 @@ function carregarProdutoDinamico() {
   }
 }
 
+// --- Helpers Seguros para LocalStorage ---
+function obterCarrinho() {
+  try {
+    const dados = localStorage.getItem("carrinho");
+    if (!dados) return [];
+    const parsed = JSON.parse(dados);
+    if (!Array.isArray(parsed)) return [];
+    // Proteção extra: remove itens nulos ou corrompidos de testes anteriores
+    const validos = parsed.filter(
+      (item) => item && typeof item === "object" && item.nome,
+    );
+    if (validos.length !== parsed.length) {
+      localStorage.setItem("carrinho", JSON.stringify(validos));
+    }
+    return validos;
+  } catch (e) {
+    console.warn("Carrinho corrompido no localStorage. Resetando...");
+    localStorage.removeItem("carrinho");
+    return [];
+  }
+}
+
+function obterFreteSalvo() {
+  try {
+    const dados = localStorage.getItem("dadosFrete");
+    if (!dados) return null;
+    return JSON.parse(dados);
+  } catch (e) {
+    localStorage.removeItem("dadosFrete");
+    return null;
+  }
+}
+
 // Atualiza o número vermelho no ícone do carrinho no menu
 function atualizarContadorCarrinho() {
   // Recupera a quantidade salva no navegador ou usa 0 se não existir
-  const carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
+  const carrinho = obterCarrinho();
   const qtd = carrinho.reduce(
     (total, item) => total + (item.quantidade || 1),
     0,
@@ -1682,7 +1695,10 @@ function selecionarTamanho(elemento) {
   elemento.classList.add("ativo");
 
   // Atualiza o texto
-  document.getElementById("tamanho-selecionado").innerText = elemento.innerText;
+  const txtTamanho = document.getElementById("tamanho-selecionado");
+  if (txtTamanho) {
+    txtTamanho.innerText = elemento.innerText;
+  }
 }
 
 // Variável global para armazenar o frete escolhido
@@ -1692,8 +1708,10 @@ let tipoFreteSelecionado = "";
 // Consulta a API ViaCEP e calcula o frete baseado na região
 async function calcularFrete() {
   const cepInput = document.getElementById("cep-input");
+  if (!cepInput) return;
   const cep = cepInput.value.replace(/\D/g, ""); // Remove o traço para validar apenas números
   const campoResultado = document.getElementById("resultado-frete");
+  if (!campoResultado) return;
 
   if (cep.length !== 8) {
     mostrarNotificacao("Por favor, digite um CEP válido.", "erro");
@@ -1708,8 +1726,18 @@ async function calcularFrete() {
   freteSelecionado = 0;
 
   try {
+    // Adiciona um AbortController para evitar requests presos (timeout de 10s)
+    const controller = new AbortController();
+    const timeoutId = setTimeout(() => controller.abort(), 10000);
+
     // Consulta a API ViaCEP
-    const response = await fetch(`https://viacep.com.br/ws/${cep}/json/`);
+    const response = await fetch(`https://viacep.com.br/ws/${cep}/json/`, {
+      signal: controller.signal,
+    });
+    clearTimeout(timeoutId);
+
+    if (!response.ok) throw new Error("Erro na API ViaCEP");
+
     const data = await response.json();
 
     if (data.erro) {
@@ -1773,7 +1801,21 @@ async function calcularFrete() {
 
     campoResultado.innerHTML = resultadoHTML;
   } catch (error) {
-    campoResultado.innerHTML = `<p style="color: #dc3545;">Erro ao calcular frete.</p>`;
+    console.error("Erro no frete:", error);
+    // Fallback para permitir a compra mesmo se a API dos Correios/ViaCEP estiver fora do ar ou bloqueada
+    let fallbackHTML = `
+      <p style="color: #dc3545; font-size: 0.9rem; margin-bottom: 10px;">Falha ao buscar o CEP automaticamente, mas você pode prosseguir escolhendo uma opção abaixo:</p>
+      <label class="item-frete">
+          <input type="radio" name="frete" value="35.00" onchange="selecionarFrete(this.value, 'Correios (PAC)')">
+          <span><strong>Correios (PAC):</strong> R$ 35,00 (5-10 dias úteis)</span>
+      </label>
+      <label class="item-frete">
+          <input type="radio" name="frete" value="55.00" onchange="selecionarFrete(this.value, 'Sedex (Expresso)')">
+          <span><strong>Sedex (Expresso):</strong> R$ 55,00 (2-5 dias úteis)</span>
+      </label>
+      <div id="total-com-frete" class="total-frete-container"></div>
+    `;
+    campoResultado.innerHTML = fallbackHTML;
   }
 }
 
@@ -1790,11 +1832,15 @@ function atualizarTotalComFrete() {
   if (!divTotal || freteSelecionado === 0) return;
 
   // Pega o preço atual do produto (já considerando personalização)
-  const precoElemento = document.querySelector(".preco-destaque");
+  const precoElemento =
+    document.querySelector(".info .preco-destaque") ||
+    document.querySelector(".preco-destaque");
   let precoProduto = 0;
 
   if (precoElemento) {
-    const textoPreco = precoElemento.childNodes[0].textContent;
+    const textoPreco = precoElemento.childNodes[0]
+      ? precoElemento.childNodes[0].textContent
+      : precoElemento.textContent;
     precoProduto = parseFloat(
       textoPreco.replace("R$", "").replace(/\./g, "").replace(",", ".").trim(),
     );
@@ -1820,11 +1866,17 @@ function alternarPersonalizacao(querPersonalizar) {
   const status = document.getElementById("status-personalizacao");
   const btnCom = document.getElementById("btn-com-perso");
   const btnSem = document.getElementById("btn-sem-perso");
-  const precoElemento = document.querySelector(".info .preco-destaque");
+  const precoElemento =
+    document.querySelector(".info .preco-destaque") ||
+    document.querySelector(".preco-destaque");
+
+  if (!campos || !status || !btnCom || !btnSem) return;
 
   // Salva o preço base original na primeira vez que a função é chamada
   if (precoElemento && !precoElemento.dataset.precoBase) {
-    const textoPreco = precoElemento.childNodes[0].textContent;
+    const textoPreco = precoElemento.childNodes[0]
+      ? precoElemento.childNodes[0].textContent
+      : precoElemento.textContent;
     precoElemento.dataset.precoBase = parseFloat(
       textoPreco.replace("R$", "").replace(/\./g, "").replace(",", ".").trim(),
     );
@@ -1875,13 +1927,16 @@ function finalizarCompra() {
   // 1. Validação (Antes do Loading)
   const areaPersonalizar = document.getElementById("campos-personalizar");
   const isPersonalizado =
+    areaPersonalizar &&
     !areaPersonalizar.classList.contains("resultado-oculto");
   let nome = "";
   let numero = "";
 
   if (isPersonalizado) {
-    nome = document.getElementById("nome-camisa").value.trim().toUpperCase();
-    numero = document.getElementById("numero-camisa").value.trim();
+    const nomeEl = document.getElementById("nome-camisa");
+    const numeroEl = document.getElementById("numero-camisa");
+    nome = nomeEl ? nomeEl.value.trim().toUpperCase() : "";
+    numero = numeroEl ? numeroEl.value.trim() : "";
 
     if (!nome || !numero) {
       mostrarNotificacao("Preencha Nome e Número para personalizar!", "erro");
@@ -1891,6 +1946,7 @@ function finalizarCompra() {
 
   // 2. Ativa o efeito de Loading
   const btn = document.querySelector(".btn-comprar");
+  if (!btn) return;
   const textoOriginal = btn.innerText;
 
   btn.innerText = "Adicionando... ⏳";
@@ -1900,84 +1956,113 @@ function finalizarCompra() {
 
   // 3. Simula o tempo de processamento
   setTimeout(() => {
-    const tamanho = document.getElementById("tamanho-selecionado").innerText;
-    const nomeProduto = document.querySelector(".info h2").innerText;
-    const imagemSrc = document.getElementById("imagemPrincipal").src;
+    try {
+      const tamanhoEl = document.getElementById("tamanho-selecionado");
+      let tamanho = "Padrão";
+      if (tamanhoEl && tamanhoEl.innerText.trim() !== "") {
+        tamanho = tamanhoEl.innerText;
+      } else {
+        const btnAtivo = document.querySelector(".btn-tam.ativo");
+        if (btnAtivo) tamanho = btnAtivo.innerText;
+      }
 
-    // Lógica de Preço
-    const precoElemento = document.querySelector(".info .preco-destaque");
-    let precoFinal;
+      const tituloEl =
+        document.querySelector(".info h2") || document.querySelector("h2");
+      const nomeProduto = tituloEl ? tituloEl.innerText : "Produto";
 
-    if (precoElemento.dataset.precoBase) {
-      precoFinal = parseFloat(precoElemento.dataset.precoBase);
-    } else {
-      const textoPreco = precoElemento.childNodes[0].textContent;
-      precoFinal = parseFloat(
-        textoPreco
-          .replace("R$", "")
-          .replace(/\./g, "")
-          .replace(",", ".")
-          .trim(),
-      );
-    }
+      const imgEl =
+        document.getElementById("imagemPrincipal") ||
+        document.querySelector(".main-img-container img");
+      const imagemSrc = imgEl ? imgEl.src : "";
 
-    const CUSTO_PERSONALIZACAO = 25.0;
-    let detalhesPersonalizacao = "Sem personalização";
+      // Lógica de Preço
+      const precoElemento =
+        document.querySelector(".info .preco-destaque") ||
+        document.querySelector(".preco-destaque");
+      let precoFinal = 0;
 
-    if (isPersonalizado) {
-      precoFinal += CUSTO_PERSONALIZACAO;
-      detalhesPersonalizacao = `${nome} (${numero})`;
-    }
+      if (precoElemento) {
+        if (precoElemento.dataset.precoBase) {
+          precoFinal = parseFloat(precoElemento.dataset.precoBase);
+        } else {
+          const textoPreco = precoElemento.childNodes[0]
+            ? precoElemento.childNodes[0].textContent
+            : precoElemento.textContent;
+          precoFinal = parseFloat(
+            textoPreco
+              .replace("R$", "")
+              .replace(/\./g, "")
+              .replace(",", ".")
+              .trim(),
+          );
+        }
+      }
 
-    // Criação do objeto
-    const produto = {
-      nome: nomeProduto,
-      preco: precoFinal,
-      tamanho: tamanho,
-      imagem: imagemSrc,
-      personalizacao: detalhesPersonalizacao,
-      quantidade: 1,
-    };
+      const CUSTO_PERSONALIZACAO = 25.0;
+      let detalhesPersonalizacao = "Sem personalização";
 
-    // Salvar no localStorage
-    const carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
-    const indexExistente = carrinho.findIndex(
-      (item) =>
-        item.nome === produto.nome &&
-        item.tamanho === produto.tamanho &&
-        item.personalizacao === produto.personalizacao,
-    );
+      if (isPersonalizado) {
+        precoFinal += CUSTO_PERSONALIZACAO;
+        detalhesPersonalizacao = `${nome} (${numero})`;
+      }
 
-    if (indexExistente !== -1) {
-      carrinho[indexExistente].quantidade =
-        (carrinho[indexExistente].quantidade || 1) + 1;
-    } else {
-      carrinho.push(produto);
-    }
-
-    // Salvar Frete no LocalStorage se foi selecionado
-    if (freteSelecionado > 0 || tipoFreteSelecionado === "Retirada na Loja") {
-      const dadosFrete = {
-        valor: freteSelecionado,
-        tipo: tipoFreteSelecionado,
+      // Criação do objeto
+      const produto = {
+        nome: nomeProduto,
+        preco: precoFinal || 0,
+        tamanho: tamanho,
+        imagem: imagemSrc,
+        personalizacao: detalhesPersonalizacao,
+        quantidade: 1,
       };
-      localStorage.setItem("dadosFrete", JSON.stringify(dadosFrete));
+
+      // Salvar no localStorage
+      const carrinho = obterCarrinho();
+      const indexExistente = carrinho.findIndex(
+        (item) =>
+          item.nome === produto.nome &&
+          item.tamanho === produto.tamanho &&
+          item.personalizacao === produto.personalizacao,
+      );
+
+      if (indexExistente !== -1) {
+        carrinho[indexExistente].quantidade =
+          (carrinho[indexExistente].quantidade || 1) + 1;
+      } else {
+        carrinho.push(produto);
+      }
+
+      // Salvar Frete no LocalStorage se foi selecionado
+      if (freteSelecionado > 0 || tipoFreteSelecionado === "Retirada na Loja") {
+        const dadosFrete = {
+          valor: freteSelecionado,
+          tipo: tipoFreteSelecionado,
+        };
+        localStorage.setItem("dadosFrete", JSON.stringify(dadosFrete));
+      }
+
+      localStorage.setItem("carrinho", JSON.stringify(carrinho));
+      atualizarContadorCarrinho();
+
+      // 4. Restaura o botão e mostra sucesso
+      btn.innerText = textoOriginal;
+      btn.disabled = false;
+      btn.style.opacity = "1";
+      btn.style.cursor = "pointer";
+
+      const precoFormatado = formatarPreco(precoFinal || 0);
+      mostrarNotificacao(
+        `Adicionado ao carrinho!<br><strong>${nomeProduto}</strong><br>Total: R$ ${precoFormatado}`,
+        "sucesso",
+      );
+    } catch (err) {
+      console.error("Erro ao adicionar ao carrinho: ", err);
+      btn.innerText = textoOriginal;
+      btn.disabled = false;
+      btn.style.opacity = "1";
+      btn.style.cursor = "pointer";
+      mostrarNotificacao("Erro ao adicionar produto.", "erro");
     }
-
-    localStorage.setItem("carrinho", JSON.stringify(carrinho));
-    atualizarContadorCarrinho();
-
-    // 4. Restaura o botão e mostra sucesso
-    btn.innerText = textoOriginal;
-    btn.disabled = false;
-    btn.style.opacity = "1";
-    btn.style.cursor = "pointer";
-
-    const precoFormatado = formatarPreco(precoFinal);
-    mostrarNotificacao(
-      `Adicionado ao carrinho!<br><strong>${nomeProduto}</strong><br>Total: R$ ${precoFormatado}`,
-      "sucesso",
-    );
   }, 1000); // 1 segundo de delay
 }
 
@@ -2036,7 +2121,7 @@ function removerFrete() {
 function renderizarCarrinho() {
   const lista = document.getElementById("lista-carrinho");
   const totalEl = document.getElementById("valor-total");
-  const carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
+  const carrinho = obterCarrinho();
   const btnWhatsapp = document.querySelector(".btn-whatsapp");
   const btnEsvaziar = document.querySelector(".btn-esvaziar");
 
@@ -2130,7 +2215,7 @@ function renderizarCarrinho() {
   }
 
   // Lógica de Frete (Recupera do LocalStorage)
-  const dadosFrete = JSON.parse(localStorage.getItem("dadosFrete"));
+  const dadosFrete = obterFreteSalvo();
   let valorFrete = 0;
   let htmlFrete = "";
 
@@ -2176,7 +2261,8 @@ function renderizarCarrinho() {
 
 // Aumenta ou diminui a quantidade de um item no carrinho
 function alterarQuantidade(index, mudanca) {
-  const carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
+  const carrinho = obterCarrinho();
+  if (!carrinho[index]) return;
   if (!carrinho[index].quantidade) carrinho[index].quantidade = 1;
 
   carrinho[index].quantidade += mudanca;
@@ -2199,7 +2285,7 @@ function alterarQuantidade(index, mudanca) {
 
 // Remove um item específico do carrinho
 function removerItem(index) {
-  const carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
+  const carrinho = obterCarrinho();
   const nomeItem = carrinho[index] ? carrinho[index].nome : "Item";
   carrinho.splice(index, 1); // Remove o item pelo índice
   localStorage.setItem("carrinho", JSON.stringify(carrinho));
@@ -2210,7 +2296,7 @@ function removerItem(index) {
 
 // Monta a mensagem formatada e abre o WhatsApp
 function finalizarPedidoWhatsApp() {
-  const carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
+  const carrinho = obterCarrinho();
 
   if (carrinho.length === 0) {
     mostrarNotificacao("Seu carrinho está vazio!", "erro");
@@ -2294,7 +2380,7 @@ function finalizarPedidoWhatsApp() {
   }
 
   // Adiciona o Frete na mensagem do WhatsApp
-  const dadosFrete = JSON.parse(localStorage.getItem("dadosFrete"));
+  const dadosFrete = obterFreteSalvo();
   if (dadosFrete) {
     let valorFrete = dadosFrete.valor;
     let textoFrete = `🚚 *Frete (${dadosFrete.tipo}): R$ ${formatarPreco(valorFrete)}*`;
@@ -2341,7 +2427,9 @@ function esvaziarCarrinho() {
 
 // Calcula o preço com 5% de desconto para exibição (Pix)
 function calcularPrecoPix() {
-  const precoElemento = document.querySelector(".info .preco-destaque");
+  const precoElemento =
+    document.querySelector(".info .preco-destaque") ||
+    document.querySelector(".preco-destaque");
   if (!precoElemento) return;
 
   const pixAnterior = document.querySelector(".preco-pix");
@@ -2353,7 +2441,9 @@ function calcularPrecoPix() {
   if (precoElemento.dataset.precoBase) {
     precoBase = parseFloat(precoElemento.dataset.precoBase);
   } else {
-    const textoPreco = precoElemento.childNodes[0].textContent;
+    const textoPreco = precoElemento.childNodes[0]
+      ? precoElemento.childNodes[0].textContent
+      : precoElemento.textContent;
     precoBase = parseFloat(
       textoPreco.replace("R$", "").replace(/\./g, "").replace(",", ".").trim(),
     );
