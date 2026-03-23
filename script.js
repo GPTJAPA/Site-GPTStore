@@ -1612,6 +1612,19 @@ function carregarProdutoDinamico() {
       precoEl.innerHTML = `R$ ${formatarPreco(produto.preco)} `;
       delete precoEl.dataset.precoBase;
     }
+
+    // Limpa as miniaturas antigas e carrega a galeria do produto
+    const thumbnailsContainer = document.querySelector(".thumbnails");
+    if (thumbnailsContainer) {
+      thumbnailsContainer.innerHTML = "";
+
+      // Se o produto tiver uma lista 'galeria', usa ela. Senão, usa apenas a imagem principal.
+      const imagensMiniatura = produto.galeria || [produto.img];
+
+      imagensMiniatura.forEach((caminhoImg, index) => {
+        thumbnailsContainer.innerHTML += `<img src="${caminhoImg}" onclick="trocarImagem(this.src)" alt="Foto ${index + 1}" loading="lazy">`;
+      });
+    }
   } else {
     // Tratamento para produto não encontrado (Evita tela quebrada)
     document.title = "Produto não encontrado - GPT STORE";
@@ -1633,60 +1646,6 @@ function carregarProdutoDinamico() {
       btnComprar.style.boxShadow = "none";
       btnComprar.style.transform = "none";
     }
-  }
-
-  // Limpa as miniaturas antigas e carrega a galeria do produto
-  const thumbnailsContainer = document.querySelector(".thumbnails");
-  if (thumbnailsContainer) {
-    thumbnailsContainer.innerHTML = "";
-
-    // Se o produto tiver uma lista 'galeria', usa ela. Senão, usa apenas a imagem principal.
-    const imagensMiniatura = produto.galeria || [produto.img];
-
-    const contador = document.getElementById("contador-carrinho");
-    if (contador) {
-      contador.innerText = qtd;
-    }
-  }
-
-  //Troca a imagem principal do produto ao clicar nas miniaturas
-  function trocarImagem(enderecoDaImagem) {
-    const imagemPrincipal = document.getElementById("imagemPrincipal");
-    if (imagemPrincipal) {
-      imagemPrincipal.src = enderecoDaImagem;
-    }
-  }
-
-  // Gerencia a seleção visual dos botões de tamanho (P, M, G...)
-  function selecionarTamanho(elemento) {
-    //  imagensMiniatura.forEach((caminhoImg, index) => {
-    // Removi o 'onerror' para que você possa ver exatamente quais imagens não estão sendo encontradas na pasta
-    thumbnailsContainer.innerHTML += `<img src="${caminhoImg}" onclick="trocarImagem(this.src)" alt="Foto ${index + 1}" loading="lazy">`;
-  }
-}
-
-// Atualiza Preço e remove o data-attribute para a personalização não bugar
-const precoEl = document.querySelector(".preco-destaque");
-if (precoEl) {
-  precoEl.innerHTML = `R$ ${formatarPreco(produto.preco)} `;
-  delete precoEl.dataset.precoBase;
-} else {
-  // Tratamento para produto não encontrado (Evita tela quebrada)
-  document.title = "Produto não encontrado - GPT STORE";
-  const tituloEl = document.querySelector(".info h2");
-  if (tituloEl) tituloEl.innerText = "Produto Indisponível ou Não Encontrado";
-
-  const precoEl = document.querySelector(".preco-destaque");
-  if (precoEl) precoEl.innerText = "R$ 0,00";
-
-  const btnComprar = document.querySelector(".btn-comprar");
-  if (btnComprar) {
-    btnComprar.innerText = "INDISPONÍVEL";
-    btnComprar.disabled = true;
-    btnComprar.style.backgroundColor = "#ccc";
-    btnComprar.style.cursor = "not-allowed";
-    btnComprar.style.boxShadow = "none";
-    btnComprar.style.transform = "none";
   }
 }
 
