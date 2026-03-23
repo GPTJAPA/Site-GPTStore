@@ -1446,7 +1446,20 @@ document.addEventListener("DOMContentLoaded", () => {
       resultsContainer.classList.add("ativo");
     });
 
-    // Fecha a busca ao clicar fora
+    // Permite que o usuário aperte "Enter" para ir para o primeiro resultadoPermite que o usuário aperte "Enter" para ir para o primeiro resultado
+    searchInput.addEventListener("keydown", (e) => {
+      if (e.key === "Enter") {
+        const termo = normalizarTexto(e.target.value);
+        const resultados = produtosDB.filter((produto) =>
+          normalizarTexto(produto.nome).includes(termo),
+        );
+        if (resultados.length > 0) {
+          window.location.href = resultados[0].url;
+        }
+      }
+    });
+
+    // Fecha a busca a clicar fora
     document.addEventListener("click", (e) => {
       if (!searchBox.contains(e.target)) {
         resultsContainer.classList.remove("ativo");
@@ -1458,95 +1471,114 @@ document.addEventListener("DOMContentLoaded", () => {
   // Pega o preço principal e aplica 5% de desconto visualmente
   calcularPrecoPix();
 
-  // Força o nome da personalização a ser maiúsculo enquanto digita
-  const inputNome = document.getElementById("nome-camisa");
-  if (inputNome) {
-    inputNome.addEventListener("input", (e) => {
-      e.target.value = e.target.value.toUpperCase();
-    });
-  }
-
-  // Fecha o modal se clicar fora dele
-  // Melhora a usabilidade permitindo fechar janelas clicando no fundo escuro
-  window.addEventListener("click", (event) => {
-    const modal = document.getElementById("modal-medidas");
-    if (event.target === modal) {
-      modal.style.display = "none";
+  // ForchInput.addEventListener("keydown", (e) => {
+  if (e.key === "Enter") {
+    const termo = normalizarTexto(e.target.value);
+    const resultados = produtosDB.filter((produto) =>
+      normalizarTexto(produto.nome).includes(termo),
+    );
+    if (resultados.length > 0) {
+      window.location.href = resultados[0].url;
     }
-  });
-
-  // Inicia o carrossel se houver slides na página
-  iniciarCarrossel();
-
-  // Lógica do Botão Voltar ao Topo
-  // Mostra o botão apenas quando o usuário rola a página para baixo
-  const btnTopo = document.getElementById("btn-topo");
-  window.addEventListener("scroll", () => {
-    if (btnTopo) {
-      if (
-        document.body.scrollTop > 300 ||
-        document.documentElement.scrollTop > 300
-      ) {
-        btnTopo.style.display = "block";
-      } else {
-        btnTopo.style.display = "none";
-      }
-    }
-  });
-
-  // Fecha o menu mobile automaticamente ao clicar em um link
-  // Melhora a experiência no celular, fechando o menu após a navegação
-  const linksMenu = document.querySelectorAll(".nav-links a");
-  const menuNav = document.querySelector(".nav-links");
-  const menuToggle = document.querySelector(".menu-toggle");
-
-  if (menuNav) {
-    linksMenu.forEach((link) => {
-      link.addEventListener("click", () => {
-        menuNav.classList.remove("active");
-        if (menuToggle) menuToggle.classList.remove("active");
-      });
-    });
-  }
-
-  // Fecha o menu mobile ao clicar fora dele
-  // Detecta cliques fora da área do menu para fechá-lo
-  document.addEventListener("click", (event) => {
-    if (menuNav && menuToggle && menuNav.classList.contains("active")) {
-      if (
-        !menuNav.contains(event.target) &&
-        !menuToggle.contains(event.target)
-      ) {
-        menuNav.classList.remove("active");
-        menuToggle.classList.remove("active");
-      }
-    }
-  });
-
-  // Sincroniza o carrinho entre abas diferentes (se alterar em uma, atualiza na outra)
-  // O evento 'storage' é disparado quando o localStorage muda em outra aba
-  window.addEventListener("storage", (event) => {
-    if (event.key === "carrinho") {
-      atualizarContadorCarrinho();
-      if (document.getElementById("lista-carrinho")) {
-        renderizarCarrinho();
-      }
-    }
-  });
-
-  // Restaura os dados do formulário do carrinho (se existirem)
-  // Preenche os campos automaticamente se o usuário já tiver digitado antes
-  if (document.getElementById("nome-cliente")) {
-    document.getElementById("nome-cliente").value =
-      localStorage.getItem("nomeCliente") || "";
-    document.getElementById("telefone-cliente").value =
-      localStorage.getItem("telefoneCliente") || "";
-    document.getElementById("endereco-cliente").value =
-      localStorage.getItem("enderecoCliente") || "";
-    document.getElementById("pagamento-cliente").value =
-      localStorage.getItem("pagamentoCliente") || "";
   }
 });
+
+// Fecha a busca ao clicar fora
+document.addEventListener("click", (e) => {
+  if (!searchBox.contains(e.target)) {
+    resultsContainer.classList.remove("ativo");
+  }
+});
+
+// Calcula e exibe o preço do Pix automaticamente
+// Pega o preço principal e aplica 5% de desconto visualmente
+calcularPrecoPix();
+
+// Força o nome da personalização a ser maiúsculo enquanto digita
+const inputNome = document.getElementById("nome-camisa");
+if (inputNome) {
+  inputNome.addEventListener("input", (e) => {
+    e.target.value = e.target.value.toUpperCase();
+  });
+}
+
+// Fecha o modal se clicar fora dele
+// Melhora a usabilidade permitindo fechar janelas clicando no fundo escuro
+window.addEventListener("click", (event) => {
+  const modal = document.getElementById("modal-medidas");
+  if (event.target === modal) {
+    modal.style.display = "none";
+  }
+});
+
+// Inicia o carrossel se houver slides na página
+iniciarCarrossel();
+
+// Lógica do Botão Voltar ao Topo
+// Mostra o botão apenas quando o usuário rola a página para baixo
+const btnTopo = document.getElementById("btn-topo");
+window.addEventListener("scroll", () => {
+  if (btnTopo) {
+    if (
+      document.body.scrollTop > 300 ||
+      document.documentElement.scrollTop > 300
+    ) {
+      btnTopo.style.display = "block";
+    } else {
+      btnTopo.style.display = "none";
+    }
+  }
+});
+
+// Fecha o menu mobile automaticamente ao clicar em um link
+// Melhora a experiência no celular, fechando o menu após a navegação
+const linksMenu = document.querySelectorAll(".nav-links a");
+const menuNav = document.querySelector(".nav-links");
+const menuToggle = document.querySelector(".menu-toggle");
+
+if (menuNav) {
+  linksMenu.forEach((link) => {
+    link.addEventListener("click", () => {
+      menuNav.classList.remove("active");
+      if (menuToggle) menuToggle.classList.remove("active");
+    });
+  });
+}
+
+// Fecha o menu mobile ao clicar fora dele
+// Detecta cliques fora da área do menu para fechá-lo
+document.addEventListener("click", (event) => {
+  if (menuNav && menuToggle && menuNav.classList.contains("active")) {
+    if (!menuNav.contains(event.target) && !menuToggle.contains(event.target)) {
+      menuNav.classList.remove("active");
+      menuToggle.classList.remove("active");
+    }
+  }
+});
+
+// Sincroniza o carrinho entre abas diferentes (se alterar em uma, atualiza na outra)
+// O evento 'storage' é disparado quando o localStorage muda em outra aba
+window.addEventListener("storage", (event) => {
+  if (event.key === "carrinho") {
+    atualizarContadorCarrinho();
+    if (document.getElementById("lista-carrinho")) {
+      renderizarCarrinho();
+    }
+  }
+});
+
+// Restaura os dados do formulário do carrinho (se existirem)
+// Preenche os campos automaticamente se o usuário já tiver digitado antes
+if (document.getElementById("nome-cliente")) {
+  document.getElementById("nome-cliente").value =
+    localStorage.getItem("nomeCliente") || "";
+  document.getElementById("telefone-cliente").value =
+    localStorage.getItem("telefoneCliente") || "";
+  document.getElementById("endereco-cliente").value =
+    localStorage.getItem("enderecoCliente") || "";
+  document.getElementById("pagamento-cliente").value =
+    localStorage.getItem("pagamentoCliente") || "";
+}
 
 // Preenche a página de produto dinamicamente com base no ID da URL
 function carregarProdutoDinamico() {
@@ -1574,26 +1606,87 @@ function carregarProdutoDinamico() {
       imgPrincipalEl.alt = produto.nome;
     }
 
-    // Limpa as miniaturas antigas e carrega a galeria do produto
-    const thumbnailsContainer = document.querySelector(".thumbnails");
-    if (thumbnailsContainer) {
-      thumbnailsContainer.innerHTML = "";
-
-      // Se o produto tiver uma lista 'galeria', usa ela. Senão, usa apenas a imagem principal.
-      const imagensMiniatura = produto.galeria || [produto.img];
-
-      imagensMiniatura.forEach((caminhoImg, index) => {
-        // Removi o 'onerror' para que você possa ver exatamente quais imagens não estão sendo encontradas na pasta
-        thumbnailsContainer.innerHTML += `<img src="${caminhoImg}" onclick="trocarImagem(this.src)" alt="Foto ${index + 1}" loading="lazy">`;
-      });
-    }
-
-    // Atualiza Preço e remove o data-attribute para a personalização não bugar
+    // Atualiza preço e remove o data-attribute para a personalização não bugar
     const precoEl = document.querySelector(".preco-destaque");
     if (precoEl) {
       precoEl.innerHTML = `R$ ${formatarPreco(produto.preco)} `;
       delete precoEl.dataset.precoBase;
     }
+  } else {
+    // Tratamento para produto não encontrado (Evita tela quebrada)
+    document.title = "Produto não encontrado - GPT STORE";
+
+    // Renomeado para 'tituloElErro' para não causar conflito de re-declaração
+    const tituloElErro = document.querySelector(".info h2");
+    if (tituloElErro)
+      tituloElErro.innerText = "Produto Indisponível ou Não Encontrado";
+
+    const precoEl = document.querySelector(".preco-destaque");
+    if (precoEl) precoEl.innerText = "R$ 0,00";
+
+    const btnComprar = document.querySelector(".btn-comprar");
+    if (btnComprar) {
+      btnComprar.innerText = "INDISPONÍVEL";
+      btnComprar.disabled = true;
+      btnComprar.style.backgroundColor = "#ccc";
+      btnComprar.style.cursor = "not-allowed";
+      btnComprar.style.boxShadow = "none";
+      btnComprar.style.transform = "none";
+    }
+  }
+
+  // Limpa as miniaturas antigas e carrega a galeria do produto
+  const thumbnailsContainer = document.querySelector(".thumbnails");
+  if (thumbnailsContainer) {
+    thumbnailsContainer.innerHTML = "";
+
+    // Se o produto tiver uma lista 'galeria', usa ela. Senão, usa apenas a imagem principal.
+    const imagensMiniatura = produto.galeria || [produto.img];
+
+    const contador = document.getElementById("contador-carrinho");
+    if (contador) {
+      contador.innerText = qtd;
+    }
+  }
+
+  //Troca a imagem principal do produto ao clicar nas miniaturas
+  function trocarImagem(enderecoDaImagem) {
+    const imagemPrincipal = document.getElementById("imagemPrincipal");
+    if (imagemPrincipal) {
+      imagemPrincipal.src = enderecoDaImagem;
+    }
+  }
+
+  // Gerencia a seleção visual dos botões de tamanho (P, M, G...)
+  function selecionarTamanho(elemento) {
+    //  imagensMiniatura.forEach((caminhoImg, index) => {
+    // Removi o 'onerror' para que você possa ver exatamente quais imagens não estão sendo encontradas na pasta
+    thumbnailsContainer.innerHTML += `<img src="${caminhoImg}" onclick="trocarImagem(this.src)" alt="Foto ${index + 1}" loading="lazy">`;
+  }
+}
+
+// Atualiza Preço e remove o data-attribute para a personalização não bugar
+const precoEl = document.querySelector(".preco-destaque");
+if (precoEl) {
+  precoEl.innerHTML = `R$ ${formatarPreco(produto.preco)} `;
+  delete precoEl.dataset.precoBase;
+} else {
+  // Tratamento para produto não encontrado (Evita tela quebrada)
+  document.title = "Produto não encontrado - GPT STORE";
+  const tituloEl = document.querySelector(".info h2");
+  if (tituloEl) tituloEl.innerText = "Produto Indisponível ou Não Encontrado";
+
+  const precoEl = document.querySelector(".preco-destaque");
+  if (precoEl) precoEl.innerText = "R$ 0,00";
+
+  const btnComprar = document.querySelector(".btn-comprar");
+  if (btnComprar) {
+    btnComprar.innerText = "INDISPONÍVEL";
+    btnComprar.disabled = true;
+    btnComprar.style.backgroundColor = "#ccc";
+    btnComprar.style.cursor = "not-allowed";
+    btnComprar.style.boxShadow = "none";
+    btnComprar.style.transform = "none";
   }
 }
 
@@ -1676,8 +1769,8 @@ async function calcularFrete() {
     if (data.localidade === "Curitiba") {
       resultadoHTML += `
         <label class="item-frete">
-            <input type="radio" name="frete" value="12.00" onchange="selecionarFrete(this.value, 'Motoboy 🏍️')">
-            <span><strong>Motoboy 🏍️:</strong> R$ 12,00 (Entrega no mesmo dia)</span>
+            <input type="radio" name="frete" value="0.00" onchange="selecionarFrete(this.value, 'Motoboy 🏍️ (A calcular - Uber)')">
+            <span><strong>Motoboy 🏍️:</strong> A calcular (Uber)</span>
         </label>
         <label class="item-frete">
             <input type="radio" name="frete" value="0.00" onchange="selecionarFrete(this.value, 'Retirada na Loja')">
@@ -1688,17 +1781,17 @@ async function calcularFrete() {
       let precoPAC, prazoPAC, precoSedex, prazoSedex;
 
       if (sul.includes(data.uf)) {
-        precoPAC = 15.0;
+        precoPAC = 35.0;
         prazoPAC = "5-7 dias úteis";
-        precoSedex = 25.0;
+        precoSedex = 45.0;
         prazoSedex = "2-3 dias úteis";
       } else if (sudeste.includes(data.uf)) {
-        precoPAC = 20.0;
+        precoPAC = 30.0;
         prazoPAC = "6-8 dias úteis";
-        precoSedex = 35.0;
+        precoSedex = 45.0;
         prazoSedex = "3-4 dias úteis";
       } else {
-        precoPAC = 30.0;
+        precoPAC = 40.0;
         prazoPAC = "8-12 dias úteis";
         precoSedex = 60.0;
         prazoSedex = "4-6 dias úteis";
@@ -2416,10 +2509,10 @@ function abrirModalMedidas() {
                     <tr>
                         <th>Tamanho</th>
                         <th>Largura (cm)</th>
-                        <th>Altura (cm)</th>
-                    </tr>
-                </thead>
-                <tbody>
+                                <th>Comprimento (cm)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
                     <tr><td>P</td><td>50</td><td>70</td></tr>
                     <tr><td>M</td><td>53</td><td>72</td></tr>
                     <tr><td>G</td><td>56</td><td>74</td></tr>
