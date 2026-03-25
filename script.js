@@ -168,7 +168,7 @@ const produtosDB = [
       "imagens/Camisas-time/Seleções/Seleção Brasileira 1 - Feminino/etiqueta.jpg",
       "imagens/Camisas-time/Seleções/Seleção Brasileira 1 - Feminino/gola.jpg",
     ],
-    preco: 200.0,
+    preco: 225.0,
   },
   {
     id: "selecao-brasileira-fem-2",
@@ -2488,15 +2488,13 @@ function calcularPrecoPixCards() {
   const cards = document.querySelectorAll(".card");
 
   cards.forEach((card) => {
-    // 1. Tenta achar o elemento de preço (pode estar com a classe antiga ou nova)
-    const precoElemento =
-      card.querySelector(".preco-destaque") ||
-      card.querySelector(".preco-pix-card");
+    const precoDestaque = card.querySelector(".preco-destaque");
+    if (!precoDestaque) return;
 
-    if (!precoElemento) return;
+    // Evita duplicar se o preço pix já tiver sido adicionado neste card
+    if (card.querySelector(".preco-pix-card")) return;
 
-    // 2. Extrai o valor numérico puro do texto (ex: "R$ 240,00" vira 240)
-    const textoPreco = precoElemento.textContent;
+    const textoPreco = precoDestaque.textContent;
     const precoBase = parseFloat(
       textoPreco.replace(/[^\d,]/g, "").replace(",", "."),
     );
@@ -2504,18 +2502,15 @@ function calcularPrecoPixCards() {
     if (!isNaN(precoBase)) {
       const precoPix = precoBase * 0.95;
 
-      // 3. LIMPEZA E SUBSTITUIÇÃO:
-      // Em vez de adicionar ao lado, nós resetamos o conteúdo do elemento
-      precoElemento.className = "preco-pix-card"; // Padroniza a classe
-      precoElemento.innerHTML = `<strong>R$ ${formatarPreco(precoPix)}</strong> no Pix (5% off)`;
+      const precoPixElemento = document.createElement("p");
+      precoPixElemento.className = "preco-pix-card";
+      precoPixElemento.innerHTML = `<strong>R$ ${formatarPreco(precoPix)}</strong> no Pix (5% off)`;
 
-      // 4. Remove qualquer duplicata acidental que tenha sobrado no card
-      const duplicatas = card.querySelectorAll(".preco-pix-card");
-      if (duplicatas.length > 1) {
-        for (let i = 1; i < duplicatas.length; i++) {
-          duplicatas[i].remove();
-        }
-      }
+      // Insere o preço do pix logo após o preço original
+      precoDestaque.parentNode.insertBefore(
+        precoPixElemento,
+        precoDestaque.nextSibling,
+      );
     }
   });
 }
@@ -2712,24 +2707,6 @@ function subirTopo() {
 }
 
 // Função para abrir/fechar o Menu Hambúrguer no mobile
-function toggleMenu() {
-  const navLinks = document.querySelector(".nav-links");
-  const menuToggle = document.querySelector(".menu-toggle");
-  navLinks.classList.toggle("active");
-  if (menuToggle) menuToggle.classList.toggle("active");
-}
-function toggleMenu() {
-  const navLinks = document.querySelector(".nav-links");
-  const menuToggle = document.querySelector(".menu-toggle");
-  navLinks.classList.toggle("active");
-  if (menuToggle) menuToggle.classList.toggle("active");
-}
-function toggleMenu() {
-  const navLinks = document.querySelector(".nav-links");
-  const menuToggle = document.querySelector(".menu-toggle");
-  navLinks.classList.toggle("active");
-  if (menuToggle) menuToggle.classList.toggle("active");
-}
 function toggleMenu() {
   const navLinks = document.querySelector(".nav-links");
   const menuToggle = document.querySelector(".menu-toggle");
