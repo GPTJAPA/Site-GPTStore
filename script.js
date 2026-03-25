@@ -40,7 +40,7 @@ const produtosDB = [
       "imagens/Camisas-time/Seleções/Seleção Brasileira 1/gola.jpg",
       "imagens/Camisas-time/Seleções/Seleção Brasileira 1/etiqueta.jpg",
     ],
-    preco: 220.0,
+    preco: 225.0,
   },
   {
     id: "selecao-brasileira-2-2026",
@@ -154,7 +154,7 @@ const produtosDB = [
       "imagens/Camisas-time/Seleções/Brasileira - retro penta/ronaldo.png",
       "imagens/Camisas-time/Seleções/Brasileira - retro penta/Ronaldinho.webp",
     ],
-    preco: 200.0,
+    preco: 240.0,
   },
   {
     id: "selecao-brasileira-fem-1",
@@ -210,7 +210,7 @@ const produtosDB = [
       "imagens/Camisas-time/Seleções/Brasil Amare -1994/lateral.jpg",
       "imagens/Camisas-time/Seleções/Brasil Amare -1994/gola.jpg",
     ],
-    preco: 230.0,
+    preco: 240.0,
   },
   {
     id: "brasil-1994-azul",
@@ -224,7 +224,7 @@ const produtosDB = [
       "imagens/Camisas-time/Seleções/Brasil Azul -1994/lateral.jpg",
       "imagens/Camisas-time/Seleções/Brasil Azul -1994/gola.jpg",
     ],
-    preco: 230.0,
+    preco: 240.0,
   },
   {
     id: "espanha",
@@ -1497,10 +1497,6 @@ document.addEventListener("DOMContentLoaded", () => {
   calcularPrecoPix();
 });
 
-// Calcula e exibe o preço do Pix automaticamente
-// Pega o preço principal e aplica 5% de desconto visualmente
-calcularPrecoPix();
-
 // Força o nome da personalização a ser maiúsculo enquanto digita
 const inputNome = document.getElementById("nome-camisa");
 if (inputNome) {
@@ -2454,9 +2450,8 @@ function esvaziarCarrinho() {
 
 // Calcula o preço com 5% de desconto para exibição (Pix)
 function calcularPrecoPix() {
-  const precoElemento =
-    document.querySelector(".info .preco-destaque") ||
-    document.querySelector(".preco-destaque");
+  // Restringido apenas para a div .info da página de produto
+  const precoElemento = document.querySelector(".info .preco-destaque");
   if (!precoElemento) return;
 
   const pixAnterior = document.querySelector(".preco-pix");
