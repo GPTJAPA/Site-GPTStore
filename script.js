@@ -1498,6 +1498,9 @@ document.addEventListener("DOMContentLoaded", () => {
   // Calcula e exibe o preço do Pix automaticamente
   // Pega o preço principal e aplica 5% de desconto visualmente
   calcularPrecoPix();
+
+  // Inicia o carrossel garantindo que o HTML da página já carregou
+  iniciarCarrossel();
 });
 
 // Força o nome da personalização a ser maiúsculo enquanto digita
@@ -1516,9 +1519,6 @@ window.addEventListener("click", (event) => {
     modal.style.display = "none";
   }
 });
-
-// Inicia o carrossel se houver slides na página
-iniciarCarrossel();
 
 // Lógica do Botão Voltar ao Topo
 // Mostra o botão apenas quando o usuário rola a página para baixo
@@ -2676,6 +2676,8 @@ function currentSlide(n) {
 function showSlides() {
   const slides = document.getElementsByClassName("carousel-slide");
   const dots = document.getElementsByClassName("dot");
+
+  if (slides.length === 0) return; // Evita erros se não houver carrossel na tela
 
   for (let i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
