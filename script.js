@@ -2,8 +2,35 @@
 // Lista de objetos que contém as informações básicas de cada produto para busca e exibição
 const produtosDB = [
   {
-    id: "selecao-brasileira-1-2026",
+    id: "selecao-brasileira-1-2026-jogador",
     nome: "Camisa Seleção Brasileira I 2026 - VERSÃO JOGADOR",
+    url: "produto.html?id=selecao-brasileira-1-2026-jogador",
+    img: "imagens/Camisas-time/Seleções/Seleção Brasileira 1 - Jogador/frente.jpg",
+    galeria: [
+      "imagens/Camisas-time/Seleções/Seleção Brasileira 1 - Jogador/frente.jpg",
+      "imagens/Camisas-time/Seleções/Seleção Brasileira 1 - Jogador/costas.jpg",
+      "imagens/Camisas-time/Seleções/Seleção Brasileira 1 - Jogador/emblema.jpg",
+      "imagens/Camisas-time/Seleções/Seleção Brasileira 1 - Jogador/etiqueta.jpg",
+    ],
+    preco: 280.0,
+  },
+  {
+    id: "selecao-brasileira-2-2026-jogador",
+    nome: "Camisa Seleção Brasil II 2026 - VERSÃO JOGADOR",
+    url: "produto.html?id=selecao-brasileira-2-2026-jogador",
+    img: "imagens/Camisas-time/Seleções/Seleção Brasileira 2 - Jogador/frente.jpg",
+    galeria: [
+      "imagens/Camisas-time/Seleções/Seleção Brasileira 2 - Jogador/frente.jpg",
+      "imagens/Camisas-time/Seleções/Seleção Brasileira 2 - Jogador/costas.jpg",
+      "imagens/Camisas-time/Seleções/Seleção Brasileira 2 - Jogador/emblema.jpg",
+      "imagens/Camisas-time/Seleções/Seleção Brasileira 2 - Jogador/lateral.jpg",
+      "imagens/Camisas-time/Seleções/Seleção Brasileira 2 - Jogador/etiqueta.jpg",
+    ],
+    preco: 280.0,
+  },
+  {
+    id: "selecao-brasileira-1-2026",
+    nome: "Camisa Seleção Brasileira I 2026",
     url: "produto.html?id=selecao-brasileira-1-2026",
     img: "imagens/Camisas-time/Seleções/Seleção Brasileira 1/Frente.jpg",
     galeria: [
@@ -13,7 +40,7 @@ const produtosDB = [
       "imagens/Camisas-time/Seleções/Seleção Brasileira 1/gola.jpg",
       "imagens/Camisas-time/Seleções/Seleção Brasileira 1/etiqueta.jpg",
     ],
-    preco: 240.0,
+    preco: 220.0,
   },
   {
     id: "selecao-brasileira-2-2026",
