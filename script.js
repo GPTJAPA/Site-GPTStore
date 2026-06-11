@@ -12,7 +12,7 @@ const produtosDB = [
       "imagens/Camisas-time/Seleções/Seleção Brasileira 1 - Jogador/emblema.jpg",
       "imagens/Camisas-time/Seleções/Seleção Brasileira 1 - Jogador/etiqueta.jpg",
     ],
-    preco: 280.0,
+    preco: 290.0,
   },
   {
     id: "selecao-brasileira-2-2026-jogador",
@@ -26,7 +26,7 @@ const produtosDB = [
       "imagens/Camisas-time/Seleções/Seleção Brasileira 2 - Jogador/lateral.jpg",
       "imagens/Camisas-time/Seleções/Seleção Brasileira 2 - Jogador/etiqueta.jpg",
     ],
-    preco: 280.0,
+    preco: 290.0,
   },
   {
     id: "selecao-brasileira-1-2026",
@@ -40,7 +40,7 @@ const produtosDB = [
       "imagens/Camisas-time/Seleções/Seleção Brasileira 1/gola.jpg",
       "imagens/Camisas-time/Seleções/Seleção Brasileira 1/etiqueta.jpg",
     ],
-    preco: 225.0,
+    preco: 220.0,
   },
   {
     id: "selecao-brasileira-2-2026",
@@ -54,7 +54,7 @@ const produtosDB = [
       "imagens/Camisas-time/Seleções/Seleção Brasileira 2/lateral.jpg",
       "imagens/Camisas-time/Seleções/Seleção Brasileira 2/etiqueta.jpg",
     ],
-    preco: 200.0,
+    preco: 220.0,
   },
   {
     id: "alemanha",
@@ -154,7 +154,7 @@ const produtosDB = [
       "imagens/Camisas-time/Seleções/Brasileira - retro penta/ronaldo.png",
       "imagens/Camisas-time/Seleções/Brasileira - retro penta/Ronaldinho.webp",
     ],
-    preco: 240.0,
+    preco: 280.0,
   },
   {
     id: "selecao-brasileira-fem-1",
@@ -168,7 +168,7 @@ const produtosDB = [
       "imagens/Camisas-time/Seleções/Seleção Brasileira 1 - Feminino/etiqueta.jpg",
       "imagens/Camisas-time/Seleções/Seleção Brasileira 1 - Feminino/gola.jpg",
     ],
-    preco: 225.0,
+    preco: 220.0,
   },
   {
     id: "selecao-brasileira-fem-2",
@@ -182,7 +182,7 @@ const produtosDB = [
       "imagens/Camisas-time/Seleções/Seleção Brasileira 2 - Feminino/etiqueta.jpg",
       "imagens/Camisas-time/Seleções/Seleção Brasileira 2 - Feminino/lateral.jpg",
     ],
-    preco: 200.0,
+    preco: 220.0,
   },
   {
     id: "alemanha-2",
@@ -210,7 +210,7 @@ const produtosDB = [
       "imagens/Camisas-time/Seleções/Brasil Amare -1994/lateral.jpg",
       "imagens/Camisas-time/Seleções/Brasil Amare -1994/gola.jpg",
     ],
-    preco: 240.0,
+    preco: 280.0,
   },
   {
     id: "brasil-1994-azul",
@@ -224,7 +224,7 @@ const produtosDB = [
       "imagens/Camisas-time/Seleções/Brasil Azul -1994/lateral.jpg",
       "imagens/Camisas-time/Seleções/Brasil Azul -1994/gola.jpg",
     ],
-    preco: 240.0,
+    preco: 280.0,
   },
   {
     id: "espanha",
@@ -1399,8 +1399,6 @@ document.addEventListener("DOMContentLoaded", () => {
   // Carrega produtos relacionados se o container existir
   exibirProdutosRelacionados();
 
-
-
   // Se estivermos na página do carrinho, renderiza os itens
   if (document.getElementById("lista-carrinho")) {
     renderizarCarrinho();
@@ -1493,8 +1491,6 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   }
-
-
 
   // Inicia o carrossel garantindo que o HTML da página já carregou
   iniciarCarrossel();
